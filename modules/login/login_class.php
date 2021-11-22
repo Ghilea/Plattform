@@ -5,7 +5,7 @@ class Login {
     protected array $errorList = [];
     protected array $errorMessage = [];
 
-    public function __construct($database = null, Functions $functions)
+    public function __construct($database, Functions $functions)
     {
         if(session_status() === PHP_SESSION_NONE){
             session_start();
