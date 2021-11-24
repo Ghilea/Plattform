@@ -1,0 +1,60 @@
+.gallery {
+    margin: 10em 0;
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    animation: 5s fade-in forwards;
+    padding: 3em;
+    overflow: hidden;
+}
+
+.gallery h2 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-m);
+    text-align: center;
+    --color: 0 0% 50%;
+    color: hsl(var(--color));
+    margin: 0 0 2em 0;
+}
+
+.gallery figure {
+    position: relative;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+    max-width: 40em;
+    height: auto;
+    margin: 1em 0;
+}
+
+.gallery figure img {
+    box-shadow: var(--b-shadow);
+    padding: 0.5em;
+    width: 100%;
+    border-radius: var(--br);
+}
+
+.gallery figure:hover {
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 2;
+    transform: scale(1.1);
+}
+
+.gallery figcaption :is(h3, p) {
+    position: absolute;
+    left: 0.7em;
+    bottom: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: var(--fw-m);
+    font-size: 150%;
+    text-shadow: var(--t-shadow);
+    overflow: hidden;
+}
+
+.gallery figcaption p {
+    left: 0;
+    bottom: 0;
+    font-weight: var(--fw-n);
+    font-size: 100%;
+}

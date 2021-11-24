@@ -1,0 +1,93 @@
+.project {
+    background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
+
+    .container {
+        margin: 5em auto;
+        padding: 1em;
+        width: 70%;
+    }
+
+    .knowledge {
+        width: 7em;
+        height: 7em;
+        margin: 5em auto;
+    }
+
+    img {
+        padding: 1.5em;
+        width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        color: hsl(var(--color));
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+    }
+}
+
+.project .projectImg img {
+    width: 100%;
+    height: auto;
+}
+
+.rightPanel {
+
+    .skill-sm {
+        width: 3em;
+        height: 3em;
+    }
+
+    .skill-sm img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.project h2 {
+    padding: 3em 0 0 0;
+}
+
+.project h3 {
+    color: hsl(var(--color));
+    font-weight: var(--fw-m);
+    --fs-h3: 1.5rem;
+    font-size: var(--fs-h3);
+    overflow-wrap: break-word;
+}
+
+.project header p {
+    text-align: center;
+    color: hsl(var(--color));
+    font-weight: var(--fw-n);
+    font-size: var(--fs-p);
+    width: 100%;
+    height: auto;
+    margin: 1.5em auto;
+    padding: 0 1em;
+}
+
+.project p {
+    color: hsl(var(--color));
+    font-weight: var(--fw-n);
+    font-size: var(--fs-p);
+    width: 100%;
+    height: auto;
+    margin: 1.5em auto;
+    padding: 0 1em;
+}
+
+.underConstruction {
+    margin: 15% auto 0 auto;
+    width: 5em;
+}
+
+.underConstruction img {
+    width: 100%;
+}
+
+.underConstruction figcaption {
+    --color: 0 0% 38%;
+    color: hsl(var(--color) / 0.5);
+    font-size: var(--fs-p);
+}

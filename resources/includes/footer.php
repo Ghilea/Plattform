@@ -1,5 +1,3 @@
-</div>
-
 <div class="style footer">
 	<div class="content">
 
@@ -61,8 +59,6 @@
 	</div>
 </div>
 
-</div> <!-- wrapContainer -->
-
 <?php foreach ($config->GetSettingsBtn() as $outputSetting) {
 
 if($outputSetting["target_id"] === 'settingsBtn'){?>
@@ -73,6 +69,12 @@ if($outputSetting["target_id"] === 'settingsBtn'){?>
 <?php } } ?>
 
 <!-- overlayMenu -->
+<div class="bodyOverlay"></div>
+
+<!-- sidemenu -->
+<div id="sideNav" class="sideNav"></div>
+
+
 <div id="overlayMenu" class="overlayBox">
 	<?php foreach ($config->ActivateModule("settings") as $output) { 	
 		require_once($_SERVER['DOCUMENT_ROOT'].$output["link"]);

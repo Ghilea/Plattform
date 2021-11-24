@@ -1,0 +1,71 @@
+.styleNews {
+    padding: 0;
+
+    h2 {
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        font-size: 300%;
+        text-align: center;
+        height: 1.2em;
+        margin: 4em 0 0 0;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 280%;
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        font-weight: var(--fw-m);
+        line-height: 1.2em;
+        letter-spacing: 0.1em;
+        margin: 0 0 1em 0;
+    }
+
+    h4 {
+        font-size: 120%;
+        font-weight: var(--fw-m);
+        --color: 0.61 12% 32%;
+        color: hsl(var(--color));
+        text-align: justify;
+        margin: 1.5em 0 3em 0;
+    }
+
+    p {
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+        height: 20em;
+        --bg-color: 0 33% 98%;
+        background-color: hsl(var(--bg-color));
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        padding: 1.5em;
+        border-top-left-radius: 0.5em;
+        font-size: 120%;
+        width: 100%;
+        margin: 1em auto;
+    }
+
+    a:hover {
+        transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+
+    .img {
+        position: absolute;
+        right: 25%;
+        top: 0;
+        width: 35em;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0 0 var(--space-p-medium) 0;
+        border-top-right-radius: 0.5em;
+        border-top-left-radius: 0.5em;
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.7;
+        }
+    }
+}

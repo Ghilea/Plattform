@@ -1,5 +1,4 @@
 /*
-
 	colorscheme:
 	orange: hsl(19 88.1% 57.1%);
 	purple 1: hsl(237 93.1% 77.3%);
@@ -120,14 +119,6 @@ html, body {
 	padding: 0 var(--space-p);
 }
 
-.container {
-	position: relative;
-	padding: var(--space-p) 0;
-	overflow: hidden;
-	max-width: 80vw;
-	width: 100%;
-}
-
 h2 {
 	font-size: var(--fs-h2);
 	color: hsl(var(--color));
@@ -233,10 +224,6 @@ h2 {
 	overflow: hidden;
 }
 
-
-
-
-
 .hover:hover {
 	--bg-color: 0 0% 0%;
 	background-color: hsl(var(--bg-color) / 0.2);
@@ -290,7 +277,20 @@ h2 {
 /***************************/
 /* flex			 		   */
 /***************************/
-:is(.row, .column) {
+:is(.container, .container-fluid) {
+	display: grid;
+	position: relative;
+	padding: var(--space-p) 0;
+	overflow: hidden;
+	max-width: 80vw;
+	width: 100%;
+}
+
+.container {
+	max-width: 100%;
+}
+
+:is(.row, .col) {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -300,10 +300,58 @@ h2 {
 	gap: 1em;
 }
 
-.column {
+.col {
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
 }
 
 /***************************/

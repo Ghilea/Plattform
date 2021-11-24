@@ -1,0 +1,479 @@
+:root {
+    /* fonts */
+    --ff: 'Exo', sans-serif;
+
+    /* color */
+    --color: 0 0% 100%;
+    --bg-color: 0 0% 100%;
+
+    --border-color: 0 0% 0%;
+
+    /* gradient color #8f94fb, #4e54c8*/
+    --g-color: hsl(237 93.1% 77.3%);
+    --g-color2: hsl(237 52.6% 54.5%);
+
+    /* shadow */
+    --b-shadow: 0 0 .8em hsl(0 0% 0% / .10);
+    --t-shadow: .1em .1em hsl(0 0% 0% / .10);
+
+    /* margin */
+    --space-m: 1em;
+    --space-m-small: calc(var(--space-m) / 2);
+    --space-m-medium: calc(var(--space-m) * 2);
+    --space-m-large: calc(var(--space-m) * 3);
+
+    /* padding */
+    --space-p: 1em;
+    --space-p-small: calc(var(--space-p) / 2);
+    --space-p-medium: calc(var(--space-p) * 2);
+    --space-p-large: calc(var(--space-p) * 3);
+    --space-p-xLarge: calc(var(--space-p) * 12);
+
+    /* font weight */
+    --fw-n: 400;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    /* font size */
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-p: 1rem;
+
+    --fs-n: .95rem;
+    --fs-s: .7rem;
+
+    /* border radius */
+    --br: 1em;
+    --br-b: 3em;
+    --br-r: 50%;
+
+    /* line-height */
+    --lh-n: 1.85em;
+    --lh: 1em;
+}
+
+.box {
+    --bg-color: 0.54 100% 6%;
+    background-color: hsl(var(--bg-color));
+    border-radius: var(--br-b);
+    padding: var(--space-p-small);
+    box-shadow: var(--b-shadow);
+}
+
+.style {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 var(--space-p-xLarge) 0;
+    clear: both;
+    margin: 0;
+}
+
+.style header p {
+    text-align: center;
+    color: hsl(var(--color));
+    font-weight: var(--fw-n);
+    --fs-p: 1.5rem;
+    font-size: var(--fs-p);
+    width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+    padding: 0 var(--space-p);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    color: hsl(var(--color));
+    line-height: 1.2em;
+    text-align: center;
+    text-shadow: var(--t-shadow);
+    font-weight: var(--fw-m);
+    letter-spacing: 0.1em;
+}
+
+/***************************/
+/* small changes	       */
+/***************************/
+.wordSplit {
+    word-wrap: break-word;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.noBottomPadding {
+    padding: 6em 0 0 0 !important;
+}
+
+.padding {
+    padding: 3em 0 3em 0 !important;
+}
+
+.margin-bottom {
+    margin-bottom: 3em !important;
+}
+
+.paddingBorder {
+    padding: 3em 0 3em 0 !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.border {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5em 0.3em !important;
+}
+
+
+.txtJustify {
+    text-align: justify !important;
+}
+
+.txtLeft {
+    text-align: left !important;
+}
+
+.txtRight {
+    text-align: right !important;
+}
+
+.txtCenter {
+    text-align: center !important;
+}
+
+.txtSmall {
+    font-size: 75% !important;
+    margin: 0.5em 0 !important;
+}
+
+.floatLeft {
+    float: left;
+    text-align: left;
+}
+
+.floatRight {
+    float: right;
+    text-align: left;
+}
+
+.maxWidth {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.maxWidth2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.maxWidthCalendar {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.mousePointer {
+    cursor: pointer;
+}
+
+.mousePointer:hover {
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    color: rgba(168, 210, 110, 0.8) !important;
+}
+
+.overflowText {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    height: 1.5em !important;
+}
+
+.fit {
+    width: 100%;
+    margin: 0;
+}
+
+/***************************/
+/* colors	               */
+/***************************/
+.borderOrangeTop {
+    border-top: 0.2em solid rgba(255, 182, 47, 1);
+    margin-top: 25px;
+    border-radius: 0.3em 0.3em 0 0;
+}
+
+.borderOrangeTopLine {
+    border-top: 0.05em solid rgba(255, 182, 47, 1);
+    box-shadow: var(--b-shadow);
+    padding: 0.5em 0;
+    margin: 0.5em 0 0 0;
+}
+
+.borderOrangeBottom {
+    border-top: 0.2em solid rgba(255, 182, 47, 1);
+    box-shadow: var(--b-shadow);
+}
+
+.borderOrangeLeft {
+    border-left: 1em solid rgba(255, 182, 47, 1);
+}
+
+.borderGreenTop {
+    border-top: 0.2em solid rgba(150, 201, 80, 1);
+    margin-top: 25px;
+    border-radius: 0.3em 0.3em 0 0;
+}
+
+.borderGreenBottom {
+    border-bottom: 0.2em solid rgba(150, 201, 80, 1);
+    margin-bottom: 25px;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+}
+
+.borderGreenLeft {
+    border-left: 1em solid rgba(150, 201, 80, 1);
+}
+
+.borderGreenRight {
+    border-right: 1em solid rgba(150, 201, 80, 1);
+}
+
+.borderBlueTop {
+    border-top: 0.2em solid rgba(0, 162, 232, 1);
+    margin-top: 25px;
+}
+
+.borderBlueBottom {
+    border-bottom: 0.2em solid rgba(0, 162, 232, 1);
+    margin-bottom: 25px;
+}
+
+.borderBlueLeft {
+    border-left: 1em solid rgba(0, 162, 232, 1);
+}
+
+.borderRedTop {
+    border-top: 0.2em solid rgba(255, 77, 77, 1);
+    margin-top: 25px;
+}
+
+.borderRedBottom {
+    border-bottom: 0.2em solid rgba(255, 77, 77, 1);
+    margin-bottom: 25px;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+}
+
+.borderRedLeft {
+    border-left: 1em solid rgba(255, 77, 77, 1);
+}
+
+.borderRedRight {
+    border-right: 1em solid rgba(255, 77, 77, 1);
+}
+
+.borderWhiteLeft {
+    border-left: 1em solid rgba(237, 237, 237, 1);
+}
+
+.red {
+    color: rgba(238, 82, 85, 1) !important;
+}
+
+.backgroundRed {
+    background-color: rgba(238, 82, 85, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.backgroundRed:hover {
+    background-color: rgba(238, 82, 85, 0.5) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.backgroundNeutral {
+    background-color: rgba(235, 235, 235, 1) !important;
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.backgroundNeutral:hover {
+    background-color: rgba(235, 235, 235, 0.5) !important;
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+/***************************/
+/* Input			       */
+/***************************/
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+input[type=date],
+input[type=tel],
+input[type=search],
+input[type=file],
+input[type=range],
+select,
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0.5em 2em 0.5em 2em;
+    font-size: 90%;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    border: 0.1em solid rgba(204, 204, 204, 1);
+    box-shadow: var(--b-shadow);
+    transition: border-color .2s ease;
+    --br: 0.5em;
+    border-radius: var(--br);
+}
+
+
+
+input[type=search] {
+    padding: 0.5em 2.3em 0.5em 2.8em;
+    font-size: 100%;
+    background-image: url('/resources/images/svg/common-search-lookup-outline-stroke.svg');
+    background-repeat: no-repeat;
+    background-position: 0.5em 50%;
+}
+
+input[type=text]:hover,
+input[type=number]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=date]:hover,
+input[type=tel]:hover,
+input[type=search]:hover,
+input[type=file]:hover,
+input[type=range]:hover,
+select:hover,
+textarea:hover {
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border: 0.1em solid rgba(183, 183, 183, 1);
+    box-shadow: var(--b-shadow);
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=date]:focus,
+input[type=tel]:focus,
+input[type=search]:focus,
+input[type=file]:focus,
+input[type=range]:focus,
+select:focus,
+textarea:focus {
+    border: 0.1em solid rgba(183, 183, 183, 1);
+    box-shadow: var(--b-shadow);
+    outline: 0;
+}
+
+form textarea {
+    height: 20em;
+    resize: vertical;
+}
+
+li div {
+    cursor: pointer;
+}
+
+form h3 {
+    display: inline-block;
+}
+
+/*checkbox locked and sticked*/
+#sticked,
+#locked,
+#showImage,
+#showMail,
+#showPhoneNumber {
+    display: none;
+}
+
+#locked:checked+#lock,
+#sticked:checked+#stick {
+    opacity: 0.5;
+}
+
+/*buttons*/
+#showImage:not(:checked)+#imageShow,
+#showMail:not(:checked)+#mailShow,
+#showPhoneNumber:not(:checked)+#phoneShow {
+    background-image: url('/resources/images/svg/editor-more-detail-glyph.svg');
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#showImage:checked+#imageShow,
+#showMail:checked+#mailShow,
+#showPhoneNumber:checked+#phoneShow {
+    background-image: url('/resources/images/svg/editor-more-detail-outline-stroke.svg');
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.hidden :is(input[type=text],
+    input[type=number],
+    input[type=password],
+    input[type=email],
+    input[type=date],
+    input[type=tel],
+    input[type=search],
+    input[type=file],
+    input[type=range],
+    select,
+    textarea) {
+    min-width: 20%;
+    max-width: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 90%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+.hidden :is(input[type=text]:hover,
+    input[type=number]:hover,
+    input[type=password]:hover,
+    input[type=email]:hover,
+    input[type=date]:hover,
+    input[type=tel]:hover,
+    input[type=search]:hover,
+    input[type=file]:hover,
+    input[type=range]:hover,
+    select:hover,
+    textarea:hover) {
+    transition: color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out,
+        background-color 0.2s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+.hidden :is(input[type=text]:focus,
+    input[type=number]:focus,
+    input[type=password]:focus,
+    input[type=email]:focus,
+    input[type=date]:focus,
+    input[type=tel]:focus,
+    input[type=search]:focus,
+    input[type=file]:focus,
+    input[type=range]:focus,
+    select:focus,
+    textarea:focus) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+    outline: 0;
+}

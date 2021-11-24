@@ -1,0 +1,176 @@
+.settings {
+    overflow-y: auto;
+    width: 100%;
+}
+
+.settings .button {
+    width: 3em;
+    height: 3em;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+}
+
+.settings .button img {
+    width: 100%;
+    padding: 0.5em;
+}
+
+.settings .container {
+    gap: 0.5em;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 0 2em 0 0;
+}
+
+.settings .box {
+    --bg-color: 0 0% 100%;
+    --br-b: 1.5em;
+    padding: 3em;
+    position: relative;
+    width: 100%;
+    max-width: 30em;
+    min-height: 45em;
+}
+
+.settings .mainImg {
+    overflow: hidden;
+    width: 8em;
+    height: 8em;
+    margin: 2em auto;
+}
+
+.settings .mainImg img {
+    width: 100%;
+    height: auto;
+}
+
+.settings h2 {
+    margin: 1.5em 0 2.5em 0;
+    --color: 0 0% 0%;
+    color: var(--color);
+    font-size: var(--fs-h3);
+}
+
+.settings h3 {
+    text-align: center;
+    --color: 0 0% 38%;
+    color: hsl(var(--color));
+    font-weight: var(--fw-m);
+    --fs-h3: 1.5rem;
+    font-size: var(--fs-n);
+    overflow-wrap: break-word;
+}
+
+/*.settings p {
+	--color: 0 0% 38%;
+	color: hsl(var(--color));
+	font-weight: var(--fw-n);
+	font-size: var(--fs-p);
+	width: 100%;
+	height: auto;
+	margin: 1.5em auto;
+	padding: 0 1em;
+}*/
+
+.switch {
+    position: relative;
+    cursor: pointer;
+    width: 5.7em;
+    height: 1.5em
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    --bg-color: 0 0% 30%;
+    background-color: hsl(var(--bg-color));
+    transition: .4s;
+    --br: 0.3em;
+    border-radius: var(--br);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: 0.3em;
+    bottom: 0.25em;
+    --bg-color: 0 0% 40%;
+    background-color: hsl(var(--bg-color));
+    transition: .4s;
+    border-radius: var(--br);
+}
+
+.settings input[type="checkbox"]:checked+.slider {
+    --bg-color: 0 0% 30%;
+    background-color: hsl(var(--bg-color));
+}
+
+.settings input[type="checkbox"]:checked+.slider:before {
+    content: "";
+    --bg-color: 0 0% 60%;
+    transform: translateX(4em);
+}
+
+.settings input[type="checkbox"] {
+    display: none;
+}
+
+.hiddenContent {
+    display: none;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+.settings #modulesContent div {
+    --bg-color: 0 0% 95%;
+    background-color: hsl(var(--bg-color));
+    --br: 0.3em;
+    border-radius: var(--br);
+    padding: 0.5em 1em;
+}
+
+.settings .buttonContent {
+    position: relative;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex: 0.2;
+}
+
+.settings .content {
+    position: relative;
+    width: 100%;
+    justify-content: space-between
+}
+
+.configsContent__title {
+    --bg-color: 0 0% 95%;
+    background-color: hsl(var(--bg-color));
+    --br: 0.3em;
+    border-radius: var(--br);
+    padding: 0.5em 1em;
+    width: 100%;
+    height: auto;
+}
+
+.configsContent__title:checked+.configsContent__toggleBox {
+    height: fit-content;
+}
+
+.configsContent__toggleBox {
+    display: none;
+    overflow: hidden;
+    --bg-color: 0 0% 95%;
+    background-color: hsl(var(--bg-color));
+    --br: 0.3em;
+    border-radius: var(--br);
+    padding: 0;
+    /*padding: 0.5em 1em;*/
+}

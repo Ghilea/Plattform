@@ -1,0 +1,274 @@
+/***************************/
+/* Grid	desktop:		   */
+/***************************/
+@media only screen and (min-width: 1180px) {
+    .col-lg-1 {width: 8.33%;}
+    
+    .col-lg-2 {width: 16.66%;}
+
+    .col-lg-3 {width: 25%;}
+
+    .col-lg-4 {width: 33.33%;}
+
+    .col-lg-5 {width: 41.66%;}
+
+    .col-lg-6 {width: 50%;}
+
+    .col-lg-7 {width: 58.33%;}
+
+    .col-lg-8 {width: 66.66%;}
+
+    .col-lg-9 {width: 75%;}
+
+    .col-lg-10 {width: 83.33%;}
+
+    .col-lg-11 {width: 91.66%;}
+
+    .col-lg-12 {width: 100%;}
+}
+
+/***************************/
+/* Grid	Tablet & Mobile	   */
+/***************************/
+@media only screen and (min-width: 150px) and (max-width: 1180px) {
+
+    .styleMain h2 {
+        font-size: 150%;
+    }
+
+    .styleMain p {
+        font-size: 195%;
+        text-align: center;
+    }
+
+    .styleFooter {
+        max-height: 62em;
+    }
+
+    .forumPicture {
+        padding: 25.25% 0 0 0;
+    }
+
+
+    .sub {
+        min-width: 100%;
+    }
+
+    .headerBox {
+        min-height: 25em;
+        height: auto;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navControl {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .nav li {
+        display: block;
+        margin: 0.3em;
+        box-shadow: var(--b-shadow);
+        font-size: 85%;
+        background: rgb(255, 255, 255);
+    }
+
+    .nav li:hover {
+        background-color: rgb(0, 126, 167);
+    }
+
+    .nav a,
+    nav div {
+        padding: 0.5em 0;
+        color: rgb(0, 0, 0);
+    }
+
+    .nav :is(a:hover, div:hover) {
+        transition: all 0.2s ease-in-out;
+        color: rgb(255, 255, 255)
+    }
+
+    .indexBanner h2,
+    .styleNews h2 {
+        font-size: var(--fs-h3);
+    }
+
+}
+
+/***************************/
+/* Grid	Tablet			   */
+/***************************/
+@media only screen and (min-width: 650px) and (max-width: 1180px) {
+
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .w1 {
+        font-size: 230%;
+    }
+
+    .removeM {
+        display: none;
+    }
+
+    .indexBanner .circleImg,
+    .styleLight .circleImg {
+        width: 7em;
+        height: 7em;
+    }
+
+    #footerContactForm {
+        width: 100%;
+        max-width: 35em;
+        margin: 0 auto;
+    }
+
+}
+
+/***************************/
+/* Grid	Mobile			   */
+/***************************/
+@media only screen and (min-width: 150px)and (max-width: 650px) {
+
+    .col-sm-1 {
+        width: 8.33%;
+    }
+
+    .col-sm-2 {
+        width: 16.66%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .col-sm-5 {
+        width: 41.66%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33%;
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33%;
+    }
+
+    .col-sm-11 {
+        width: 91.66%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .styleMain p {
+        font-size: 150%;
+        word-wrap: break-word;
+    }
+
+    .w1 {
+        font-size: 150%;
+    }
+
+    .removeSM {
+        display: none;
+    }
+
+    .logoImage {
+        float: none;
+        margin: 1em auto 0 auto;
+        max-width: 100px;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .indexBanner .circleImg,
+    .styleLight .circleImg {
+        border-radius: var(--br-r);
+        width: 6em;
+        height: 6em;
+    }
+
+    #footerContactForm {
+        width: 100%;
+        max-width: 25em;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,97 @@
+.sFooter {
+    --color: 0.61 24% 84%;
+    color: hsl(var(--color) / 0.5);
+    border-top: 1px solid hsl(var(--border-color) / 0.1);
+    --g-color: 0 0% 16%;
+    --g-color2: 0 0% 12%;
+    background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color)) 50%, hsl(var(--g-color2)) 100%);
+}
+
+.footer {
+    --g-color: 0 0% 23%;
+    --g-color2: 0 0% 16%;
+    background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color2)) 100%);
+}
+
+.footer h2 {
+    margin: 3em 0 2em 0;
+}
+
+.footer h3 {
+    margin: 1em 0 0 0;
+    color: hsl(var(--color));
+    font-size: 100%;
+    font-weight: var(--fw-b);
+}
+
+.footer p span {
+    margin: 0 0 0 1.3em;
+}
+
+.footer ul li {
+    display: block;
+    overflow: hidden;
+}
+
+.footer li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em 0;
+}
+
+.footer li a:before {
+    margin: 0;
+}
+
+.footer li>a,
+.footer li>div {
+    transition: all linear 0.15s;
+    color: hsl(var(--color) / 0.692);
+    text-decoration: none;
+    float: left;
+    margin: 1em 1.3em 0 0;
+    font-size: 85%;
+}
+
+.footer li>a:hover,
+.footer li>div:hover {
+    --color: 0.07 11% 75%;
+}
+
+#footerContactForm {
+    width: 100%;
+    max-width: 45em;
+    margin: 0 auto;
+}
+
+#footerContactForm :is(input[type=text],
+    input[type=email],
+    textarea) {
+    padding: 0.5em 2em 0.5em 2em;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 90%;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    border: 0.1em solid rgba(204, 204, 204, 1);
+    box-shadow: var(--b-shadow);
+    transition: border-color .2s ease;
+    --br: 0.5em;
+    border-radius: var(--br);
+}
+
+.socialMedia img {
+    margin: 0 1em 0 0;
+}
+
+.copyright p {
+    font-size: var(--fs-s);
+}
+
+.sFooter {
+    padding: 0;
+}
+
+.sFooter .container {
+    margin: 0 auto;
+    justify-content: space-between;
+}

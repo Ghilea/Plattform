@@ -1,0 +1,24 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-weight: var(--fw-n);
+    line-height: var(--lh-n);
+    font-size: var(--fs-n);
+    font-family: var(--ff);
+    scroll-behavior: smooth;
+}
