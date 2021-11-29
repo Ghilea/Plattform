@@ -581,8 +581,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 17s ease-in-out infinite;
-          animation: bubbles 17s ease-in-out infinite;
+  -webkit-animation: bubbles 14s ease-in-out infinite;
+          animation: bubbles 14s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -590,124 +590,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 43vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(3em) rotateY(4deg);
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-.hero .bubbles:nth-child(1) {
-  left: 32vw;
+  left: 74vw;
   width: 6em;
   height: 6em;
+  transform: translateZ(4em) rotateY(1deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.hero .bubbles:nth-child(1) {
+  left: 58vw;
+  width: 2em;
+  height: 2em;
   transform: translateZ(4em) rotateY(3deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 .hero .bubbles:nth-child(2) {
-  left: 65vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(4em) rotateY(3deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-.hero .bubbles:nth-child(3) {
-  left: 20vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(5deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(4) {
-  left: 5vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(2em) rotateY(5deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-.hero .bubbles:nth-child(5) {
-  left: 99vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(5em) rotateY(1deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(6) {
-  left: 69vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(5em) rotateY(3deg);
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 12vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(2em) rotateY(2deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-.hero .bubbles:nth-child(8) {
   left: 14vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(3em) rotateY(3deg);
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.hero .bubbles:nth-child(9) {
-  left: 92vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(2em) rotateY(4deg);
+  transform: translateZ(5em) rotateY(1deg);
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
-.hero .bubbles:nth-child(10) {
-  left: 72vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(4deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.hero .bubbles:nth-child(11) {
-  left: 15vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(4em) rotateY(1deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(12) {
-  left: 86vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(2deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-.hero .bubbles:nth-child(13) {
-  left: 38vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(1deg);
+.hero .bubbles:nth-child(3) {
+  left: 67vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(2em) rotateY(3deg);
   -webkit-animation-delay: 14s;
           animation-delay: 14s;
 }
-.hero .bubbles:nth-child(14) {
-  left: 29vw;
+.hero .bubbles:nth-child(4) {
+  left: 85vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(2em) rotateY(5deg);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.hero .bubbles:nth-child(5) {
+  left: 26vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(1em) rotateY(1deg);
+  transform: translateZ(2em) rotateY(3deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(6) {
+  left: 5vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(2em) rotateY(5deg);
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+}
+.hero .bubbles:nth-child(7) {
+  left: 30vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(2em) rotateY(1deg);
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 5vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(2em) rotateY(4deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 76vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(2em) rotateY(4deg);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 14vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(3em) rotateY(1deg);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 16vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(5em) rotateY(4deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(12) {
+  left: 95vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(5em) rotateY(4deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+.hero .bubbles:nth-child(13) {
+  left: 9vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(4em) rotateY(4deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(14) {
+  left: 41vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(4em) rotateY(2deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
 }
 
 .settings {
@@ -1020,7 +1020,7 @@ textarea:focus) {
 }
 .project .container {
   margin: 5em auto;
-  padding: 1em;
+  padding: 1em 6em;
   width: 80%;
 }
 .project .knowledge {
@@ -1048,11 +1048,12 @@ textarea:focus) {
 .leftPanel .box3d {
   transform: rotateY(20deg);
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 2em 1em 6em -1em rgba(0, 0, 0, 0.3);
+  box-shadow: 3em 1em 3em -1em rgba(0, 0, 0, 0.3);
+  border-radius: 0.3em;
 }
 .leftPanel img {
   width: 100%;
@@ -1093,7 +1094,7 @@ textarea:focus) {
   height: 100%;
   top: 0;
   left: 0;
-  box-shadow: -2em 1em 6em -1em rgba(0, 0, 0, 0.3);
+  box-shadow: -3em 1em 3em -1em rgba(0, 0, 0, 0.3);
   border-radius: 0.3em;
 }
 .rightPanel .box3d img {
@@ -2025,7 +2026,7 @@ nav div {
 /***************************/
 /* Grid	Tablet			   */
 /***************************/
-@media only screen and (min-width: 650px) and (max-width: 1180px) {
+@media only screen and (min-width: 750px) and (max-width: 1180px) {
   .col-md-1 {
     width: 8.33%;
   }
@@ -2093,11 +2094,20 @@ nav div {
     max-width: 35em;
     margin: 0 auto;
   }
+
+  .project {
+    background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
+  }
+  .project .container {
+    margin: 5em auto;
+    padding: 1em;
+    width: 80%;
+  }
 }
 /***************************/
 /* Grid	Mobile			   */
 /***************************/
-@media only screen and (min-width: 150px) and (max-width: 650px) {
+@media only screen and (min-width: 150px) and (max-width: 750px) {
   .col-sm-1 {
     width: 8.33%;
   }
@@ -2184,6 +2194,15 @@ nav div {
     width: 100%;
     max-width: 25em;
     margin: 0 auto;
+  }
+
+  .project {
+    background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
+  }
+  .project .container {
+    margin: 5em auto;
+    padding: 1em;
+    width: 80%;
   }
 
   .leftPanel {
@@ -3700,8 +3719,6 @@ button,
   right: 0;
   bottom: 0;
   border-radius: 0;
-  --br: 1em;
-  border-bottom-right-radius: var(--br);
 }
 
 button,

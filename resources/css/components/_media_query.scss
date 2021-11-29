@@ -110,7 +110,7 @@
 /***************************/
 /* Grid	Tablet			   */
 /***************************/
-@media only screen and (min-width: 650px) and (max-width: 1180px) {
+@media only screen and (min-width: 750px) and (max-width: 1180px) {
 
     .col-md-1 {
         width: 8.33%;
@@ -180,12 +180,22 @@
         margin: 0 auto;
     }
 
+    .project {
+        background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
+
+        .container {
+            margin: 5em auto;
+            padding: 1em;
+            width: 80%;
+        }
+    }
+
 }
 
 /***************************/
 /* Grid	Mobile			   */
 /***************************/
-@media only screen and (min-width: 150px)and (max-width: 650px) {
+@media only screen and (min-width: 150px)and (max-width: 750px) {
 
     .col-sm-1 {
         width: 8.33%;
@@ -273,6 +283,16 @@
         width: 100%;
         max-width: 25em;
         margin: 0 auto;
+    }
+
+    .project {
+        background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
+
+        .container {
+            margin: 5em auto;
+            padding: 1em;
+            width: 80%;
+        }
     }
 
     .leftPanel {
