@@ -4,7 +4,7 @@
     .container {
         margin: 5em auto;
         padding: 1em;
-        width: 70%;
+        width: 80%;
     }
 
     .knowledge {
@@ -26,21 +26,81 @@
     }
 }
 
-.project .projectImg img {
-    width: 100%;
-    height: auto;
+
+.leftPanel {
+    margin: 5em 0;
+    width:50%;
+    height:35em;
+    position: relative;
+
+    .box3d {
+        transform: rotateY(20deg);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 2em 1em 6em -1em hsl(0 0% 0% / 0.3);
+        }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.centerPanel {
+    max-width: 5em; 
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;    
+
+    .box3d {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 .rightPanel {
+    margin: 5em 0;
+    width:50%;
+    height:35em;
+    position: relative;
 
-    .skill-sm {
-        width: 3em;
-        height: 3em;
-    }
-
-    .skill-sm img {
+    .box3d {
+        transform: rotateY(-20deg);
+        position: absolute;
         width: 100%;
-        object-fit: contain;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: -2em 1em 6em -1em hsl(0 0% 0% / 0.3);
+        border-radius: 0.3em;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            text-align: center;
+            padding: 2em 0 0 0;
+        }
+
+        p {
+            padding: 0 1em;
+        }
     }
 }
 

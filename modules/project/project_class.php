@@ -2,7 +2,7 @@
 
 class Project {
 
-    public function __construct($database = null, Functions $functions)
+    public function __construct($database, Functions $functions)
     {
         $this->db = $database;
         $this->fk = $functions;

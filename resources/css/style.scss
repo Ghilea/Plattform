@@ -1,6 +1,7 @@
 @use 'components/reset';
 @use 'components/general';
 @use 'components/gridFlex';
+@use 'components/perspective';
 
 /* styles */
 @use 'components/styles/heroes';
@@ -1456,8 +1457,6 @@ button,
     left: 0;
     bottom: 0;
     border-radius: 0;
-    --br: 1em;
-    border-bottom-left-radius: var(--br);
 }
 
 .buttonRight {

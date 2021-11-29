@@ -32,48 +32,51 @@
 		<?php } ?>		
 	</header>
 
-	<div class="container row">
 	<?php foreach($class->getProject() as $output) { ?>
 
-		<figure class="col-lg-6 col-md-6 col-sm-12 projectImg">	
-			<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-		</figure>
+		<article class="container row">
+			<div class="leftPanel col-sm-12 activate3d">
+				<figure class="box3d">	
+					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+				</figure>
+			</div>
+			<div class="centerPanel">
+					
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+					
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
 
-		<div class="col-lg-6 col-md-6 col-sm-12 rightPanel">
-			<h3 ><?php echo $output["title"]; ?></h3>
-			<div class="skill-sm">
-				<div class="col-lg-2">
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+								
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+
+			</div>
+			<div class="rightPanel col-sm-12 activate3d">
+				<div class="box3d">
+					<h3><?php echo $output["title"]; ?></h3>
+										
+					<p><?php echo $functions->ellipsis($output["content"], 200); ?></p>
+
+					<?php if($output["showBtn"] >= 1 ){?>
+				
+						<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>
+					
+						<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn buttonRight">GitHub</a>
+			
+					<?php }else{ ?>
+
+						<figure class="underConstruction">
+							<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src=" <?php echo $output["link2"] ?>" title="Under Utevckling" alt="">
+							<figcaption><?php echo $functions->ellipsis("Under Utevckling", 200); ?></figcaption>
+						</figure>
+
+					<?php } ?>
 				</div>
 			</div>
-			<p><?php echo $functions->ellipsis($output["content"], 200); ?></p>
-
-			<?php if($output["showBtn"] >= 1 ){?>
 			
-				<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>
+		</article>
 				
-				<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn buttonRight">GitHub</a>
-		
-			<?php }else{ ?>
-
-				<figure class="underConstruction">
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src=" <?php echo $output["link2"] ?>" title="Under Utevckling" alt="">
-					<figcaption><?php echo $functions->ellipsis("Under Utevckling", 200); ?></figcaption>
-				</figure>
-
-			<?php } ?>
-		</div>	
 
 	<?php } ?>
-	</div>
 
 </section>

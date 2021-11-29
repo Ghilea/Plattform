@@ -1,0 +1,15 @@
+.activate3d {
+    perspective: 30em;
+}
+
+.box3d {
+    transform-style: preserve-3d;
+    position: absolute;
+    transform: rotateY(30deg);
+    background-color: hsl(var(--bg-color) / 0.2);
+}
+
+.preserve3d {
+    transform-style: preserve-3d;
+}
+
