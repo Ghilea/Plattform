@@ -2,46 +2,32 @@
 /* logo					   */
 /***************************/
 .logo {
-    width: auto;
-}
+    max-width: 23em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 
-.logoImage {
-    float: left;
-    margin: 0.8em 1.5em 0.5em 3em;
-    width: 30%;
-    max-width: 80px;
-}
+    img {
+        width: 100%;
+        max-width: 4em;
+        padding: 0.5em;
+    }
 
-.logo img {
-    width: 100%;
-    padding: 0.5em;
-}
+    p {
+        color: hsl(var(--color));
+        font-size: 200%;
+        font-weight: var(--fw-b);
+        text-transform: capitalize;
+        margin: 0.2em 0 0 0;
 
-.logoText {
-    float: left;
-    height: auto;
-    margin: 1.4em 0 0 0;
-    width: auto;
-    overflow: hidden;
-}
-
-.logo p,
-.logo p span {
-    width: 100%;
-    margin: 0.5em 0 0 0;
-    display: block;
-    color: rgb(255, 255, 255);
-    font-size: 230%;
-    font-weight: var(--fw-b);
-    text-transform: capitalize;
-}
-
-.logo p span {
-    height: auto;
-    margin: 0 0 0 0.5em;
-    font-size: 50%;
-    font-weight: var(--fw-n);
-    text-transform: none;
+        span {
+            display: block;
+            font-size: 50%;
+            font-weight: var(--fw-n);
+        }
+    }
 }
 
 /***************************/
@@ -75,34 +61,34 @@ input[type=checkbox]:checked~.nav {
     text-align: center;
     font-size: var(--fs-n);
     font-weight: var(--fw-b);
-}
 
-.nav li {
-    display: inline-block;
-    position: relative;
-    margin: 0.7em 0.9em;
-}
+    li {
+        display: inline-block;
+        position: relative;
+        margin: 0.7em 0.9em;
 
-.nav li img {
-    display: block;
-    margin: 0 auto;
-    width: 20px;
-}
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 20px;
+        }
+    }
 
-.nav a,
-.nav div {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    letter-spacing: 0.1em;
-}
+    a, 
+    div {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        letter-spacing: 0.1em;
 
-.nav a:hover,
-.nav div:hover {
-    transition: all 0.2s ease-in-out;
-    opacity: 0.7;
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            opacity: 0.7;
+        }
+    }
+
 }
 
 /***************************/

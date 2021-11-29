@@ -54,9 +54,14 @@
 			<div class="rightPanel col-sm-12 activate3d">
 				<div class="box3d">
 					<h3><?php echo $output["title"]; ?></h3>
-										
-					<p><?php echo $functions->ellipsis($output["content"], 200); ?></p>
+								
+					<details>
+						<summary>Visa mer</summary>
+						<p><?php echo $output["content"]; ?></p>
+					</details>
 
+					<p><?php echo $functions->ellipsis($output["content"], 200); ?></p>
+					
 					<?php if($output["showBtn"] >= 1 ){?>
 				
 						<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>

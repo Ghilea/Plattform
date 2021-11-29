@@ -1,3 +1,4 @@
+<footer>
 <div class="style footer">
 	<div class="content">
 
@@ -23,7 +24,7 @@
 						</div>
 					<?php }
 				} else { ?>
-					<h2>Kontakt</h2>
+					<h2 id="contact">Kontakt</h2>
 
 					<div id="footerContactForm">
 						<form action="mailto:tougent@gmail.com" method=”POST” enctype=”text/plain”>
@@ -58,7 +59,7 @@
 
 	</div>
 </div>
-
+</footer>
 <?php foreach ($config->GetSettingsBtn() as $outputSetting) {
 
 if($outputSetting["target_id"] === 'settingsBtn'){?>

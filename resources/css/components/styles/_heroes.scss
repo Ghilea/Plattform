@@ -8,6 +8,7 @@
     perspective: 30em;
 
     h1 {
+        max-width: 10em;
         font-size: var(--fs-h1);
         color: hsl(var(--color));
         line-height: var(--lh);

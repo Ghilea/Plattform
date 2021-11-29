@@ -36,18 +36,17 @@ $company = $config->GetConfig("company")[0];
 <body>
 	<!-- Header -->
 	<header id="header">
-
-		<div class="logo">
-			<a href="/index.php" title="<?php echo $company["name"]; ?>">
-				<div class="logoImage">
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $config->GetConfig("logo")[0]["image"]; ?>" alt="">
-				</div>
-				<div class="logoText"><p><?php echo $company["name"]; ?>
-					<span><?php echo $company["content"]; ?></span></p>
-				</div>
-			</a>
-		</div>
-
+		<a class="logo" href="/index.php" title="<?php echo $company["name"]; ?>">
+		
+			
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $config->GetConfig("logo")[0]["image"]; ?>" alt="">
+				
+				<p>
+					<?php echo $company["name"]; ?>
+					<span><?php echo $company["content"]; ?></span>
+				</p>
+	
+		</a>
 		<div class="menu">
 			<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
 			<label class="menu-open-button" for="menu-open">

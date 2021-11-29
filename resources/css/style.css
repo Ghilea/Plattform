@@ -67,6 +67,16 @@ body {
   --lh: 1em;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .box {
   --bg-color: 0.54 100% 6%;
   background-color: hsl(var(--bg-color));
@@ -103,6 +113,10 @@ h2 {
   text-shadow: var(--t-shadow);
   font-weight: var(--fw-m);
   letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
 }
 
 /***************************/
@@ -570,6 +584,7 @@ textarea:focus) {
   perspective: 30em;
 }
 .hero h1 {
+  max-width: 10em;
   font-size: var(--fs-h1);
   color: hsl(var(--color));
   line-height: var(--lh);
@@ -581,8 +596,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 14s ease-in-out infinite;
-          animation: bubbles 14s ease-in-out infinite;
+  -webkit-animation: bubbles 18s ease-in-out infinite;
+          animation: bubbles 18s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -590,124 +605,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 74vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(1deg);
+  left: 89vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(2em) rotateY(3deg);
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 58vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(4em) rotateY(3deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-.hero .bubbles:nth-child(2) {
-  left: 14vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(5em) rotateY(1deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.hero .bubbles:nth-child(3) {
-  left: 67vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(3deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(4) {
-  left: 85vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(2em) rotateY(5deg);
+  left: 44vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(4em) rotateY(5deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.hero .bubbles:nth-child(5) {
-  left: 26vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(3deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-.hero .bubbles:nth-child(6) {
-  left: 5vw;
+.hero .bubbles:nth-child(2) {
+  left: 42vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(2em) rotateY(5deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  transform: translateZ(3em) rotateY(1deg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
-.hero .bubbles:nth-child(7) {
-  left: 30vw;
+.hero .bubbles:nth-child(3) {
+  left: 15vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(2em) rotateY(5deg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.hero .bubbles:nth-child(4) {
+  left: 7vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(4em) rotateY(3deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+.hero .bubbles:nth-child(5) {
+  left: 39vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(5em) rotateY(5deg);
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+.hero .bubbles:nth-child(6) {
+  left: 46vw;
   width: 6em;
   height: 6em;
-  transform: translateZ(2em) rotateY(1deg);
+  transform: translateZ(3em) rotateY(1deg);
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
+.hero .bubbles:nth-child(7) {
+  left: 57vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(5em) rotateY(3deg);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 .hero .bubbles:nth-child(8) {
-  left: 5vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(4deg);
+  left: 56vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(4em) rotateY(3deg);
   -webkit-animation-delay: 14s;
           animation-delay: 14s;
 }
 .hero .bubbles:nth-child(9) {
-  left: 76vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(4deg);
+  left: 36vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(2em) rotateY(5deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 43vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(1em) rotateY(2deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 27vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(3em) rotateY(2deg);
   -webkit-animation-delay: 11s;
           animation-delay: 11s;
 }
-.hero .bubbles:nth-child(10) {
-  left: 14vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(1deg);
+.hero .bubbles:nth-child(12) {
+  left: 58vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(4em) rotateY(5deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.hero .bubbles:nth-child(11) {
-  left: 16vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(5em) rotateY(4deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-.hero .bubbles:nth-child(12) {
-  left: 95vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(5em) rotateY(4deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-}
 .hero .bubbles:nth-child(13) {
-  left: 9vw;
-  width: 3em;
-  height: 3em;
+  left: 96vw;
+  width: 2em;
+  height: 2em;
   transform: translateZ(4em) rotateY(4deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
 }
 .hero .bubbles:nth-child(14) {
-  left: 41vw;
-  width: 6em;
-  height: 6em;
+  left: 82vw;
+  width: 5em;
+  height: 5em;
   transform: translateZ(4em) rotateY(2deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .settings {
@@ -1108,6 +1123,22 @@ textarea:focus) {
 .rightPanel .box3d p {
   padding: 0 1em;
 }
+.rightPanel .box3d details {
+  color: white;
+  padding: 0 1em;
+}
+.rightPanel .box3d details p {
+  padding: 0;
+}
+.rightPanel .box3d details:hover {
+  cursor: pointer;
+}
+.rightPanel .box3d details[open] > summary {
+  background-color: #ccf;
+}
+.rightPanel .box3d details[open] ~ p {
+  display: none;
+}
 
 .project h2 {
   padding: 3em 0 0 0;
@@ -1155,6 +1186,10 @@ textarea:focus) {
   --color: 0 0% 38%;
   color: hsl(var(--color)/0.5);
   font-size: var(--fs-p);
+}
+
+footer {
+  margin-top: auto;
 }
 
 .sFooter {
@@ -1242,6 +1277,11 @@ textarea) {
   margin: 0 1em 0 0;
 }
 
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
 .copyright p {
   font-size: var(--fs-s);
 }
@@ -1259,46 +1299,29 @@ textarea) {
 /* logo					   */
 /***************************/
 .logo {
-  width: auto;
+  max-width: 23em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
 }
-
-.logoImage {
-  float: left;
-  margin: 0.8em 1.5em 0.5em 3em;
-  width: 30%;
-  max-width: 80px;
-}
-
 .logo img {
   width: 100%;
+  max-width: 4em;
   padding: 0.5em;
 }
-
-.logoText {
-  float: left;
-  height: auto;
-  margin: 1.4em 0 0 0;
-  width: auto;
-  overflow: hidden;
-}
-
-.logo p,
-.logo p span {
-  width: 100%;
-  margin: 0.5em 0 0 0;
-  display: block;
-  color: white;
-  font-size: 230%;
+.logo p {
+  color: hsl(var(--color));
+  font-size: 200%;
   font-weight: var(--fw-b);
   text-transform: capitalize;
+  margin: 0.2em 0 0 0;
 }
-
 .logo p span {
-  height: auto;
-  margin: 0 0 0 0.5em;
+  display: block;
   font-size: 50%;
   font-weight: var(--fw-n);
-  text-transform: none;
 }
 
 /***************************/
@@ -1333,19 +1356,16 @@ input[type=checkbox]:checked ~ .nav {
   font-size: var(--fs-n);
   font-weight: var(--fw-b);
 }
-
 .nav li {
   display: inline-block;
   position: relative;
   margin: 0.7em 0.9em;
 }
-
 .nav li img {
   display: block;
   margin: 0 auto;
   width: 20px;
 }
-
 .nav a,
 .nav div {
   display: block;
@@ -1355,7 +1375,6 @@ input[type=checkbox]:checked ~ .nav {
   cursor: pointer;
   letter-spacing: 0.1em;
 }
-
 .nav a:hover,
 .nav div:hover {
   transition: all 0.2s ease-in-out;
@@ -2275,6 +2294,10 @@ nav div {
   }
   .rightPanel .box3d p {
     padding: 0 1em;
+  }
+
+  .hero h1 {
+    font-size: var(--fs-h3);
   }
 }
 /* styles */
@@ -3695,7 +3718,8 @@ button,
   box-shadow: var(--b-shadow);
   font-weight: var(--fw-n);
   line-height: 3em;
-  width: 10em;
+  min-width: 10em;
+  max-width: 14em;
   height: 3em;
   margin: 2em auto;
   color: white;

@@ -1440,7 +1440,8 @@ button,
     box-shadow: var(--b-shadow);
     font-weight: var(--fw-n);
     line-height: 3em;
-    width: 10em;
+    min-width: 10em;
+    max-width: 14em;
     height: 3em;
     margin: 2em auto;
     color: rgb(255, 255, 255);

@@ -103,6 +103,28 @@
         p {
             padding: 0 1em;
         }
+
+        details {
+            color: hsl(0 0% 100%);
+            padding: 0 1em;
+
+            p {
+                padding: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &[open]>summary {
+                background-color: #ccf;
+            }
+
+            &[open] ~ p {
+                display:none;
+            }
+
+        }
     }
 }
 

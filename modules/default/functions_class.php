@@ -384,7 +384,8 @@ class Functions {
 		$query = $this->db->select("modules_content_sub",
 			[
 				"name", 
-				"class"
+				"class",
+                "link"
 			],
             ["AND" => ["modules_content_id" => 14, "override" => null],
             "ORDER" => ["sortOrder" => "ASC"]]

@@ -53,6 +53,16 @@
     --lh: 1em;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .box {
     --bg-color: 0.54 100% 6%;
     background-color: hsl(var(--bg-color));
@@ -91,6 +101,7 @@ h2 {
     letter-spacing: 0.1em;
 }
 
+a {text-decoration: none;}
 /***************************/
 /* small changes	       */
 /***************************/
