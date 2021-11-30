@@ -50,9 +50,25 @@ class Project {
             $count = $this->db->count("project");
 
             $query = $this->db->select("project",
-            ["id", "image", "title", "content", "created", "showBtn", "link", "link2"],
-            ["ORDER" => ["sticked" => "DESC", "title" => "ASC"],
+            [
+                "[><]project_images" => ["project.id" => "project_id"],
+                "[<]project_skills" => ["project_images.project_skills_id" => "id"]],
+            [
+                "project.id", 
+                "project.image", 
+                "project.title", 
+                "project.content", 
+                "project.created",
+                "project.showBtn",
+                "project.link",
+                "project.link2",
+                
+            ],
+            ["ORDER" => ["project.sticked" => "DESC", "project.title" => "ASC"],
             "LIMIT" => $count]);
+
+            var_dump($query);
+
         }
 
         $res = $this->fk->dynamicRow($query, $count, "presentation", "id");

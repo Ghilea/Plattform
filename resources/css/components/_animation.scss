@@ -186,3 +186,9 @@
     }
 
 }
+
+@keyframes perspectiveFadeIn {
+    to {
+        perspective: 30em;
+    }
+}

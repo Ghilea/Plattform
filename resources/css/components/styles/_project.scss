@@ -89,6 +89,8 @@
         left: 0;
         box-shadow: -3em 1em 3em -1em rgb(0 0 0 / 30%);
         border-radius: 0.3em;
+        display: flex;
+        flex-direction: column;
 
         img {
             width: 100%;
@@ -96,28 +98,38 @@
         }
 
         h3 {
+            order: 1;
             text-align: center;
             padding: 2em 0 0 0;
         }
 
         p {
+            order: 2;
             padding: 0 1em;
         }
 
         details {
+            order: 3;
             color: hsl(0 0% 100%);
             padding: 0 1em;
-
-            p {
-                padding: 0;
-            }
+            position: relative;
 
             &:hover {
                 cursor: pointer;
             }
 
+            p {
+                padding: 0 0.05em;
+                order:2;
+                &:hover {
+                    cursor: auto;
+                }
+            }
+
             &[open]>summary {
-                background-color: #ccf;
+                position: absolute;
+                bottom:0;
+                margin: 0 0 -1.85em 0;
             }
 
             &[open] ~ p {
@@ -125,7 +137,31 @@
             }
 
         }
+
+        .underConstruction {
+            order: 4;
+            position: absolute;
+            bottom: 2em;
+            left: 50%;
+            width: 5em;
+            transform: translateX(-50%);
+
+            img {
+                width: 100%;
+            }
+
+            figcaption {
+                --color: 0 0% 38%;
+                color: hsl(var(--color) / 0.5);
+                font-size: var(--fs-p);
+            }
+        }
+
+        .buttonLeft, .buttonRight {
+            max-width:100%;
+        }
     }
+
 }
 
 .project h2 {
@@ -159,19 +195,4 @@
     height: auto;
     margin: 1.5em auto;
     padding: 0 1em;
-}
-
-.underConstruction {
-    margin: 15% auto 0 auto;
-    width: 5em;
-}
-
-.underConstruction img {
-    width: 100%;
-}
-
-.underConstruction figcaption {
-    --color: 0 0% 38%;
-    color: hsl(var(--color) / 0.5);
-    font-size: var(--fs-p);
 }
