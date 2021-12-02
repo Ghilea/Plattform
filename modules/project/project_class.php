@@ -40,9 +40,7 @@ class Project {
                     "link",
                     "link2"
                 ],
-                [
-                    "id" => $id
-                ]
+                ["id" => $id]
             );
 
         }else{
@@ -51,24 +49,34 @@ class Project {
 
             $query = $this->db->select("project",
             [
-                "[><]project_images" => ["project.id" => "project_id"],
-                "[<]project_skills" => ["project_images.project_skills_id" => "id"]],
-            [
-                "project.id", 
-                "project.image", 
-                "project.title", 
-                "project.content", 
-                "project.created",
-                "project.showBtn",
-                "project.link",
-                "project.link2",
+                "id", 
+                "image", 
+                "title", 
+                "content", 
+                "created",
+                "showBtn",
+                "link",
+                "link2",
                 
             ],
-            ["ORDER" => ["project.sticked" => "DESC", "project.title" => "ASC"],
-            "LIMIT" => $count]);
+            ["ORDER" => ["project.sticked" => "DESC", "project.title" => "ASC"]]);
 
-            var_dump($query);
+            $number = 0;
 
+            foreach($query as $output){
+
+                $query[$number]["images_skill"] = $this->db->select("project_images",
+                ["[<]project_skills" => ["project_skills_id" => "id"]],
+                [
+                    "link(image_link)",
+                    "name"
+                    
+                ],
+                ["project_id" => $output["id"]]);
+                $number++;
+
+            }
+        
         }
 
         $res = $this->fk->dynamicRow($query, $count, "presentation", "id");

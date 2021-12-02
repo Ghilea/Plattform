@@ -25,15 +25,15 @@
 
 	</div>
 
-	<header>
+	<header id="project">
 		<?php foreach($class->getHeader() as $hOutput){ ?>
 			<h2><?php echo $hOutput["name"]; ?></h2>
 			<p><?php echo $hOutput["content"]; ?></p>
 		<?php } ?>		
 	</header>
 
-	<?php foreach($class->getProject() as $output) { ?>
-
+	<?php foreach($class->getProject() as $output) {  ?>
+		
 		<article class="container row">
 			<div class="leftPanel col-sm-12 activate3d">
 				<figure class="box3d">	
@@ -41,15 +41,10 @@
 				</figure>
 			</div>
 			<div class="centerPanel">
+				<?php foreach($output["images_skill"] as $output2) { ?>
 					
-				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-					
-				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-
-				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-								
-				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-
+					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output2["image_link"]; ?>" title="<?php echo $output2["name"]; ?>" alt="">
+				<?php } ?>
 			</div>
 			<div class="rightPanel col-sm-12 activate3d">
 				<div class="box3d">
