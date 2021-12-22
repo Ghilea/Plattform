@@ -1,6 +1,6 @@
 <?php $class = new Project($database, $functions); ?>
 
-<section class="container-fluid style project">
+<section class="container-fluid style project activate3d">
 	
 	<header>
 		<h2>Kunskaper</h2>	
@@ -32,22 +32,24 @@
 		<?php } ?>		
 	</header>
 
+	<div class="container carousel">
+
 	<?php foreach($class->getProject() as $output) {  ?>
 		
-		<article class="container row">
-			<div class="leftPanel col-sm-12 activate3d">
-				<figure class="box3d">	
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-				</figure>
-			</div>
+		<article class="item">
+			
+			<figure>	
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+			</figure>
+
 			<div class="centerPanel">
 				<?php foreach($output["images_skill"] as $output2) { ?>
 					
 					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output2["image_link"]; ?>" title="<?php echo $output2["name"]; ?>" alt="">
 				<?php } ?>
 			</div>
-			<div class="rightPanel col-sm-12 activate3d">
-				<div class="box3d">
+			<div class="rightPanel">
+		
 					<h3><?php echo $output["title"]; ?></h3>
 								
 					<details>
@@ -63,20 +65,14 @@
 					
 						<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn buttonRight">GitHub</a>
 			
-					<?php }else{ ?>
-
-						<figure class="underConstruction">
-							<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src=" <?php echo $output["link2"] ?>" title="Under Utevckling" alt="">
-							<figcaption><?php echo $functions->ellipsis("Under Utevckling", 200); ?></figcaption>
-						</figure>
-
 					<?php } ?>
-				</div>
-			</div>
+				
+			</div>-->
 			
 		</article>
 				
 
 	<?php } ?>
 
+					</div>
 </section>
