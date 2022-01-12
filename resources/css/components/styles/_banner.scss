@@ -6,13 +6,19 @@
 }
 
 .indexBanner h2 {
+    text-align: center;
+    color: hsl(var(--color));
+    font-weight: var(--fw-m);
+    font-size: var(--fs-h2);
     margin: 6em 0 0 0;
     text-shadow: var(--t-shadow);
-    color: hsl(var(--color));
 }
 
 .indexBanner p {
-    max-width: 500px;
+    font-size: 120%;
+    color: hsl(var(--color));
     width: 100%;
+    margin: 1em auto;
+    max-width: 500px;
     text-align: center;
 }

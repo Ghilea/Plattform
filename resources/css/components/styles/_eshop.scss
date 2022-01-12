@@ -1,0 +1,188 @@
+.styleShop {
+    font-size: 120%;
+    --color: 0 0% 33%;
+    color: hsl(var(--color));
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    margin: 0;
+
+    h2 {
+        text-shadow: var(--t-shadow);
+        --color: 0.61 12% 32%;
+        color: hsl(var(--color));
+        margin: 0.5em 0 0 0;
+    }
+
+    h3 {
+        font-size: 150%;
+        font-weight: var(--fw-m);
+        --color: 0.61 12% 32%;
+        color: hsl(var(--color));
+        text-align: left;
+        line-height: 1.2em;
+        letter-spacing: 0.1em;
+        margin: 0 0 1em 0;
+    }
+
+    h4 {
+        font-size: 120%;
+        font-weight: var(--fw-m);
+        --color: 0.61 12% 32%;
+        color: hsl(var(--color));
+        text-align: justify;
+        margin: 1.5em 0 3em 0;
+        font-weight: var(--fw-n);
+        text-align: center;
+    }
+
+    p {
+        font-size: 120%;
+        color: hsl(var(--color));
+        width: 100%;
+        margin: 1em auto;
+    }
+
+    a {
+        --color: 0 0% %;
+        color: hsl(var(--color));
+        text-decoration: none;
+        text-shadow: none;
+
+        &:hover {
+            transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+    }
+
+    .tit {
+        font-size: 110%;
+        --color: 0.61 12% 32%;
+        color: hsl(var(--color));
+        line-height: 1.2em;
+        text-align: center;
+        font-weight: var(--fw-m);
+        letter-spacing: 0.1em;
+        margin: 1em 0 0.5em 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .sub {
+        font-size: 100%;
+        height: 10em;
+    }
+}
+
+.showShoping {
+    width: 100%;
+    height: 2.2em;
+    display: flex;
+    margin: 1.5em 0 1.5em 0;
+
+    img {
+        display: block;
+        margin: 0 0 0 -1.5em;
+        --bg-color: 0.54 100% 33%;
+        background-color: hsl(var(--bg-color));
+        border-radius: var(--br-r);
+        width: 40px;
+        height: 40px;
+        padding: 0.5em;
+    }
+
+    .totalProducts {
+        margin: -1.3em 0 0 1em;
+        font-size: 80%;
+        font-weight: var(--fw-n);
+        line-height: 2em;
+        text-align: center;
+        background-color: hsl(var(--bg-color));
+        --border-color: 0.54 100% 33%;
+        border: 1px solid hsl(var(--border-color));
+        border-radius: var(--br-r);
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        width: 25px;
+        height: 25px;
+        z-index: 9;
+    }
+
+    .totalProductsPrice {
+        font-size: 90%;
+        font-weight: var(--fw-n);
+        line-height: 2.5em;
+        text-align: center;
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        width: auto;
+        height: 30px;
+        margin: 0 0 0 0.5em;
+    }
+
+
+}
+
+.categoryMenu {
+    position: relative;
+    box-shadow: var(--b-shadow);
+    padding: 0 0 1em 0;
+
+    h3 {
+        width: 100%;
+        font-size: 120%;
+        padding: 0.5em 0 0.5em 1em;
+        margin: 0 0 0.5em 0;
+        --border-color: 0 0 85%;
+        border-bottom: 0.07em solid hsl(var(--border-color));
+    }
+}
+
+.product {
+    height: 15em;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+
+    .priceTagText {
+        text-shadow: var(--t-shadow);
+        text-align: center;
+        letter-spacing: 0.05em;
+        word-spacing: 0.05em;
+        font-size: 180%;
+        font-weight: var(--fw-b);
+        color: hsl(var(--color));
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        width: 100%;
+        height: 2em;
+    }
+
+    .priceTag {
+        text-shadow: var(--t-shadow);
+        text-align: center;
+        letter-spacing: 0.05em;
+        word-spacing: 0.05em;
+        font-weight: var(--fw-b);
+        color: hsl(var(--color));
+        position: absolute;
+        font-size: 85%;
+        right: 1em;
+        top: 1em;
+        left: auto;
+        width: 8em;
+        height: 4em;
+        border-bottom-left-radius: 1em;
+        border-top-right-radius: 1em;
+        --bg-color: 0 100% 50%;
+        background-color: hsl(var(--bg-color));
+    }
+}

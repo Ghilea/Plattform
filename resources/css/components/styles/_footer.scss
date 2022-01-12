@@ -24,6 +24,10 @@ footer {
 
     h2 {
         margin: 3em 0 2em 0;
+        text-align: center;
+        color: hsl(var(--color));
+        font-weight: var(--fw-m);
+        font-size: var(--fs-h2);
     }
 
     h3 {

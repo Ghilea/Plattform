@@ -597,8 +597,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 25s ease-in-out infinite;
-          animation: bubbles 25s ease-in-out infinite;
+  -webkit-animation: bubbles 11s ease-in-out infinite;
+          animation: bubbles 11s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -606,124 +606,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 33vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(1deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  left: 95vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(3em) rotateY(4deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 74vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(5em) rotateY(4deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  left: 84vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 .hero .bubbles:nth-child(2) {
-  left: 60vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(3em) rotateY(3deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  left: 16vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(3em) rotateY(5deg);
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
 }
 .hero .bubbles:nth-child(3) {
-  left: 93vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(5em) rotateY(5deg);
+  left: 57vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(2em) rotateY(4deg);
   -webkit-animation-delay: 12s;
           animation-delay: 12s;
 }
 .hero .bubbles:nth-child(4) {
-  left: 81vw;
+  left: 18vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(1em) rotateY(2deg);
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.hero .bubbles:nth-child(5) {
+  left: 54vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(1em) rotateY(3deg);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.hero .bubbles:nth-child(6) {
+  left: 8vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(3em) rotateY(4deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(7) {
+  left: 54vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(1em) rotateY(5deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 24vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(4em) rotateY(2deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 45vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 73vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(5em) rotateY(2deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 89vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(3em) rotateY(4deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(12) {
+  left: 25vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(13) {
+  left: 1vw;
   width: 2em;
   height: 2em;
   transform: translateZ(2em) rotateY(5deg);
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
-.hero .bubbles:nth-child(5) {
-  left: 76vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(1em) rotateY(4deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(6) {
-  left: 20vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(1em) rotateY(4deg);
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 21vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(4deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(8) {
-  left: 59vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(1deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(9) {
-  left: 19vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(4em) rotateY(1deg);
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.hero .bubbles:nth-child(10) {
-  left: 38vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(5em) rotateY(4deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-.hero .bubbles:nth-child(11) {
-  left: 90vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(1deg);
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-.hero .bubbles:nth-child(12) {
-  left: 79vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(5em) rotateY(1deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-.hero .bubbles:nth-child(13) {
-  left: 97vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(3em) rotateY(3deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
 .hero .bubbles:nth-child(14) {
-  left: 83vw;
+  left: 95vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(4em) rotateY(1deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  transform: translateZ(2em) rotateY(4deg);
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 
 .settings {
@@ -1179,6 +1179,10 @@ footer {
 }
 .footer h2 {
   margin: 3em 0 2em 0;
+  text-align: center;
+  color: hsl(var(--color));
+  font-weight: var(--fw-m);
+  font-size: var(--fs-h2);
 }
 .footer h3 {
   margin: 1em 0 0 0;
@@ -1706,21 +1710,21 @@ input[type=checkbox]:checked ~ .nav {
 /***************************/
 /* combine 		   		   */
 /***************************/
-:is(.styleLight, .styleShop, .styleEvents) h2 {
+:is(.styleLight, .styleEvents) h2 {
   text-shadow: var(--t-shadow);
   --color: 0.61 12% 32%;
   color: hsl(var(--color));
   margin: 0.5em 0 0 0;
 }
 
-:is(.project, .footer, .indexBanner) h2 {
+.project h2 {
   text-align: center;
   color: hsl(var(--color));
   font-weight: var(--fw-m);
   font-size: var(--fs-h2);
 }
 
-:is(.styleLight, .styleShop) h3 {
+.styleLight, h3 {
   font-size: 150%;
   font-weight: var(--fw-m);
   --color: 0.61 12% 32%;
@@ -1731,7 +1735,7 @@ input[type=checkbox]:checked ~ .nav {
   margin: 0 0 1em 0;
 }
 
-:is(.styleLight, .styleShop, .indexBanner, .styleEvents) p {
+:is(.styleLight, .styleEvents) p {
   font-size: 120%;
   color: hsl(var(--color));
   width: 100%;
@@ -1829,18 +1833,13 @@ input[type=checkbox]:checked ~ .nav {
 /***************************/
 /* style h4	   			   */
 /***************************/
-:is(.styleLight, .styleShop) h4 {
+.styleLight h4 {
   font-size: 120%;
   font-weight: var(--fw-m);
   --color: 0.61 12% 32%;
   color: hsl(var(--color));
   text-align: justify;
   margin: 1.5em 0 3em 0;
-}
-
-.styleShop h4 {
-  font-weight: var(--fw-n);
-  text-align: center;
 }
 
 .difficultyPos {
@@ -1890,14 +1889,14 @@ input[type=checkbox]:checked ~ .nav {
 /***************************/
 /* style a / hover		   */
 /***************************/
-:is(.styleLight, .styleShop, .styleOverlay) a {
+:is(.styleLight, .styleOverlay) a {
   --color: 0 0% %;
   color: hsl(var(--color));
   text-decoration: none;
   text-shadow: none;
 }
 
-:is(.styleLight, .styleShop, .styleOverlay, .shareButton) a:hover {
+:is(.styleLight, .styleOverlay, .shareButton) a:hover {
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1988,109 +1987,6 @@ input[type=checkbox]:checked ~ .nav {
 /***************************/
 /* style img	   		   */
 /***************************/
-.showShoping {
-  width: 100%;
-  height: 2.2em;
-  display: flex;
-  margin: 1.5em 0 1.5em 0;
-}
-
-.showShoping .totalProducts {
-  margin: -1.3em 0 0 1em;
-  font-size: 80%;
-  font-weight: var(--fw-n);
-  line-height: 2em;
-  text-align: center;
-  background-color: hsl(var(--bg-color));
-  --border-color: 0.54 100% 33%;
-  border: 1px solid hsl(var(--border-color));
-  border-radius: var(--br-r);
-  --color: 0 0% 0%;
-  color: hsl(var(--color));
-  width: 25px;
-  height: 25px;
-  z-index: 9;
-}
-
-.showShoping .totalProductsPrice {
-  font-size: 90%;
-  font-weight: var(--fw-n);
-  line-height: 2.5em;
-  text-align: center;
-  --color: 0 0% 0%;
-  color: hsl(var(--color));
-  width: auto;
-  height: 30px;
-  margin: 0 0 0 0.5em;
-}
-
-.showShoping img {
-  display: block;
-  margin: 0 0 0 -1.5em;
-  --bg-color: 0.54 100% 33%;
-  background-color: hsl(var(--bg-color));
-  border-radius: var(--br-r);
-  width: 40px;
-  height: 40px;
-  padding: 0.5em;
-}
-
-.categoryMenu {
-  position: relative;
-  box-shadow: var(--b-shadow);
-  padding: 0 0 1em 0;
-}
-
-.categoryMenu h3 {
-  width: 100%;
-  font-size: 120%;
-  padding: 0.5em 0 0.5em 1em;
-  margin: 0 0 0.5em 0;
-  --border-color: 0 0 85%;
-  border-bottom: 0.07em solid hsl(var(--border-color));
-}
-
-.product {
-  height: 15em;
-  overflow: hidden;
-  position: relative;
-}
-
-.product img {
-  display: block;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
-}
-
-.product :is(.priceTagText .priceTag) {
-  text-shadow: var(--t-shadow);
-  text-align: center;
-  letter-spacing: 0.05em;
-  word-spacing: 0.05em;
-  font-size: 180%;
-  font-weight: var(--fw-b);
-  color: hsl(var(--color));
-  position: absolute;
-  top: 0.5em;
-  left: 0;
-  width: 100%;
-  height: 2em;
-}
-
-.product .priceTag {
-  font-size: 85%;
-  right: 1em;
-  top: 1em;
-  left: auto;
-  width: 8em;
-  height: 4em;
-  border-bottom-left-radius: 1em;
-  border-top-right-radius: 1em;
-  --bg-color: 0 100% 50%;
-  background-color: hsl(var(--bg-color));
-}
-
 .boxImg {
   position: relative;
   height: 30em;
@@ -2250,22 +2146,7 @@ input[type=checkbox]:checked ~ .nav {
   margin: 1em 0 0.5em 0;
 }
 
-.styleShop .tit {
-  font-size: 110%;
-  --color: 0.61 12% 32%;
-  color: hsl(var(--color));
-  line-height: 1.2em;
-  text-align: center;
-  font-weight: var(--fw-m);
-  letter-spacing: 0.1em;
-  margin: 1em 0 0.5em 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 100%;
-  white-space: nowrap;
-}
-
-:is(.sub, .styleShop .sub) {
+:is(.sub, .sub) {
   font-size: 120%;
   --color: 0 0% 33%;
   color: hsl(var(--color));
@@ -2273,11 +2154,6 @@ input[type=checkbox]:checked ~ .nav {
   height: 100%;
   text-align: justify;
   margin: 0;
-}
-
-.styleShop .sub {
-  font-size: 100%;
-  height: 10em;
 }
 
 .productBorder {
