@@ -25,54 +25,56 @@
 
 	</div>
 
-	<header id="project">
+	<header>
 		<?php foreach($class->getHeader() as $hOutput){ ?>
 			<h2><?php echo $hOutput["name"]; ?></h2>
 			<p><?php echo $hOutput["content"]; ?></p>
 		<?php } ?>		
 	</header>
 
-	<div class="container carousel">
+	<div class="container projectBox activate3d">
 
 	<?php foreach($class->getProject() as $output) {  ?>
 		
-		<article class="item">
+		<article class="container row item preserve3d">
 			
-			<figure>	
-				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
-			</figure>
+			<div class="leftPanel">
+
+				<figure>	
+					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+				</figure>
+
+			</div>
 
 			<div class="centerPanel">
+
 				<?php foreach($output["images_skill"] as $output2) { ?>
 					
 					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output2["image_link"]; ?>" title="<?php echo $output2["name"]; ?>" alt="">
 				<?php } ?>
+
 			</div>
+
 			<div class="rightPanel">
 		
-					<h3><?php echo $output["title"]; ?></h3>
-								
-					<details>
-						<summary>Visa mer</summary>
-						<p><?php echo $output["content"]; ?></p>
-					</details>
-
-					<p><?php echo $functions->ellipsis($output["content"], 200); ?></p>
-					
-					<?php if($output["showBtn"] >= 1 ){?>
+				<h3><?php echo $output["title"]; ?></h3>
+							
+				<p><?php echo $functions->ellipsis($output["content"], 200); ?></p>
 				
-						<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>
-					
-						<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn buttonRight">GitHub</a>
+				<?php if($output["showBtn"] >= 1 ){?>
 			
-					<?php } ?>
+					<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>
 				
-			</div>-->
+					<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn buttonRight">GitHub</a>
+		
+				<?php } ?>
+				
+			</div>
 			
 		</article>
 				
 
 	<?php } ?>
 
-					</div>
+	</div>
 </section>

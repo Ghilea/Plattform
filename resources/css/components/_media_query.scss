@@ -105,6 +105,40 @@
         font-size: var(--fs-h3);
     }
 
+    .project {
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: center;
+            align-content: center;
+            justify-items: stretch;
+        }
+
+        .item {
+            text-align: center;
+            color: #FFF;
+            opacity: 0.95;
+            border-radius: 10px;
+            gap: 1em 0.5em;
+
+            &:nth-child(n+1) {
+                grid-column: 1 / span 6;
+            }
+        }
+
+        .centerPanel {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+
+            img {
+                min-width: 10%;
+            }
+
+        }
+    }
 }
 
 /***************************/

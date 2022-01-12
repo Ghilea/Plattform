@@ -1,4 +1,4 @@
-:is(.container, .container-fluid) {
+.container, .container-fluid {
     display: grid;
     position: relative;
     padding: var(--space-p) 0;
