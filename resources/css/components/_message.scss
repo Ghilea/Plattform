@@ -1,0 +1,38 @@
+.errorMessage {
+    margin: 0 0 1em 0;
+
+    p {
+        padding: 0 0 0 2.5em;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-size: 100%;
+        font-weight: var(--fw-m);
+    }
+
+    img {
+        float: left;
+        width: 24px;
+        height: auto;
+    }
+}
+
+.overlayError {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(238, 82, 85, 0.9);
+    font-size: 100%;
+}
+
+.noError {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(85, 238, 82, 1);
+    font-size: 100%;
+}
+
+.inputError {
+    border: 0.1em dashed rgb(238, 82, 85) !important;
+}

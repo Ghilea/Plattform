@@ -1,0 +1,147 @@
+.boxForumSettings {
+    margin: 2em 0 0 0;
+    background-color: red;
+}
+
+.boxForumSettings .boxForumNumber {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+}
+
+.forumBarSetting a:hover {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.forumPicture {
+    position: relative;
+    padding: 85.25% 0 0 0;
+}
+
+.boxForumText {
+    line-height: 2em;
+}
+
+.boxForumDate {
+    position: absolute;
+    right: 1.5em;
+    bottom: 1em;
+    font-size: 70%;
+    letter-spacing: 0.2em;
+}
+
+.boxForum {
+    line-height: 1em;
+    position: relative;
+    padding: 0.5em !important;
+    box-shadow: var(--b-shadow);
+    background-color: rgb(255, 255, 255);
+    --br: 0.3em;
+    border-radius: var(--br);
+}
+
+.boxForum:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.boxForum h2 {
+    font-size: 100%;
+    font-weight: var(--fw-n);
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+.boxForum h3 {
+    font-size: 545%;
+}
+
+.boxForum h4 {
+    font-size: 200%;
+    font-weight: var(--fw-n);
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    line-height: 2em;
+    margin: 0 !important;
+}
+
+.boxForum p {
+    text-align: left;
+    font-size: 80%;
+    margin: 0.4em 2em 0 0;
+    letter-spacing: 0.05em;
+}
+
+.boxForum p span {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    font-size: 90%;
+    color: rgba(0, 0, 0, 0.6);
+    float: right;
+}
+
+.forumBoxHidden {
+    visibility: hidden;
+}
+
+.showHidden:hover .forumBoxHidden {
+    visibility: visible;
+}
+
+.forumPicture {
+    box-shadow: var(--b-shadow);
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    a img:hover {
+        transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        opacity: 0.5;
+    }
+
+    figcaption {
+        text-transform: capitalize;
+        position: absolute;
+        padding: 0.1em 0.1em;
+        left: 0.3em;
+        right: 0.3em;
+        bottom: 0;
+        text-align: center;
+        letter-spacing: 0.05em;
+        word-spacing: 0.05em;
+        font-size: 80%;
+        background-color: rgba(168, 210, 110, 0.9);
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.forumBarSetting {
+    font-weight: var(--fw-n);
+    font-size: 100%;
+}
+
+.forumBarSetting li {
+    display: inline-block;
+    margin: 0 0.9em 0 0;
+}
+
+.forumBarSetting li img {
+    margin: 0 0.5em 0 0;
+}
+
+.forumBarSetting a {
+    --color: 0 0% 0%;
+    color: hsl(var(--color));
+    text-decoration: none;
+    cursor: pointer;
+}

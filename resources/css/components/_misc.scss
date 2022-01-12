@@ -114,28 +114,6 @@
 }
 
 /***************************/
-/* indexBanner			   */
-/***************************/
-.indexBanner {
-    background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
-    max-height: 38em;
-    height: 100%;
-    overflow: hidden;
-}
-
-.indexBanner h2 {
-    margin: 6em 0 0 0;
-    text-shadow: var(--t-shadow);
-    color: hsl(var(--color));
-}
-
-.indexBanner p {
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
-}
-
-/***************************/
 /* combine 		   		   */
 /***************************/
 :is(.styleLight, .styleShop, .styleEvents) h2 {
@@ -614,8 +592,7 @@
     margin: 0.5em;
 }
 
-.image2,
-.forumPicture {
+.image2 {
     position: relative;
     padding: 85.25% 0 0 0;
 }
@@ -642,29 +619,6 @@
 /***************************/
 /* style misc 			   */
 /***************************/
-.forumBarSetting {
-    font-weight: var(--fw-n);
-    font-size: 100%;
-}
-
-.forumBarSetting li {
-    display: inline-block;
-    margin: 0 0.9em 0 0;
-}
-
-.forumBarSetting li img {
-    margin: 0 0.5em 0 0;
-}
-
-.forumBarSetting a {
-    --color: 0 0% 0%;
-    color: hsl(var(--color));
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
 .styleLight .uploadImageBox {
     position: relative;
     width: 100%;
@@ -1195,91 +1149,6 @@
 }
 
 /***************************/
-/* boxForum				   */
-/***************************/
-.boxForumSettings {
-    margin: 2em 0 0 0;
-    background-color: red;
-}
-
-.boxForumSettings .boxForumNumber {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-}
-
-.boxForumText {
-    line-height: 2em;
-}
-
-.boxForumDate {
-    position: absolute;
-    right: 1.5em;
-    bottom: 1em;
-    font-size: 70%;
-    letter-spacing: 0.2em;
-}
-
-.boxForum {
-    line-height: 1em;
-    position: relative;
-    padding: 0.5em !important;
-    box-shadow: var(--b-shadow);
-    background-color: rgb(255, 255, 255);
-    --br: 0.3em;
-    border-radius: var(--br);
-}
-
-.boxForum:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.boxForum h2 {
-    font-size: 100%;
-    font-weight: var(--fw-n);
-    text-align: left;
-    margin: 0.5em 0;
-}
-
-.boxForum h3 {
-    font-size: 545%;
-}
-
-.boxForum h4 {
-    font-size: 200%;
-    font-weight: var(--fw-n);
-    color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    line-height: 2em;
-    margin: 0 !important;
-}
-
-.boxForum p {
-    text-align: left;
-    font-size: 80%;
-    margin: 0.4em 2em 0 0;
-    letter-spacing: 0.05em;
-}
-
-.boxForum p span {
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em;
-    font-size: 90%;
-    color: rgba(0, 0, 0, 0.6);
-    float: right;
-}
-
-.forumBoxHidden {
-    visibility: hidden;
-}
-
-.showHidden:hover .forumBoxHidden {
-    visibility: visible;
-}
-
-/***************************/
 /* box right menu          */
 /***************************/
 .right-menu-Box h2,
@@ -1304,16 +1173,9 @@
 }
 
 /***************************/
-/* image forum picture     */
-/***************************/
-.forumPicture {
-    box-shadow: var(--b-shadow);
-}
-
-/***************************/
 /* image shared 		   */
 /***************************/
-:is(.image2, .forumPicture) img {
+.image2 img {
     position: absolute;
     width: 65%;
     height: auto;
@@ -1324,26 +1186,7 @@
     margin: auto;
 }
 
-.forumPicture img {
-    width: 100%;
-}
-
-.forumPicture figcaption {
-    text-transform: capitalize;
-    position: absolute;
-    padding: 0.1em 0.1em;
-    left: 0.3em;
-    right: 0.3em;
-    bottom: 0;
-    text-align: center;
-    letter-spacing: 0.05em;
-    word-spacing: 0.05em;
-    font-size: 80%;
-    background-color: rgba(168, 210, 110, 0.9);
-    color: rgba(255, 255, 255, 1);
-}
-
-:is(.image, .image2, .forumPicture, .accountPicture) a img:hover {
+:is(.image, .image2, .accountPicture) a img:hover {
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     opacity: 0.5;
 }
@@ -1455,7 +1298,6 @@ button:focus,
     outline: none;
 }
 
-.forumBarSetting a:hover,
 .logo:hover,
 .shareButton a:hover,
 button:hover,
@@ -1527,246 +1369,4 @@ button:hover,
 .productLSBtn:hover,
 .productRSBtn:hover {
     box-shadow: var(--b-shadow);
-}
-
-
-
-/***************************/
-/* Paging				   */
-/***************************/
-.pagingBox {
-    text-align: center;
-}
-
-.paging {
-    display: inline-block;
-    font-size: 100%;
-    line-height: 0em;
-    padding: 1em;
-    box-shadow: var(--b-shadow);
-    color: rgba(0, 0, 0);
-    margin: 0 0.7em;
-}
-
-.paging:hover {
-    background-color: rgb(166, 210, 235);
-}
-
-.pagingEnd,
-.pagingCurrent {
-    display: inline-block;
-    font-size: 100%;
-    line-height: 0em;
-    padding: 1em;
-    box-shadow: var(--b-shadow);
-    color: rgb(187, 187, 187);
-    margin: 0 0.7em;
-}
-
-.pagingCurrent {
-    font-size: 135%;
-    background-color: rgb(166, 210, 235);
-    color: rgb(255, 255, 255);
-}
-
-/***************************/
-/* error messages          */
-/***************************/
-.errorMessage {
-    margin: 0 0 1em 0;
-}
-
-.errorMessage p {
-    padding: 0 0 0 2.5em;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-size: 100%;
-    font-weight: var(--fw-m);
-}
-
-.errorMessage img {
-    float: left;
-    width: 24px;
-    height: auto;
-}
-
-.overlayError {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(238, 82, 85, 0.9);
-    font-size: 100%;
-}
-
-.noError {
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(85, 238, 82, 1);
-    font-size: 100%;
-}
-
-.inputError {
-    border: 0.1em dashed rgb(238, 82, 85) !important;
-}
-
-/***************************/
-/* overlay				   */
-/***************************/
-.overlay {
-    color: rgba(0, 0, 0, 1);
-    display: none;
-    position: fixed !important;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    max-width: 25em;
-    height: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: var(--b-shadow);
-    border-left: 0.1em solid rgba(0, 0, 0, 0.1);
-    z-index: 10000;
-}
-
-.closeOverlayButton {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 1em;
-    left: 1em;
-}
-
-.closeOverlayButton:hover {
-    cursor: pointer;
-}
-
-.closeOverlayButton img {
-    width: 100%;
-    height: 100%;
-}
-
-.slide {
-    position: absolute;
-    right: -25em;
-    width: 100%;
-    max-width: 25em;
-    height: 100%;
-    -webkit-animation: mySlide 0.5s forwards;
-    animation: mySlide 0.5s forwards;
-}
-
-/***************************/
-/* Calendar				   */
-/***************************/
-.calendar {
-    color: rgba(0, 0, 0, 1);
-    border-collapse: collapse;
-    font-size: 75%;
-    text-align: center;
-}
-
-.boxCalendar,
-.boxCalendarDisable {
-    border: 0.1em solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(245, 245, 245, 1);
-    height: auto;
-}
-
-.boxCalendar:hover {
-    background-color: rgba(230, 230, 230, 1);
-    cursor: pointer;
-    color: rgba(0, 0, 0, 1);
-}
-
-.calendarDateEvent {
-    background-color: rgba(238, 82, 85, 1);
-    color: rgba(255, 255, 255, 1);
-}
-
-.calendarDateEvent:hover {
-    background-color: rgba(238, 82, 85, 1);
-    color: rgba(255, 255, 255, 1);
-    cursor: not-allowed;
-}
-
-.calendarDateToday {
-    position: relative;
-}
-
-.calendarDateToday:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-width: 0 1.6em 1.6em 0;
-    border-style: solid;
-    border-color: transparent rgba(168, 210, 110, 0.8);
-}
-
-.calendarDateOld {
-    background-color: rgba(238, 82, 85, 0.3);
-    color: rgba(255, 255, 255, 1);
-}
-
-.calendarDateOld:hover {
-    background-color: rgba(238, 82, 85, 0.3);
-    color: rgba(255, 255, 255, 1);
-    cursor: not-allowed;
-}
-
-.js-overlay-start:hover {
-    cursor: pointer;
-}
-
-.overlay-video {
-    display: none;
-    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    opacity: 0;
-    -ms-transition: opacity 600ms ease-in;
-    transition: opacity 600ms ease-in;
-    -ms-transition: opacity .6s;
-    transition: opacity .6s;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .7);
-    z-index: 999999;
-}
-
-.o1 {
-    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    opacity: 1;
-    transition: opacity 600ms ease-out;
-    transition: opacity .6s;
-}
-
-.videoWrapperExt {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    max-width: 982px;
-    padding: 0 20px;
-}
-
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    height: 0;
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }

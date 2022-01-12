@@ -1,0 +1,34 @@
+.pagingBox {
+    text-align: center;
+}
+
+.paging {
+    display: inline-block;
+    font-size: 100%;
+    line-height: 0em;
+    padding: 1em;
+    box-shadow: var(--b-shadow);
+    color: rgba(0, 0, 0);
+    margin: 0 0.7em;
+}
+
+.paging:hover {
+    background-color: rgb(166, 210, 235);
+}
+
+.pagingEnd,
+.pagingCurrent {
+    display: inline-block;
+    font-size: 100%;
+    line-height: 0em;
+    padding: 1em;
+    box-shadow: var(--b-shadow);
+    color: rgb(187, 187, 187);
+    margin: 0 0.7em;
+}
+
+.pagingCurrent {
+    font-size: 135%;
+    background-color: rgb(166, 210, 235);
+    color: rgb(255, 255, 255);
+}

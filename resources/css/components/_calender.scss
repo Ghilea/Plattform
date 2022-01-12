@@ -1,0 +1,60 @@
+.calendar {
+    color: rgba(0, 0, 0, 1);
+    border-collapse: collapse;
+    font-size: 75%;
+    text-align: center;
+}
+
+.boxCalendar {
+    border: 0.1em solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 245, 245, 1);
+    height: auto;
+
+    &:hover {
+        background-color: rgba(230, 230, 230, 1);
+        cursor: pointer;
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+.boxCalendarDisable {
+    border: 0.1em solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 245, 245, 1);
+    height: auto;
+}
+
+.calendarDateEvent {
+    background-color: rgba(238, 82, 85, 1);
+    color: rgba(255, 255, 255, 1);
+
+    &:hover {
+        background-color: rgba(238, 82, 85, 1);
+        color: rgba(255, 255, 255, 1);
+        cursor: not-allowed;
+    }
+}
+
+.calendarDateToday {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 0 1.6em 1.6em 0;
+        border-style: solid;
+        border-color: transparent rgba(168, 210, 110, 0.8);
+    }
+}
+
+.calendarDateOld {
+    background-color: rgba(238, 82, 85, 0.3);
+    color: rgba(255, 255, 255, 1);
+
+    &:hover {
+        background-color: rgba(238, 82, 85, 0.3);
+        color: rgba(255, 255, 255, 1);
+        cursor: not-allowed;
+    }
+}

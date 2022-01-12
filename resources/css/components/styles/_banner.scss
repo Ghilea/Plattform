@@ -1,0 +1,18 @@
+.indexBanner {
+    background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
+    max-height: 38em;
+    height: 100%;
+    overflow: hidden;
+}
+
+.indexBanner h2 {
+    margin: 6em 0 0 0;
+    text-shadow: var(--t-shadow);
+    color: hsl(var(--color));
+}
+
+.indexBanner p {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
