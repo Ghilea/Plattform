@@ -11,7 +11,15 @@
 @use 'components/styles/project';
 @use 'components/styles/footer';
 @use 'components/styles/menu';
+@use 'components/styles/banner';
+@use 'components/styles/eshop';
+@use 'components/styles/forum';
+@use 'components/styles/calender';
+
 @use 'components/misc';
+@use 'components/message';
+@use 'components/overlay';
+@use 'components/paging';
 
 @use 'components/animation';
 @use 'components/media_query';
