@@ -1,6 +1,6 @@
 <?php $class = new Project($database, $functions); ?>
 
-<section class="container-fluid style project activate3d">
+<section class="container-fluid project activate3d">
 	
 	<header>
 		<h2>Kunskaper</h2>	
@@ -63,11 +63,13 @@
 				
 				<?php if($output["showBtn"] >= 1 ){?>
 			
+					<?php if($output["link"] !== null) { ?>
 					<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>
+					<?php } if($output["link2"] !== null) { ?>
 				
 					<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn buttonRight">GitHub</a>
 		
-				<?php } ?>
+				<?php } } ?>
 				
 			</div>
 			

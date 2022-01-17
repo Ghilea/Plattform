@@ -3,8 +3,8 @@
     --ff: 'Exo', sans-serif;
 
     /* color */
-    --color: 0 0% 100%;
-    --bg-color: 0 0% 100%;
+    --color: 0, 0%, 100%;
+    --bg-color: 0, 0%, 100%;
     --white: 0, 0%, 100%;
 
     --border-color: 0 0% 0%;
@@ -488,4 +488,29 @@ form h3 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: none;
     outline: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    --bg-color: 0 0% 95%;
+    background-color: hsl(var(--bg-color));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    --bg-color: 0 0% 53%;
+    background-color: hsl(var(--bg-color));
+    --br: 3em;
+    border-radius: var(--br);
+    padding: 0.5em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    --bg-color: 0 0% 33%;
 }

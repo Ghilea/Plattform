@@ -83,19 +83,19 @@
         }
     }
 
-    .project h2 {
+    h2 {
         padding: 3em 0 0 0;
     }
 
-    .project h3 {
-        color: hsl(var(--color));
+    h3 {
+        color: hsl(var(--white));
         font-weight: var(--fw-m);
         --fs-h3: 1.5rem;
         font-size: var(--fs-h3);
         overflow-wrap: break-word;
     }
 
-    .project header p {
+    header p {
         text-align: center;
         color: hsl(var(--color));
         font-weight: var(--fw-n);
@@ -106,7 +106,7 @@
         padding: 0 1em;
     }
 
-    .project p {
+    p {
         color: hsl(var(--color));
         font-weight: var(--fw-n);
         font-size: var(--fs-p);
@@ -121,7 +121,6 @@
         color: #FFF;
         opacity: 0.95;
         border-radius: 10px;
-        
         gap: 2em 0.5em;
         box-shadow: 0 0 5px hsl(0, 0%, 100%, 0.2);
         background-color: hsl(237, 52%, 65%);

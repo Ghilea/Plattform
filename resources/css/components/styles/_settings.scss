@@ -1,79 +1,118 @@
 .settings {
     overflow-y: auto;
     width: 100%;
+
+    h2 {
+        margin: 1.5em 0 2.5em 0;
+        --color: 0 0% 0%;
+        color: var(--color);
+        font-size: var(--fs-h3);
+    }
+
+     h3 {
+         text-align: center;
+         --color: 0 0% 38%;
+         color: hsl(var(--color));
+         font-weight: var(--fw-m);
+         --fs-h3: 1.5rem;
+         font-size: var(--fs-n);
+         overflow-wrap: break-word;
+     }
+
+    p {
+        --color: 0 0% 38%;
+        color: hsl(var(--color));
+        font-weight: var(--fw-n);
+        font-size: var(--fs-p);
+        width: 100%;
+        height: auto;
+        margin: 1.5em auto;
+        padding: 0 1em;
+    }
+
+    .container {
+        gap: 0.5em;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 0 2em 0 0;
+    }
+
+    .box {
+        --bg-color: 0 0% 100%;
+        --br-b: 1.5em;
+        padding: 3em;
+        position: relative;
+        width: 100%;
+        max-width: 30em;
+        min-height: 45em;
+    }
+
+    .mainImg {
+        overflow: hidden;
+        width: 8em;
+        height: 8em;
+        margin: 2em auto;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .button {
+        width: 3em;
+        height: 3em;
+        margin: 0;
+        min-width: 0;
+        padding: 0;
+
+        img {
+            width: 100%;
+            padding: 0.5em;
+        }
+    }
 }
 
-.settings .button {
-    width: 3em;
-    height: 3em;
-    margin: 0;
-    min-width: 0;
-    padding: 0;
-}
-
-.settings .button img {
-    width: 100%;
-    padding: 0.5em;
-}
-
-.settings .container {
-    gap: 0.5em;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    padding: 0 2em 0 0;
-}
-
-.settings .box {
-    --bg-color: 0 0% 100%;
-    --br-b: 1.5em;
-    padding: 3em;
-    position: relative;
-    width: 100%;
-    max-width: 30em;
-    min-height: 45em;
-}
-
-.settings .mainImg {
-    overflow: hidden;
-    width: 8em;
-    height: 8em;
-    margin: 2em auto;
-}
-
-.settings .mainImg img {
-    width: 100%;
-    height: auto;
-}
-
-.settings h2 {
-    margin: 1.5em 0 2.5em 0;
-    --color: 0 0% 0%;
-    color: var(--color);
-    font-size: var(--fs-h3);
-}
-
-.settings h3 {
+.settingsBtn {
+    position: fixed;
+    right: 2em;
+    top: 1em;
+    display: block;
+    --bg-color: 19 88.1% 57.1%;
+    background-color: hsl(var(--bg-color));
+    box-shadow: var(--b-shadow);
+    --br: 0.3em;
+    border-radius: var(--br);
+    cursor: pointer;
+    font-size: 100%;
+    line-height: 2.3em;
+    min-width: 2em;
+    height: 2em;
     text-align: center;
-    --color: 0 0% 38%;
-    color: hsl(var(--color));
-    font-weight: var(--fw-m);
-    --fs-h3: 1.5rem;
-    font-size: var(--fs-n);
-    overflow-wrap: break-word;
+    padding: 0 var(--space-p);
+    z-index: 2;
+    background-image: url(/resources/images/svg/configuration.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/*.settings p {
-	--color: 0 0% 38%;
-	color: hsl(var(--color));
-	font-weight: var(--fw-n);
-	font-size: var(--fs-p);
-	width: 100%;
-	height: auto;
-	margin: 1.5em auto;
-	padding: 0 1em;
-}*/
+input[id='settingsBtn'] {
+    --bg-color: 220 60.0% 16.7%;
+    display: none;
+}
+
+#settingsBtn {
+    --bg-color: 220 60.0% 16.7%;
+}
+
+#settingsBtn:checked~.overlayBox {
+    display: flex;
+}
+
+/*
 
 .switch {
     position: relative;
@@ -173,4 +212,3 @@
     border-radius: var(--br);
     padding: 0;
     /*padding: 0.5em 1em;*/
-}
