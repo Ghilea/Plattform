@@ -25,7 +25,7 @@
 
 	</div>
 
-	<header>
+	<header id="project">
 		<?php foreach($class->getHeader() as $hOutput){ ?>
 			<h2><?php echo $hOutput["name"]; ?></h2>
 			<p><?php echo $hOutput["content"]; ?></p>

@@ -597,8 +597,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 25s ease-in-out infinite;
-          animation: bubbles 25s ease-in-out infinite;
+  -webkit-animation: bubbles 21s ease-in-out infinite;
+          animation: bubbles 21s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -606,124 +606,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 7vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(1deg);
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  left: 92vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 75vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(2em) rotateY(3deg);
+  left: 8vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(2em) rotateY(2deg);
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
 }
 .hero .bubbles:nth-child(2) {
-  left: 10vw;
+  left: 5vw;
   width: 2em;
   height: 2em;
   transform: translateZ(1em) rotateY(4deg);
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 .hero .bubbles:nth-child(3) {
-  left: 35vw;
-  width: 6em;
-  height: 6em;
+  left: 60vw;
+  width: 4em;
+  height: 4em;
   transform: translateZ(1em) rotateY(3deg);
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
 .hero .bubbles:nth-child(4) {
-  left: 84vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(5em) rotateY(5deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-}
-.hero .bubbles:nth-child(5) {
-  left: 98vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(3em) rotateY(2deg);
+  left: 68vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(2em) rotateY(4deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.hero .bubbles:nth-child(6) {
-  left: 83vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(4deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.hero .bubbles:nth-child(5) {
+  left: 91vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(1em) rotateY(5deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
 }
-.hero .bubbles:nth-child(7) {
-  left: 25vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(1em) rotateY(2deg);
+.hero .bubbles:nth-child(6) {
+  left: 22vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(3em) rotateY(1deg);
   -webkit-animation-delay: 13s;
           animation-delay: 13s;
 }
-.hero .bubbles:nth-child(8) {
-  left: 3vw;
+.hero .bubbles:nth-child(7) {
+  left: 83vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(1em) rotateY(2deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  transform: translateZ(3em) rotateY(4deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 31vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 .hero .bubbles:nth-child(9) {
-  left: 46vw;
+  left: 37vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(3em) rotateY(5deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  transform: translateZ(1em) rotateY(2deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 .hero .bubbles:nth-child(10) {
   left: 3vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(1em) rotateY(3deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(3em) rotateY(4deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 .hero .bubbles:nth-child(11) {
-  left: 18vw;
+  left: 35vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(1em) rotateY(4deg);
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  transform: translateZ(2em) rotateY(1deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 .hero .bubbles:nth-child(12) {
-  left: 60vw;
-  width: 3em;
-  height: 3em;
+  left: 4vw;
+  width: 6em;
+  height: 6em;
   transform: translateZ(5em) rotateY(2deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 .hero .bubbles:nth-child(13) {
-  left: 48vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(3em) rotateY(1deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-.hero .bubbles:nth-child(14) {
-  left: 83vw;
+  left: 14vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(2em) rotateY(5deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  transform: translateZ(4em) rotateY(2deg);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.hero .bubbles:nth-child(14) {
+  left: 5vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .settings {
@@ -1134,24 +1134,21 @@ textarea:focus) {
   color: #FFF;
   opacity: 0.95;
   border-radius: 10px;
-  gap: 2em 0;
+  gap: 2em 0.5em;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  background-color: #777cd4;
 }
 .project .item:nth-child(1) {
-  grid-column: 2/span 5;
-  background-color: #777cd4;
+  grid-column: 1/span 7;
   z-index: 1;
   min-height: 21em;
+  gap: 2em 0;
 }
 .project .item:nth-child(2) {
-  gap: 2em 0.5em;
   grid-column: 1/span 3;
-  background-color: #777cd4;
-  box-shadow: 0 0 55px rgba(255, 255, 255, 0.2);
 }
 .project .item:nth-child(3) {
-  gap: 2em 0.5em;
   grid-column: 5/span 3;
-  background-color: #777cd4;
 }
 
 footer {
@@ -1255,11 +1252,13 @@ footer {
 /* logo					   */
 /***************************/
 .logo {
-  max-width: 23em;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   display: flex;
   gap: 1em;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 1em;
 }
 .logo img {
@@ -1278,6 +1277,10 @@ footer {
   display: block;
   font-size: 50%;
   font-weight: var(--fw-n);
+}
+.logo .logo:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.5;
 }
 
 /***************************/
@@ -3158,7 +3161,6 @@ button:focus,
   outline: none;
 }
 
-.logo:hover,
 .shareButton a:hover,
 button:hover,
 .button:hover,
@@ -3995,6 +3997,9 @@ nav div {
     max-width: 100px;
   }
 
+  .logo {
+    justify-content: center;
+  }
   .logo p {
     display: none;
   }

@@ -302,8 +302,12 @@
         max-width: 100px;
     }
 
-    .logo p {
-        display: none;
+    .logo {
+        justify-content: center;
+
+        p {
+            display: none;
+        }
     }
 
     .indexBanner .circleImg,

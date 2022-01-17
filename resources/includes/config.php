@@ -182,10 +182,14 @@ class Config {
 				"modules_content.image",
 				"modules_content.class",
 				"modules_content.target_id",
-				"modules.moduleName"
+				"modules.moduleName",
+				"modules.moduleOn"
 			],
 			[
-				"AND" => ["modules.moduleOn" => 1, "type" => "settingsBtn", "modules_content.active" => 1], 
+				"AND" => [
+					"moduleOn" => 1, "moduleName" => "settings",
+				], 
+				
 				"ORDER" => ["modules_content.sortOrder" => "ASC"]
 			]
 		);

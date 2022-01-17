@@ -121,26 +121,24 @@
         color: #FFF;
         opacity: 0.95;
         border-radius: 10px;
-        gap: 2em 0;
+        
+        gap: 2em 0.5em;
+        box-shadow: 0 0 5px hsl(0, 0%, 100%, 0.2);
+        background-color: hsl(237, 52%, 65%);
 
         &:nth-child(1) {
-            grid-column: 2 / span 5;
-            background-color: hsl(237, 52%, 65%);
+            grid-column: 1 / span 7;
             z-index: 1;
             min-height: 21em;
+            gap: 2em 0;
         }
 
         &:nth-child(2) {
-            gap: 2em 0.5em;
             grid-column: 1 / span 3;
-            background-color: hsl(237, 52%, 65%);
-            box-shadow: 0 0 55px hsl(0, 0%, 100%, 0.2);
         }
 
         &:nth-child(3) {
-            gap: 2em 0.5em;
             grid-column: 5 / span 3;
-            background-color: hsl(237, 52%, 65%);
         }
     }
 }

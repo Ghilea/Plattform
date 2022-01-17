@@ -2,11 +2,11 @@
 /* logo					   */
 /***************************/
 .logo {
-    max-width: 23em;
+    max-width: fit-content;
     display: flex;
     gap: 1em;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1em;
 
     img {
@@ -27,6 +27,11 @@
             font-size: 50%;
             font-weight: var(--fw-n);
         }
+    }
+
+    .logo:hover {
+        transition: all 0.2s ease-in-out;
+        opacity: 0.5;
     }
 }
 

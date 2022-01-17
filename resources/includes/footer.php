@@ -61,7 +61,7 @@
 </div>
 </footer>
 <?php foreach ($config->GetSettingsBtn() as $outputSetting) {
-
+	echo $outputSetting["moduleOn"];
 if($outputSetting["target_id"] === 'settingsBtn'){?>
 	<input type="checkbox" id="<?php echo $outputSetting["target_id"]; ?>">
 
