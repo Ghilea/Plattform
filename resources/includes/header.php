@@ -64,7 +64,7 @@ $company = $config->GetConfig("company")[0];
 			<?php }?>
 		</div>
 				
-		<nav class="nav">
+		<nav>
 			<ul>
 				<?php foreach ($config->GetMenu() as $output) { ?>
 				<li>

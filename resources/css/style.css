@@ -622,8 +622,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 20s ease-in-out infinite;
-          animation: bubbles 20s ease-in-out infinite;
+  -webkit-animation: bubbles 23s ease-in-out infinite;
+          animation: bubbles 23s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -631,124 +631,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 98vw;
+  left: 88vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(2em) rotateY(1deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(1) {
+  left: 45vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(1em) rotateY(4deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(2) {
+  left: 77vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(1em) rotateY(4deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.hero .bubbles:nth-child(3) {
+  left: 8vw;
   width: 6em;
   height: 6em;
-  transform: translateZ(2em) rotateY(5deg);
+  transform: translateZ(1em) rotateY(1deg);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+.hero .bubbles:nth-child(4) {
+  left: 24vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(5em) rotateY(1deg);
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
-.hero .bubbles:nth-child(1) {
-  left: 35vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(4em) rotateY(5deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-.hero .bubbles:nth-child(2) {
-  left: 96vw;
+.hero .bubbles:nth-child(5) {
+  left: 7vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(1em) rotateY(2deg);
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.hero .bubbles:nth-child(3) {
-  left: 86vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(4em) rotateY(5deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-.hero .bubbles:nth-child(4) {
-  left: 20vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(4em) rotateY(5deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.hero .bubbles:nth-child(5) {
-  left: 86vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(2em) rotateY(5deg);
+  transform: translateZ(5em) rotateY(2deg);
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 .hero .bubbles:nth-child(6) {
-  left: 99vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(1em) rotateY(5deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 88vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(3deg);
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-.hero .bubbles:nth-child(8) {
-  left: 82vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(1deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(9) {
-  left: 74vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(2em) rotateY(3deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(10) {
-  left: 44vw;
+  left: 33vw;
   width: 6em;
   height: 6em;
-  transform: translateZ(5em) rotateY(1deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-}
-.hero .bubbles:nth-child(11) {
-  left: 11vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(5em) rotateY(4deg);
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.hero .bubbles:nth-child(12) {
-  left: 47vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(5em) rotateY(2deg);
+  transform: translateZ(2em) rotateY(4deg);
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
-.hero .bubbles:nth-child(13) {
-  left: 19vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(1em) rotateY(5deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-.hero .bubbles:nth-child(14) {
-  left: 68vw;
+.hero .bubbles:nth-child(7) {
+  left: 70vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(5em) rotateY(2deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 51vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(3em) rotateY(5deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 62vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(5em) rotateY(5deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 47vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(1em) rotateY(4deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 53vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(5em) rotateY(5deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(12) {
+  left: 16vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(4em) rotateY(3deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(13) {
+  left: 91vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(1em) rotateY(1deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.hero .bubbles:nth-child(14) {
+  left: 53vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(3em) rotateY(3deg);
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 
 .settings {
@@ -1289,9 +1289,6 @@ footer .container {
   font-size: var(--fs-s);
 }
 
-/***************************/
-/* logo					   */
-/***************************/
 .logo {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -1319,7 +1316,7 @@ footer .container {
   font-size: 50%;
   font-weight: var(--fw-n);
 }
-.logo .logo:hover {
+.logo:hover {
   transition: all 0.2s ease-in-out;
   opacity: 0.5;
 }
@@ -1336,15 +1333,12 @@ footer .container {
   height: auto;
   z-index: 2;
   overflow: hidden;
+  /* Toggled State */
 }
-
-/* Toggled State */
-input[type=checkbox]:checked ~ .nav {
+#header input[type=checkbox]:checked ~ nav {
   display: block;
 }
-
-/*nav*/
-.nav {
+#header nav {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -1356,18 +1350,17 @@ input[type=checkbox]:checked ~ .nav {
   font-size: var(--fs-n);
   font-weight: var(--fw-b);
 }
-.nav li {
+#header nav li {
   display: inline-block;
   position: relative;
   margin: 0.7em 0.9em;
 }
-.nav li img {
+#header nav li img {
   display: block;
   margin: 0 auto;
   width: 20px;
 }
-.nav a,
-.nav div {
+#header nav a {
   display: block;
   color: white;
   text-decoration: none;
@@ -1375,8 +1368,7 @@ input[type=checkbox]:checked ~ .nav {
   cursor: pointer;
   letter-spacing: 0.1em;
 }
-.nav a:hover,
-.nav div:hover {
+#header nav a:hover {
   transition: all 0.2s ease-in-out;
   opacity: 0.7;
 }
@@ -3711,7 +3703,6 @@ button:hover,
   .styleMain h2 {
     font-size: 150%;
   }
-
   .styleMain p {
     font-size: 195%;
     text-align: center;
@@ -3742,7 +3733,7 @@ button:hover,
     display: block;
   }
 
-  .nav {
+  #header nav {
     display: none;
     position: absolute;
     left: 0;
@@ -3751,26 +3742,21 @@ button:hover,
     height: auto;
     margin: 0;
   }
-
-  .nav li {
+  #header nav li {
     display: block;
     margin: 0.3em;
     box-shadow: var(--b-shadow);
     font-size: 85%;
     background: white;
   }
-
-  .nav li:hover {
+  #header nav li:hover {
     background-color: #007ea7;
   }
-
-  .nav a,
-nav div {
+  #header nav a {
     padding: 0.5em 0;
     color: black;
   }
-
-  .nav :is(a:hover, div:hover) {
+  #header nav a:hover {
     transition: all 0.2s ease-in-out;
     color: white;
   }
@@ -3874,12 +3860,6 @@ nav div {
     height: 7em;
   }
 
-  #footerContactForm {
-    width: 100%;
-    max-width: 35em;
-    margin: 0 auto;
-  }
-
   .project {
     background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
   }
@@ -3976,12 +3956,6 @@ nav div {
     border-radius: var(--br-r);
     width: 6em;
     height: 6em;
-  }
-
-  #footerContactForm {
-    width: 100%;
-    max-width: 25em;
-    margin: 0 auto;
   }
 
   .project {

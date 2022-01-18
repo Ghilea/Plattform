@@ -1,59 +1,57 @@
 <footer>
-<div class="footer">
-<div class="container row">
-	<?php if ($config->getFooter() == true) { ?>
+	<div class="footer">
+		<div class="container row">
+		<?php if ($config->getFooter() == true) { ?>
 
-		<?php foreach ($config->getFooter() as $output) { ?>
-			
-			<div class="col-lg-3 col-md-12 col-sm-12">
-				<h2><?php echo $output["name"] ?></h2>
+			<?php foreach ($config->getFooter() as $output) { ?>
+				
+				<div class="col-lg-3 col-md-12 col-sm-12">
+					<h2><?php echo $output["name"] ?></h2>
 
-				<ul>
-					<?php foreach ($output["sub"] as $outputSub) { ?>
+					<ul>
+						<?php foreach ($output["sub"] as $outputSub) { ?>
 
-						<li><a href="<?php echo $outputSub["link"]; ?>"><?php echo $outputSub["name"]; ?></a></li>
+							<li><a href="<?php echo $outputSub["link"]; ?>"><?php echo $outputSub["name"]; ?></a></li>
 
-					<?php } ?>
-				</ul>
-			</div>
-		<?php } ?>
+						<?php } ?>
+					</ul>
+				</div>
+			<?php } ?>
 
-	
-	<?php } else { ?>
 		
-		<form id="contactForm" action="mailto:tougent@gmail.com" method="POST" enctype="text/plain">
-			<h2 id="contact">Kontakt</h2>
+		<?php } else { ?>
 			
-		
+			<form id="contactForm" action="mailto:tougent@gmail.com" method="POST" enctype="text/plain">
+				<h2 id="contact">Kontakt</h2>
+				
 				<input type="text" name="contactName" placeholder="Namn *" pattern="[a-ÖA-Ö]+" required>
 				<input type="email" name="contactEmail" placeholder="E-post *" required>
 				<input type="text" name="contactSubject" placeholder="Ämne">
 				<textarea name="contactMessage" placeholder="Meddelande *" required></textarea>
 				<button>Skicka</button>
-			
-		</form>
+				
+			</form>
 
-	<?php } ?>
+		<?php } ?>
 
+		</div>
 	</div>
 
-</div>
+	<div class="subFooter">
+		<div class="container row">
 
-<div class="subFooter">
-	<div class="container row">
+			<div class="socialMedia">
+				<?php foreach ($config->GetSocialMedia() as $output) { ?>
+					<a href="<?php echo $output["link"]; ?>"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["name"]; ?>" alt="<?php echo $output["name"]; ?>"></a>
+				<?php } ?>
+			</div>
 
-		<div class="socialMedia">
-			<?php foreach ($config->GetSocialMedia() as $output) { ?>
-				<a href="<?php echo $output["link"]; ?>"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["name"]; ?>" alt="<?php echo $output["name"]; ?>"></a>
-			<?php } ?>
+			<div class="copyright">
+				<p><?php echo $config->GetConfig("copyright")[0]["content"]; ?></p>
+			</div>
+
 		</div>
-
-		<div class="copyright">
-			<p><?php echo $config->GetConfig("copyright")[0]["content"]; ?></p>
-		</div>
-
 	</div>
-</div>
 </footer>
 
 <?php foreach ($config->GetSettingsBtn() as $outputSetting) {

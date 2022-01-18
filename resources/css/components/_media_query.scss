@@ -32,13 +32,15 @@
 /***************************/
 @media only screen and (min-width: 150px) and (max-width: 1180px) {
 
-    .styleMain h2 {
-        font-size: 150%;
-    }
+    .styleMain {
+        h2 {
+            font-size: 150%;
+        }
 
-    .styleMain p {
-        font-size: 195%;
-        text-align: center;
+        p {
+            font-size: 195%;
+            text-align: center;
+        }
     }
 
     .styleFooter {
@@ -48,7 +50,6 @@
     .forumPicture {
         padding: 25.25% 0 0 0;
     }
-
 
     .sub {
         min-width: 100%;
@@ -67,38 +68,40 @@
         display: block;
     }
 
-    .nav {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
+    #header {
+        nav {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: auto;
+            margin: 0;
 
-    .nav li {
-        display: block;
-        margin: 0.3em;
-        box-shadow: var(--b-shadow);
-        font-size: 85%;
-        background: rgb(255, 255, 255);
-    }
+            li {
+                display: block;
+                margin: 0.3em;
+                box-shadow: var(--b-shadow);
+                font-size: 85%;
+                background: rgb(255, 255, 255);
 
-    .nav li:hover {
-        background-color: rgb(0, 126, 167);
-    }
+                &:hover {
+                    background-color: rgb(0, 126, 167);
+                }
+            }
 
-    .nav a,
-    nav div {
-        padding: 0.5em 0;
-        color: rgb(0, 0, 0);
-    }
+            a {
+                padding: 0.5em 0;
+                color: rgb(0, 0, 0);
 
-    .nav :is(a:hover, div:hover) {
-        transition: all 0.2s ease-in-out;
-        color: rgb(255, 255, 255)
+                &:hover {
+                    transition: all 0.2s ease-in-out;
+                    color: rgb(255, 255, 255)
+                }
+            }
+        }
     }
+    
 
     .indexBanner h2,
     .styleNews h2 {
@@ -208,12 +211,6 @@
         height: 7em;
     }
 
-    #footerContactForm {
-        width: 100%;
-        max-width: 35em;
-        margin: 0 auto;
-    }
-
     .project {
         background-image: linear-gradient(to left, var(--g-color) 0%, var(--g-color2) 100%);
 
@@ -315,12 +312,6 @@
         border-radius: var(--br-r);
         width: 6em;
         height: 6em;
-    }
-
-    #footerContactForm {
-        width: 100%;
-        max-width: 25em;
-        margin: 0 auto;
     }
 
     .project {
