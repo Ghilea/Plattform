@@ -1,13 +1,14 @@
 .boxForumSettings {
     margin: 2em 0 0 0;
     background-color: red;
+
+    .boxForumNumber {
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+    }
 }
 
-.boxForumSettings .boxForumNumber {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-}
 
 .forumBarSetting a:hover {
     transition: all 0.2s ease-in-out;
@@ -39,47 +40,47 @@
     background-color: rgb(255, 255, 255);
     --br: 0.3em;
     border-radius: var(--br);
-}
 
-.boxForum:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
+    &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
 
-.boxForum h2 {
-    font-size: 100%;
-    font-weight: var(--fw-n);
-    text-align: left;
-    margin: 0.5em 0;
-}
+    h2 {
+        font-size: 100%;
+        font-weight: var(--fw-n);
+        text-align: left;
+        margin: 0.5em 0;
+    }
 
-.boxForum h3 {
-    font-size: 545%;
-}
+    h3 {
+        font-size: 545%;
+    }
 
-.boxForum h4 {
-    font-size: 200%;
-    font-weight: var(--fw-n);
-    color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    line-height: 2em;
-    margin: 0 !important;
-}
+    h4 {
+        font-size: 200%;
+        font-weight: var(--fw-n);
+        color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        line-height: 2em;
+        margin: 0 !important;
+    }
 
-.boxForum p {
-    text-align: left;
-    font-size: 80%;
-    margin: 0.4em 2em 0 0;
-    letter-spacing: 0.05em;
-}
+    p {
+        text-align: left;
+        font-size: 80%;
+        margin: 0.4em 2em 0 0;
+        letter-spacing: 0.05em;
 
-.boxForum p span {
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em;
-    font-size: 90%;
-    color: rgba(0, 0, 0, 0.6);
-    float: right;
+        span {
+            position: absolute;
+            bottom: 0.5em;
+            right: 0.5em;
+            font-size: 90%;
+            color: rgba(0, 0, 0, 0.6);
+            float: right;
+        }
+    }
 }
 
 .forumBoxHidden {
@@ -128,20 +129,20 @@
 .forumBarSetting {
     font-weight: var(--fw-n);
     font-size: 100%;
-}
 
-.forumBarSetting li {
-    display: inline-block;
-    margin: 0 0.9em 0 0;
-}
+    a {
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-.forumBarSetting li img {
-    margin: 0 0.5em 0 0;
-}
+    li {
+        display: inline-block;
+        margin: 0 0.9em 0 0;
 
-.forumBarSetting a {
-    --color: 0 0% 0%;
-    color: hsl(var(--color));
-    text-decoration: none;
-    cursor: pointer;
+        img {
+            margin: 0 0.5em 0 0;
+        }
+    }
 }
