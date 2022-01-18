@@ -1,50 +1,46 @@
 <footer>
-<div class="style footer">
-	<div class="content">
+<div class="footer">
+<div class="container-fluid row">
+	<?php if ($config->getFooter() == true) { ?>
 
-		<div class="col-full">
-			<div class=wrap-col>
+		
 
-				<?php if ($config->getFooter() == true) {
-					foreach ($config->getFooter() as $output) { ?>
-						<div class="col-3-12 col-6-12m">
-							<div class="wrap-col">
+		<?php foreach ($config->getFooter() as $output) { ?>
+			
+			<div class="col-lg-3 col-md-12 col-sm-12">
+				<h2><?php echo $output["name"] ?></h2>
 
-								<h3><?php echo $output["name"] ?></h3>
+				<ul>
+					<?php foreach ($output["sub"] as $outputSub) { ?>
 
-								<ul>
-									<?php foreach ($output["sub"] as $outputSub) { ?>
+						<li><a href="<?php echo $outputSub["link"]; ?>"><?php echo $outputSub["name"]; ?></a></li>
 
-										<li><a href="<?php echo $outputSub["link"]; ?>"><?php echo $outputSub["name"]; ?></a></li>
-
-									<?php } ?>
-								</ul>
-
-							</div>
-						</div>
-					<?php }
-				} else { ?>
-					<h2 id="contact">Kontakt</h2>
-
-					<div id="footerContactForm">
-						<form action="mailto:tougent@gmail.com" method=”POST” enctype=”text/plain”>
-							<input type="text" name="contactName" placeholder="Namn*" pattern="[a-ÖA-Ö]+" required>
-							<input type="email" name="contactEmail" placeholder="E-post*" required>
-							<input type="text" name="contactSubject" placeholder="Ämne">
-							<textarea name="contactMessage" placeholder="Meddelande*" required></textarea>
-							<button>Skicka</button>
-						</form>
-					</div>
-
-				<?php } ?>
-
+					<?php } ?>
+					</ul>
 			</div>
+		<?php } ?>
+
+	
+	<?php } else { ?>
+		<h2 id="contact">Kontakt</h2>
+
+		<div id="footerContactForm">
+			<form action="mailto:tougent@gmail.com" method=”POST” enctype=”text/plain”>
+				<input type="text" name="contactName" placeholder="Namn*" pattern="[a-ÖA-Ö]+" required>
+				<input type="email" name="contactEmail" placeholder="E-post*" required>
+				<input type="text" name="contactSubject" placeholder="Ämne">
+				<textarea name="contactMessage" placeholder="Meddelande*" required></textarea>
+				<button>Skicka</button>
+			</form>
 		</div>
 
+	<?php } ?>
+
 	</div>
+
 </div>
 
-<div class="style sFooter">
+<div class="sFooter">
 	<div class="container row">
 
 		<div class="socialMedia">
@@ -60,6 +56,7 @@
 	</div>
 </div>
 </footer>
+
 <?php foreach ($config->GetSettingsBtn() as $outputSetting) {
 if($outputSetting["target_id"] === 'settingsBtn'){?>
 	<input type="checkbox" id="<?php echo $outputSetting["target_id"]; ?>">
