@@ -37,22 +37,16 @@ $company = $config->GetConfig("company")[0];
 	<!-- Header -->
 	<header id="header">
 		<a class="logo" href="/index.php" title="<?php echo $company["name"]; ?>">
-		
-			
-				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $config->GetConfig("logo")[0]["image"]; ?>" alt="">
-				
-				<p>
-					<?php echo $company["name"]; ?>
-					<span><?php echo $company["content"]; ?></span>
-				</p>
-	
+			<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $config->GetConfig("logo")[0]["image"]; ?>" alt="">
+			<p><?php echo $company["name"]; ?><span><?php echo $company["content"]; ?></span></p>
 		</a>
+
 		<div class="menu">
 			<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
 			<label class="menu-open-button" for="menu-open">
-				<span class="hamburger hamburger-1"></span>
-				<span class="hamburger hamburger-2"></span>
-				<span class="hamburger hamburger-3"></span>
+				<span class="hamburger"></span>
+				<span class="hamburger"></span>
+				<span class="hamburger"></span>
 			</label>
 					
 			<?php foreach ($config->GetMenu() as $output) {  ?>
