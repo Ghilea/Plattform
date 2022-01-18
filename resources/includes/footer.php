@@ -1,9 +1,7 @@
 <footer>
 <div class="footer">
-<div class="container-fluid row">
+<div class="container row">
 	<?php if ($config->getFooter() == true) { ?>
-
-		
 
 		<?php foreach ($config->getFooter() as $output) { ?>
 			
@@ -16,23 +14,24 @@
 						<li><a href="<?php echo $outputSub["link"]; ?>"><?php echo $outputSub["name"]; ?></a></li>
 
 					<?php } ?>
-					</ul>
+				</ul>
 			</div>
 		<?php } ?>
 
 	
 	<?php } else { ?>
-		<h2 id="contact">Kontakt</h2>
-
-		<div id="footerContactForm">
-			<form action="mailto:tougent@gmail.com" method=”POST” enctype=”text/plain”>
-				<input type="text" name="contactName" placeholder="Namn*" pattern="[a-ÖA-Ö]+" required>
-				<input type="email" name="contactEmail" placeholder="E-post*" required>
+		
+		<form id="contactForm" action="mailto:tougent@gmail.com" method="POST" enctype="text/plain">
+			<h2 id="contact">Kontakt</h2>
+			
+		
+				<input type="text" name="contactName" placeholder="Namn *" pattern="[a-ÖA-Ö]+" required>
+				<input type="email" name="contactEmail" placeholder="E-post *" required>
 				<input type="text" name="contactSubject" placeholder="Ämne">
-				<textarea name="contactMessage" placeholder="Meddelande*" required></textarea>
+				<textarea name="contactMessage" placeholder="Meddelande *" required></textarea>
 				<button>Skicka</button>
-			</form>
-		</div>
+			
+		</form>
 
 	<?php } ?>
 
@@ -40,7 +39,7 @@
 
 </div>
 
-<div class="sFooter">
+<div class="subFooter">
 	<div class="container row">
 
 		<div class="socialMedia">

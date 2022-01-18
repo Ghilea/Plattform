@@ -1,17 +1,4 @@
-.sFooter {
-    position: relative;
-    overflow: hidden;
-    padding: 0 0 var(--space-p-xLarge) 0;
-    clear: both;
-    margin: 0;
-    --color: 0.61 24% 84%;
-    color: hsl(var(--color) / 0.5);
-    border-top: 1px solid hsl(var(--border-color) / 0.1);
-    --g-color: 0 0% 16%;
-    --g-color2: 0 0% 12%;
-    background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color)) 50%, hsl(var(--g-color2)) 100%);
-    padding: 0;
-
+footer {
     .container {
         margin: 0 auto;
         justify-content: space-between;
@@ -29,11 +16,11 @@
     background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color2)) 100%);
 
     h2 {
-        margin: 3em 0 2em 0;
-        text-align: center;
+        margin: 3em 0 0.5em 0;
         color: hsl(var(--color));
         font-weight: var(--fw-m);
         font-size: var(--fs-h2);
+        text-align: left;
     }
 
     h3 {
@@ -43,15 +30,10 @@
         font-weight: var(--fw-b);
     }
 
-    p span {
-        margin: 0 0 0 1.3em;
-    }
-
     ul {
         display:flex;
         flex-direction: column;
         gap: 1em;
-        margin: 0 5em;
 
         li {
             overflow: hidden;
@@ -75,39 +57,43 @@
         }
     }
 
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+        max-width: 45em;
+        margin: 2em auto 0 auto;
+
+    }
 }
 
-#footerContactForm {
-     width: 100%;
-     max-width: 45em;
-     margin: 0 auto;
+.subFooter {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 var(--space-p-xLarge) 0;
+    clear: both;
+    margin: 0;
+    --color: 0.61 24% 84%;
+    color: hsl(var(--color) / 0.5);
+    border-top: 1px solid hsl(var(--border-color) / 0.1);
+    --g-color: 0 0% 16%;
+    --g-color2: 0 0% 12%;
+    background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color)) 50%, hsl(var(--g-color2)) 100%);
+    padding: 0;
 
-     input[type=text],
-     input[type=email],
-     textarea {
-         padding: 0.5em 2em 0.5em 2em;
-         margin: 0.5em 0 0.5em 0;
-         font-size: 90%;
-         background-color: rgba(255, 255, 255, 1);
-         color: rgba(0, 0, 0, 1);
-         border: 0.1em solid rgba(204, 204, 204, 1);
-         box-shadow: var(--b-shadow);
-         transition: border-color .2s ease;
-         --br: 0.5em;
-         border-radius: var(--br);
-     }
+    .socialMedia {
+        display: flex;
+        gap: 1em;
+    }
 
-}
+    .copyright {
+        display: flex;
+        align-items: center;
 
-.socialMedia img {
-    margin: 0 1em 0 0;
-}
-
-.copyright {
-    display: flex;
-    align-items: center;
-
-    p {
-        font-size: var(--fs-s);
+        p {
+            font-size: var(--fs-s);
+        }
     }
 }

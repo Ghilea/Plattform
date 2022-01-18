@@ -622,8 +622,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 16s ease-in-out infinite;
-          animation: bubbles 16s ease-in-out infinite;
+  -webkit-animation: bubbles 20s ease-in-out infinite;
+          animation: bubbles 20s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -631,124 +631,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 49vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(1em) rotateY(3deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  left: 98vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(2em) rotateY(5deg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 50vw;
+  left: 35vw;
   width: 4em;
   height: 4em;
-  transform: translateZ(5em) rotateY(5deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  transform: translateZ(4em) rotateY(5deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 .hero .bubbles:nth-child(2) {
-  left: 46vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(4em) rotateY(4deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(3) {
-  left: 50vw;
+  left: 96vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(5em) rotateY(3deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+  transform: translateZ(1em) rotateY(2deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
-.hero .bubbles:nth-child(4) {
-  left: 39vw;
+.hero .bubbles:nth-child(3) {
+  left: 86vw;
   width: 4em;
   height: 4em;
-  transform: translateZ(4em) rotateY(1deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
+  transform: translateZ(4em) rotateY(5deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
-.hero .bubbles:nth-child(5) {
-  left: 38vw;
+.hero .bubbles:nth-child(4) {
+  left: 20vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(1em) rotateY(1deg);
+  transform: translateZ(4em) rotateY(5deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(5) {
+  left: 86vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(2em) rotateY(5deg);
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 .hero .bubbles:nth-child(6) {
-  left: 20vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(5em) rotateY(2deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 48vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(3deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(8) {
-  left: 37vw;
+  left: 99vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(3em) rotateY(4deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(9) {
-  left: 23vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(5em) rotateY(4deg);
+  transform: translateZ(1em) rotateY(5deg);
   -webkit-animation-delay: 11s;
           animation-delay: 11s;
 }
-.hero .bubbles:nth-child(10) {
-  left: 96vw;
+.hero .bubbles:nth-child(7) {
+  left: 88vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(2em) rotateY(3deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 82vw;
   width: 4em;
   height: 4em;
-  transform: translateZ(1em) rotateY(3deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  transform: translateZ(3em) rotateY(1deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 74vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(2em) rotateY(3deg);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 44vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(5em) rotateY(1deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 .hero .bubbles:nth-child(11) {
-  left: 54vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(5em) rotateY(3deg);
+  left: 11vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(5em) rotateY(4deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 .hero .bubbles:nth-child(12) {
-  left: 84vw;
-  width: 5em;
-  height: 5em;
+  left: 47vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(5em) rotateY(2deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(13) {
+  left: 19vw;
+  width: 4em;
+  height: 4em;
   transform: translateZ(1em) rotateY(5deg);
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
-.hero .bubbles:nth-child(13) {
-  left: 6vw;
+.hero .bubbles:nth-child(14) {
+  left: 68vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(2em) rotateY(1deg);
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.hero .bubbles:nth-child(14) {
-  left: 24vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(5deg);
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  transform: translateZ(5em) rotateY(2deg);
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .settings {
@@ -1203,21 +1203,7 @@ input[id=settingsBtn] {
   grid-column: 5/span 3;
 }
 
-.sFooter {
-  position: relative;
-  overflow: hidden;
-  padding: 0 0 var(--space-p-xLarge) 0;
-  clear: both;
-  margin: 0;
-  --color: 0.61 24% 84%;
-  color: hsl(var(--color)/0.5);
-  border-top: 1px solid hsl(var(--border-color)/0.1);
-  --g-color: 0 0% 16%;
-  --g-color2: 0 0% 12%;
-  background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color)) 50%, hsl(var(--g-color2)) 100%);
-  padding: 0;
-}
-.sFooter .container {
+footer .container {
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -1233,11 +1219,11 @@ input[id=settingsBtn] {
   background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color2)) 100%);
 }
 .footer h2 {
-  margin: 3em 0 2em 0;
-  text-align: center;
+  margin: 3em 0 0.5em 0;
   color: hsl(var(--color));
   font-weight: var(--fw-m);
   font-size: var(--fs-h2);
+  text-align: left;
 }
 .footer h3 {
   margin: 1em 0 0 0;
@@ -1245,14 +1231,10 @@ input[id=settingsBtn] {
   font-size: 100%;
   font-weight: var(--fw-b);
 }
-.footer p span {
-  margin: 0 0 0 1.3em;
-}
 .footer ul {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  margin: 0 5em;
 }
 .footer ul li {
   overflow: hidden;
@@ -1271,36 +1253,39 @@ input[id=settingsBtn] {
 .footer ul li a:hover {
   --color: 0.07, 11%, 95%;
 }
-
-#footerContactForm {
+.footer #contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
   width: 100%;
   max-width: 45em;
-  margin: 0 auto;
-}
-#footerContactForm input[type=text],
-#footerContactForm input[type=email],
-#footerContactForm textarea {
-  padding: 0.5em 2em 0.5em 2em;
-  margin: 0.5em 0 0.5em 0;
-  font-size: 90%;
-  background-color: white;
-  color: black;
-  border: 0.1em solid #cccccc;
-  box-shadow: var(--b-shadow);
-  transition: border-color 0.2s ease;
-  --br: 0.5em;
-  border-radius: var(--br);
+  margin: 2em auto 0 auto;
 }
 
-.socialMedia img {
-  margin: 0 1em 0 0;
+.subFooter {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 var(--space-p-xLarge) 0;
+  clear: both;
+  margin: 0;
+  --color: 0.61 24% 84%;
+  color: hsl(var(--color)/0.5);
+  border-top: 1px solid hsl(var(--border-color)/0.1);
+  --g-color: 0 0% 16%;
+  --g-color2: 0 0% 12%;
+  background-image: linear-gradient(to right, hsl(var(--g-color)) 0%, hsl(var(--g-color)) 50%, hsl(var(--g-color2)) 100%);
+  padding: 0;
 }
-
-.copyright {
+.subFooter .socialMedia {
+  display: flex;
+  gap: 1em;
+}
+.subFooter .copyright {
   display: flex;
   align-items: center;
 }
-.copyright p {
+.subFooter .copyright p {
   font-size: var(--fs-s);
 }
 
@@ -1657,7 +1642,6 @@ input[type=checkbox]:checked ~ .nav {
   height: 100%;
   overflow: hidden;
 }
-
 .indexBanner h2 {
   text-align: center;
   color: hsl(var(--color));
@@ -1666,7 +1650,6 @@ input[type=checkbox]:checked ~ .nav {
   margin: 6em 0 0 0;
   text-shadow: var(--t-shadow);
 }
-
 .indexBanner p {
   font-size: 120%;
   color: hsl(var(--color));
@@ -1852,7 +1835,6 @@ input[type=checkbox]:checked ~ .nav {
   margin: 2em 0 0 0;
   background-color: red;
 }
-
 .boxForumSettings .boxForumNumber {
   position: absolute;
   right: 0.5em;
@@ -1890,23 +1872,19 @@ input[type=checkbox]:checked ~ .nav {
   --br: 0.3em;
   border-radius: var(--br);
 }
-
 .boxForum:hover {
   opacity: 0.5;
   cursor: pointer;
 }
-
 .boxForum h2 {
   font-size: 100%;
   font-weight: var(--fw-n);
   text-align: left;
   margin: 0.5em 0;
 }
-
 .boxForum h3 {
   font-size: 545%;
 }
-
 .boxForum h4 {
   font-size: 200%;
   font-weight: var(--fw-n);
@@ -1915,14 +1893,12 @@ input[type=checkbox]:checked ~ .nav {
   line-height: 2em;
   margin: 0 !important;
 }
-
 .boxForum p {
   text-align: left;
   font-size: 80%;
   margin: 0.4em 2em 0 0;
   letter-spacing: 0.05em;
 }
-
 .boxForum p span {
   position: absolute;
   bottom: 0.5em;
@@ -1976,21 +1952,18 @@ input[type=checkbox]:checked ~ .nav {
   font-weight: var(--fw-n);
   font-size: 100%;
 }
-
-.forumBarSetting li {
-  display: inline-block;
-  margin: 0 0.9em 0 0;
-}
-
-.forumBarSetting li img {
-  margin: 0 0.5em 0 0;
-}
-
 .forumBarSetting a {
   --color: 0 0% 0%;
   color: hsl(var(--color));
   text-decoration: none;
   cursor: pointer;
+}
+.forumBarSetting li {
+  display: inline-block;
+  margin: 0 0.9em 0 0;
+}
+.forumBarSetting li img {
+  margin: 0 0.5em 0 0;
 }
 
 .calendar {
