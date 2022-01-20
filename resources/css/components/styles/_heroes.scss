@@ -24,7 +24,7 @@
         transform-style: preserve-3d;
         box-shadow: var(--b-shadow);
         position: absolute;
-        background-color: hsl(var(--bg-color) / 0.2);
+        background-color: hsl(var(--white), 0.2);
         top: -10em;
 
         @for $var from 0 to 15 {
@@ -33,7 +33,7 @@
                 left: random(99)+vw;
                 width: $size+1em;
                 height: $size+1em;
-                transform: translateZ(random(5)+em) rotateY(random(5)+deg);
+                transform: translateZ(random(8)+em) rotateY(random(8)+deg);
                 animation-delay: random(15)+s;
             }
         }

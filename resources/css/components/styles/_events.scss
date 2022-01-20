@@ -1,0 +1,33 @@
+.styleEvents {
+    padding: 5em 0 5em 0;
+
+    h2 {
+        text-shadow: var(--t-shadow);
+        --color: 0.61 12% 32%;
+        color: hsl(var(--color));
+        margin: 0.5em 0 0 0;
+    }
+
+    h3 {
+        text-align: center;
+        color: hsl(var(--color));
+        font-size: 180%;
+        font-weight: var(--fw-m);
+        margin: 3em 0 2em 0;
+    }
+
+    p {
+        font-size: 120%;
+        color: hsl(var(--color));
+        width: 100%;
+        text-align: center;
+        margin: 1em auto 4em auto;
+    }
+}
+
+.eventImage {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 1em;
+}

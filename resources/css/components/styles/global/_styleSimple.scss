@@ -1,0 +1,54 @@
+.styleSimple {
+    position: relative;
+    background-color: hsl(var(--white));
+    overflow: hidden;
+    padding: var(--space-p-xLarge) 0;
+    clear: both;
+
+    h2,
+    h3,
+    h4 {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 150%;
+        font-weight: var(--fw-n);
+        --color: 0.61 0.12 0.32;
+        color: hsl(var(--color));
+        text-align: center;
+        line-height: 1.2em;
+        margin: var(--space-m) 0;
+    }
+
+    h2 {
+        font-size: var(--fs-h2);
+        text-shadow: var(--t-shadow);
+        margin: var(--space-m-small) 0 var(--space-m-medium) 0;
+    }
+
+    h3 {
+        font-size: var(--fs-h3);
+    }
+
+    h4 {
+        font-size: 130%;
+        margin: var(--space-m) 0 0 0;
+    }
+
+    p {
+        font-size: var(--fs-p);
+        --color: 0 0% 33%;
+        color: hsl(var(--color));
+        height: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .circleImg {
+        border-radius: var(--br-r);
+        width: 20vw;
+        height: 20vw;
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: var(--b-shadow);
+        position: relative;
+    }
+}

@@ -1,60 +1,5 @@
-/***************************/
-/* content style		   */
-/***************************/
-.styleSimple {
-    position: relative;
-    background-color: hsl(var(--white));
-    overflow: hidden;
-    padding: var(--space-p-xLarge) 0;
-    clear: both;
-}
 
-.styleSimple :is(h2, h3, h4) {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 150%;
-    font-weight: var(--fw-n);
-    --color: 0.61 0.12 0.32;
-    color: hsl(var(--color));
-    text-align: center;
-    line-height: 1.2em;
-    margin: var(--space-m) 0;
-}
-
-.styleSimple h2 {
-    font-size: var(--fs-h2);
-    text-shadow: var(--t-shadow);
-    margin: var(--space-m-small) 0 var(--space-m-medium) 0;
-}
-
-.styleSimple h3 {
-    font-size: var(--fs-h3);
-}
-
-.styleSimple h4 {
-    font-size: 130%;
-    margin: var(--space-m) 0 0 0;
-}
-
-.styleSimple p {
-    font-size: var(--fs-p);
-    --color: 0 0% 33%;
-    color: hsl(var(--color));
-    height: 100%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-:is(.styleSimple .circleImg) {
-    border-radius: var(--br-r);
-    width: 20vw;
-    height: 20vw;
-    margin: 0 auto;
-    overflow: hidden;
-    box-shadow: var(--b-shadow);
-    position: relative;
-}
-
-:is(.circleImgSmall) {
+.circleImgSmall {
     position: absolute;
     border-radius: var(--br-r);
     width: 7em;
@@ -63,6 +8,18 @@
     background-color: hsl(var(--bg-color) / 0.3);
     animation: animateCircle 15s infinite ease-in-out,
         fade-in 3s ease-in 1;
+
+    figcaption {
+        text-align: center;
+        color: hsl(var(--color));
+    }
+
+    img {
+        padding: 1.5em;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
 }
 
 .smallCard {
@@ -73,24 +30,12 @@
     background-color: hsl(var(--bg-color) / 0.3);
     height: auto;
     margin: var(--space-m);
-}
 
-:is(.smallCard) img {
-    padding: var(--space-p-small);
-    width: 100%;
-    overflow: hidden;
-}
-
-.circleImgSmall figcaption {
-    text-align: center;
-    color: hsl(var(--color));
-}
-
-:is(.circleImgSmall) img {
-    padding: 1.5em;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    img {
+        padding: var(--space-p-small);
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 .hover:hover {
@@ -100,52 +45,11 @@
     border-top-right-radius: 0.6em;
 }
 
-.styleEvents {
-    padding: 5em 0 5em 0;
-}
-
-.styleOverlay {
-    --color: 0 0% 0%;
-    color: hsl(var(--color));
-    background-color: hsl(var(--bg-color));
-    overflow: hidden;
-    padding: 0 0 6em 0;
-    clear: both;
-}
-
-/***************************/
-/* combine 		   		   */
-/***************************/
-:is(.styleLight, .styleEvents) h2 {
-    text-shadow: var(--t-shadow);
-    --color: 0.61 12% 32%;
-    color: hsl(var(--color));
-    margin: 0.5em 0 0 0;
-}
-
 .project h2 {
     text-align: center;
     color: hsl(var(--color));
     font-weight: var(--fw-m);
     font-size: var(--fs-h2);
-}
-
-.styleLight, h3 {
-    font-size: 150%;
-    font-weight: var(--fw-m);
-    --color: 0.61 12% 32%;
-    color: hsl(var(--color));
-    text-align: left;
-    line-height: 1.2em;
-    letter-spacing: 0.1em;
-    margin: 0 0 1em 0;
-}
-
-:is(.styleLight, .styleEvents) p {
-    font-size: 120%;
-    color: hsl(var(--color));
-    width: 100%;
-    margin: 1em auto;
 }
 
 .taskBox {
@@ -164,90 +68,45 @@
     min-height: 35em;
     height: auto;
     overflow: hidden;
+
+    h2 {
+        color: hsl(var(--color));
+        font-weight: var(--fw-n);
+        text-shadow: var(--t-shadow);
+    }
+
+    .bgBox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        --bg-color: 0.54 100% 33%;
+        background-color: hsl(var(--bg-color) / 0.9);
+        box-shadow: var(--b-shadow);
+        padding: 5% 1em 1em 1em;
+
+        p {
+            text-align: center;
+            padding: 1em 0 2em 0;
+            color: hsl(var(--color));
+            font-size: 110%;
+            text-shadow: var(--t-shadow);
+            letter-spacing: 0.2em;
+        }
+    }
+
 }
 
-.headerBox .bgBox {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    --bg-color: 0.54 100% 33%;
-    background-color: hsl(var(--bg-color) / 0.9);
-    box-shadow: var(--b-shadow);
-    padding: 5% 1em 1em 1em;
-}
+.task {
+    
+    h3 {
+        margin: 1.5em 0 0 0;
+    }
 
-.headerBox h2 {
-    color: hsl(var(--color));
-    font-weight: var(--fw-n);
-    text-shadow: var(--t-shadow);
-}
-
-.headerBox .bgBox p {
-    text-align: center;
-    padding: 1em 0 2em 0;
-    color: hsl(var(--color));
-    font-size: 110%;
-    text-shadow: var(--t-shadow);
-    letter-spacing: 0.2em;
-}
-
-.styleOverlay h2 {
-    font-size: 180% !important;
-    text-align: center;
-    text-shadow: none;
-    --color: 0.61 12% 32%;
-    color: hsl(var(--color));
-    font-weight: var(--fw-n);
-    margin: 0 0 0 0 !important;
-    border-bottom: 0.1em solid hsl(var(--border-color) / 0.1)
-}
-
-/***************************/
-/* style h3	   			   */
-/***************************/
-
-
-.task h3 {
-    margin: 1.5em 0 0 0;
-}
-
-.task li {
-    margin: 0.7em 0;
-}
-
-.styleEvents h3 {
-    text-align: center;
-    font-size: 280%;
-    color: hsl(var(--color));
-}
-
-.styleEvents h3 {
-    font-size: 180%;
-    font-weight: var(--fw-m);
-    margin: 3em 0 2em 0;
-}
-
-.styleOverlay h3 {
-    text-align: left;
-    font-size: 130%;
-    font-weight: var(--fw-n);
-    text-transform: capitalize;
-    --color: 0 0% 20%;
-    color: hsl(var(--color));
-}
-
-/***************************/
-/* style h4	   			   */
-/***************************/
-.styleLight h4 {
-    font-size: 120%;
-    font-weight: var(--fw-m);
-    --color: 0.61 12% 32%;
-    color: hsl(var(--color));
-    text-align: justify;
-    margin: 1.5em 0 3em 0;
+    li {
+        margin: 0.7em 0;
+    }
 }
 
 .difficultyPos {
@@ -263,59 +122,19 @@
     width: 5em;
 }
 
-.styleOverlay h4 {
-    font-size: 115%;
-    font-weight: var(--fw-n);
-    text-transform: capitalize;
-    color: hsl(var(--color));
-}
-
-/***************************/
-/* style p 				   */
-/***************************/
-.styleEvents p {
-    text-align: center;
-    margin: 1em auto 4em auto;
-}
-
-.styleLight p span {
-    font-size: 85%;
-    text-align: justify;
-    max-width: 25em;
-    width: 100%;
-    --color: 0 0% 33%;
-    color: hsl(var(--color));
-    margin: 0 auto;
-}
-
-.styleOverlay p {
-    font-size: 100%;
-    --color: 0.61 7% 52%;
-    color: hsl(var(--color));
-}
-
-/***************************/
-/* style a / hover		   */
-/***************************/
-:is(.styleLight, .styleOverlay) a {
-    --color: 0 0% %;
-    color: hsl(var(--color));
-    text-decoration: none;
-    text-shadow: none;
-}
-
-:is(.styleLight, .styleOverlay, .shareButton) a:hover {
-    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
 .shareButton {
     text-align: center;
-}
 
-.shareButton img {
-    width: 100%;
-}
+    a {
+        &:hover {
+            transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+    }
 
+    img {
+        width: 100%;
+    }
+}
 
 :is(.boxColor1, .boxColor2, .boxColor3, .boxColor4, .boxColor5) {
     overflow: hidden;
@@ -355,47 +174,37 @@
 /***************************/
 /* style ul / li		   */
 /***************************/
-:is(.categoryMenu, .styleOverlay) li {
-    text-align: left;
-    margin: 0 0.5em;
-    padding: 0.3em 0;
-    display: block;
-    color: rgba(0, 0, 0, 1);
-    display: flex;
-    --border-color: 0 0 96%;
-    border-bottom: 0.07em solid hsl(var(--border-color));
+.categoryMenu {
+    
+    li {
+        text-align: left;
+        margin: 0 0.5em;
+        padding: 0.3em 0;
+        display: block;
+        color: rgba(0, 0, 0, 1);
+        display: flex;
+        --border-color: 0 0 96%;
+        border-bottom: 0.07em solid hsl(var(--border-color));
+
+        &:hover {
+            --bg-color: 0 0 96%;
+            background-color: hsl(var(--bg-color) / 0.8);
+        }
+
+        p {
+            margin: 0 0 0 1em;
+            font-size: 85%;
+            font-weight: var(--fw-n);
+        }
+
+        img {
+            margin: 0;
+            max-width: 20px;
+            height: 20px;
+        }
+    }
 }
 
-:is(.categoryMenu, .styleOverlay) li:hover {
-    --bg-color: 0 0 96%;
-    background-color: hsl(var(--bg-color) / 0.8);
-}
-
-:is(.categoryMenu, .styleOverlay) li p {
-    margin: 0 0 0 1em;
-    font-size: 85%;
-    font-weight: var(--fw-n);
-}
-
-:is(.categoryMenu, .styleOverlay) li img {
-    margin: 0;
-    max-width: 20px;
-    height: 20px;
-}
-
-.styleOverlay li {
-    margin: 1em 0.5em;
-    padding: 0.5em 0;
-}
-
-.styleOverlay li img {
-    max-width: 25px;
-    height: 25px;
-}
-
-/***************************/
-/* style img	   		   */
-/***************************/
 .boxImg {
     position: relative;
     height: 30em;
@@ -412,27 +221,6 @@
     border-radius: var(--br-r);
 }
 
-.styleOverlay img {
-    display: block;
-    margin: 0 auto;
-    opacity: 0.3;
-}
-
-:is(.styleLight) .circleImg {
-    border-radius: var(--br-r);
-    max-width: 10em;
-    width: 100%;
-    max-height: 10em;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    box-shadow: var(--b-shadow);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .circleImg img {
     width: 100%;
     height: 100%;
@@ -440,66 +228,77 @@
 
 .imageFeed {
     padding: 0 0.5em 1em 0;
-}
 
-.imageFeed img {
-    width: 100%;
-    height: auto;
-    box-shadow: var(--b-shadow);
-    --border-color: 0 0% 100%;
-    border: 0.3em solid hsl(var(--border-color) / 0.2);
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: var(--b-shadow);
+        --border-color: 0 0% 100%;
+        border: 0.3em solid hsl(var(--border-color) / 0.2);
+    }
 }
 
 .image {
     position: relative;
     padding: 55.25% 0 0 0;
-}
 
-.image img {
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
+    figcaption {
+        text-transform: capitalize;
+        text-shadow: var(--t-shadow);
+        text-align: center;
+        letter-spacing: 0.05em;
+        word-spacing: 0.05em;
+        font-size: 0.85em;
+        font-weight: var(--fw-b);
+        color: hsl(var(--color));
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0 0.4em;
+        margin: 0.5em;
+    }
 
-.image figcaption {
-    text-transform: capitalize;
-    text-shadow: var(--t-shadow);
-    text-align: center;
-    letter-spacing: 0.05em;
-    word-spacing: 0.05em;
-    font-size: 0.85em;
-    font-weight: var(--fw-b);
-    color: hsl(var(--color));
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 0 0.4em;
-    margin: 0.5em;
+    img {
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 .image2 {
     position: relative;
     padding: 85.25% 0 0 0;
-}
 
-.image2 figcaption {
-    text-transform: capitalize;
-    padding: 0.1em 0.1em;
-    margin: 1em 0 0 0;
-    text-align: center;
-    letter-spacing: 0.05em;
-    word-spacing: 0.05em;
-    font-size: 80%;
-    --color: 0 0% 0%;
-    color: hsl(var(--color));
-    text-decoration: none !important;
+    figcaption {
+        text-transform: capitalize;
+        padding: 0.1em 0.1em;
+        margin: 1em 0 0 0;
+        text-align: center;
+        letter-spacing: 0.05em;
+        word-spacing: 0.05em;
+        font-size: 80%;
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        text-decoration: none !important;
+    }
+
+    img {
+        position: absolute;
+        width: 65%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 .image3 img {
@@ -508,42 +307,6 @@
     margin: 0.5em 0.5em;
 }
 
-/***************************/
-/* style misc 			   */
-/***************************/
-.styleLight .uploadImageBox {
-    position: relative;
-    width: 100%;
-    height: 7em;
-    box-shadow: 0 0 0.5em hsl(var(--box-shadow-color) / 0.1);
-    margin: 0.3em 0;
-    overflow: hidden;
-}
-
-.styleLight .uploadImageBox img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.styleLight .uploadImageBox p {
-    margin: 2em 0 0 0;
-    --color: 0 0% 0%;
-    color: hsl(var(--color));
-    text-transform: capitalize;
-    text-align: center;
-    letter-spacing: 0.05em;
-    word-spacing: 0.05em;
-    font-size: 120%;
-}
-
-/* offer */
 .tit {
     font-size: 180%;
     --color: 0.61 12% 32%;
@@ -555,7 +318,7 @@
     margin: 1em 0 0.5em 0;
 }
 
-:is(.sub, .sub) {
+.sub, .sub {
     font-size: 120%;
     --color: 0 0% 33%;
     color: hsl(var(--color));
@@ -568,29 +331,6 @@
 .productBorder {
     position: relative;
     box-shadow: var(--b-shadow);
-}
-
-.styleOverlay .max {
-    text-align: center;
-    margin: 0 auto 55px;
-    max-width: 600px;
-}
-
-/***************************/
-/* boxOverlay			   */
-/***************************/
-.bodyOverlay {
-    display: none;
-    position: fixed !important;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    --bg-color: 0 0% 0%;
-    background-color: hsl(var(--bg-color) / 0.5);
-    z-index: 3;
 }
 
 .sideNav {
@@ -617,7 +357,7 @@
     overflow: hidden;
 }
 
-:is(#searchInformation, #crimeInformation) {
+#searchInformation {
     display: none;
     background-color: hsl(var(--bg-color) / 0.8);
     ;
@@ -633,32 +373,55 @@
     box-shadow: var(--b-shadow);
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+
+    h2 {
+        text-align: center;
+        font-size: 150%;
+        margin: 2em 0;
+    }
+
+    p {
+        font-size: 100%;
+        margin: 2em 1em;
+    }
 }
 
 #crimeInformation {
+    display: none;
+    background-color: hsl(var(--bg-color) / 0.8);
+    ;
+    height: auto;
+    z-index: 3;
+    position: absolute;
+    top: 0.5em;
+    bottom: 1.3em;
+    --border-color: 0.54 100% 33%;
+    border-right: 5px solid hsl(var(--border-color));
+    box-shadow: var(--b-shadow);
     width: 70%;
     left: 30.5%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
+
+    h2 {
+        text-align: center;
+        font-size: 150%;
+        margin: 2em 0;
+    }
+
+    p {
+        font-size: 100%;
+        margin: 2em 1em;
+    }
 }
 
-:is(#searchInformation, #crimeInformation) h2 {
-    text-align: center;
-    font-size: 150%;
-    margin: 2em 0;
-}
 
-:is(#searchInformation, #crimeInformation) p {
-    font-size: 100%;
-    margin: 2em 1em;
-}
-
-:is(.openSearchButton,
+.openSearchButton,
     #crimeButton,
     #diagramButton,
-    .closeToSearchInformation) {
+    .closeToSearchInformation {
     width: 35px;
     height: 45px;
     margin-right: 1em;
@@ -719,83 +482,6 @@
     right: 0;
 }
 
-.overlaySearchBox {
-    background-color: hsl(var(--bg-color) / 0.9);
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin: 0 0 0 -225px;
-}
-
-.overlaySearchBox input {
-    --br: 0.3em;
-    border-radius: var(--br);
-    padding: 1.7em 0 1.7em 3em !important;
-    margin: 0 !important;
-    --border-color: 0.57 100% 17%;
-    border: 2px solid hsl(var(--border-color) / 0.9) !important;
-}
-
-.searchResults {
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    max-height: 206px;
-    overflow-y: auto;
-    box-shadow: var(--b-shadow);
-}
-
-.searchResults a {
-    --border-color: 0 0& 87&;
-    border: 1px solid hsl(var(--border-color));
-    margin-top: -1px;
-    /* Prevent double borders */
-    --bg-color: 0 0% 96%;
-    background-color: hsl(var(--bg-color));
-    padding: 6px;
-    text-decoration: none;
-    font-size: 100%;
-    --color: 0 0% 0%;
-    color: hsl(var(--color));
-    display: block;
-}
-
-.searchSub {
-    font-size: 80%;
-    --color: 0 0% 57%;
-    color: hsl(var(--color));
-}
-
-.searchResults a:hover {
-    --bg-color: 0 0% 93%;
-}
-
-.searchResults a:hover>.searchSub {
-    --bg-color: 0 0% 93%;
-    background-color: hsl(var(--bg-color));
-}
-
-.searchResults .select,
-.searchResults .select .searchSub {
-    --bg-color: 0.54 100% 33%;
-    background-color: hsl(var(--bg-color));
-    color: hsl(var(--color));
-}
-
-.eventImage {
-    width: 30px;
-    height: 30px;
-    float: left;
-    margin-right: 1em;
-}
-
 .crimeInfoButton {
     display: block;
     --bg-color: 0.54 100% 33%;
@@ -839,36 +525,6 @@
     line-height: 1.9em;
 }
 
-.search-container {
-    padding: 0 10px 10px 0;
-    width: 400px;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    margin: 0 0 0 -200px;
-}
-
-.search-box {
-    background-color: transparent;
-    outline: none;
-    height: 35px;
-    font-size: 15px;
-    border: 0;
-    width: 100%;
-}
-
-.searchButton {
-    position: absolute;
-    right: 4px;
-    top: 3px;
-    border: 0;
-    border-radius: 0;
-    width: 65px;
-    height: 35px;
-    outline: 0;
-    margin: 0;
-}
-
 .circular {
     width: 35px;
     height: 35px;
@@ -879,65 +535,56 @@
     box-shadow: var(--b-shadow);
 }
 
-/***************************/
-/* boxLight				   */
-/***************************/
 .boxLight {
     position: relative;
     text-align: left !important;
+
+    h2 {
+        font-size: 125%;
+        letter-spacing: 0.01em;
+        --color: 0.61 12% 32%;
+        color: hsl(var(--color));
+        padding: 0.5em 0 0 0;
+        font-weight: var(--fw-m);
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 85%;
+        letter-spacing: 0.05em;
+        line-height: 1.0937;
+        padding: 0.3em 0 0.8em 0;
+    }
+
+    a {
+        font-size: 85%;
+        letter-spacing: 0.05em;
+    }
 }
 
-.boxLight h2 {
-    font-size: 125%;
-    letter-spacing: 0.01em;
-    --color: 0.61 12% 32%;
-    color: hsl(var(--color));
-    padding: 0.5em 0 0 0;
-    font-weight: var(--fw-m);
-    text-transform: capitalize;
-}
-
-.boxLight p {
-    font-size: 85%;
-    letter-spacing: 0.05em;
-    line-height: 1.0937;
-    padding: 0.3em 0 0.8em 0;
-}
-
-.boxLight a {
-    font-size: 85%;
-    letter-spacing: 0.05em;
-}
-
-/***************************/
-/* simple-box			   */
-/***************************/
 .simple-box {
     box-shadow: var(--b-shadow);
     position: relative;
+
+    h2 {
+        font-size: 125%;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        font-weight: var(--fw-n);
+        text-transform: capitalize;
+        text-align: left;
+        margin: 0;
+    }
+
+    p {
+        font-size: 85%;
+        --border-color: 0.61 7% 52%;
+        border-bottom: 0.1em solid hsl(var(--border-color) / 0.1);
+        padding: 0.3em 0 !important;
+        text-align: left;
+    }
 }
 
-.simple-box h2 {
-    font-size: 125%;
-    text-align: center;
-    color: rgba(0, 0, 0, 1);
-    font-weight: var(--fw-n);
-    text-transform: capitalize;
-    text-align: left;
-    margin: 0;
-}
-
-.simple-box p {
-    font-size: 85%;
-    --border-color: 0.61 7% 52%;
-    border-bottom: 0.1em solid hsl(var(--border-color) / 0.1);
-    padding: 0.3em 0 !important;
-    text-align: left;
-}
-
-/***************************/
-/* box right menu          */
-/***************************/
 .right-menu-Box h2,
 .right-menu-Box p {
     font-size: 100%;
@@ -950,27 +597,10 @@
     font-size: 75%;
 }
 
-/***************************/
-/* image BB code           */
-/***************************/
 .imageBBCode {
     position: relative;
     width: 100%;
     max-height: 30em;
-}
-
-/***************************/
-/* image shared 		   */
-/***************************/
-.image2 img {
-    position: absolute;
-    width: 65%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
 }
 
 :is(.image, .image2, .accountPicture) a img:hover {
@@ -978,9 +608,6 @@
     opacity: 0.5;
 }
 
-/***************************/
-/* Buttons			       */
-/***************************/
 .btnMenu,
 button,
 .button,

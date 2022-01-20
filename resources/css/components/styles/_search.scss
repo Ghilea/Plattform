@@ -1,0 +1,99 @@
+.searchResults {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 206px;
+    overflow-y: auto;
+    box-shadow: var(--b-shadow);
+
+    a {
+        --border-color: 0 0& 87&;
+        border: 1px solid hsl(var(--border-color));
+        margin-top: -1px;
+        /* Prevent double borders */
+        --bg-color: 0 0% 96%;
+        background-color: hsl(var(--bg-color));
+        padding: 6px;
+        text-decoration: none;
+        font-size: 100%;
+        --color: 0 0% 0%;
+        color: hsl(var(--color));
+        display: block;
+
+        &:hover {
+            --bg-color: 0 0% 93%;
+        }
+    }
+}
+
+.searchSub {
+    font-size: 80%;
+    --color: 0 0% 57%;
+    color: hsl(var(--color));
+}
+
+.searchResults a:hover>.searchSub {
+    --bg-color: 0 0% 93%;
+    background-color: hsl(var(--bg-color));
+}
+
+.searchResults .select,
+.searchResults .select .searchSub {
+    --bg-color: 0.54 100% 33%;
+    background-color: hsl(var(--bg-color));
+    color: hsl(var(--color));
+}
+
+.overlaySearchBox {
+    background-color: hsl(var(--bg-color) / 0.9);
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -225px;
+
+    input {
+        --br: 0.3em;
+        border-radius: var(--br);
+        padding: 1.7em 0 1.7em 3em !important;
+        margin: 0 !important;
+        --border-color: 0.57 100% 17%;
+        border: 2px solid hsl(var(--border-color) / 0.9) !important;
+    }
+}
+
+.search-container {
+    padding: 0 10px 10px 0;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin: 0 0 0 -200px;
+}
+
+.search-box {
+    background-color: transparent;
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+    border: 0;
+    width: 100%;
+}
+
+.searchButton {
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    border: 0;
+    border-radius: 0;
+    width: 65px;
+    height: 35px;
+    outline: 0;
+    margin: 0;
+}

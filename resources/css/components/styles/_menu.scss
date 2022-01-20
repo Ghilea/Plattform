@@ -150,6 +150,7 @@
         transition: transform 200ms;
     }
 
+    //TODO: måste fixas, så vita strecken syns riktigt på mobilknappen
     $transform: (-8px, 0, 8px);
 
     @for $i from 0 to 2 {
@@ -157,8 +158,6 @@
             transform: translate3d(0, ($transform, $i), 0);
         }
     }
-
-    
 
 }
 
