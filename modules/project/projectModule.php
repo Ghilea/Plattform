@@ -59,7 +59,8 @@
 		
 				<h3><?php echo $output["title"]; ?></h3>
 							
-				<p><?php echo $functions->ellipsis($output["content"], 200); ?></p>
+				<p><?php echo $functions->ellipsis($output["content"], 200); ?><a href="#">Läs mer</a></p>
+				
 				
 				<?php if($output["showBtn"] >= 1 ){?>
 			

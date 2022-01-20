@@ -30,6 +30,7 @@ body {
   --color: 0, 0%, 100%;
   --bg-color: 0 0% 100%;
   --white: 0, 0%, 100%;
+  --orange: 19, 88.1%, 57.1%;
   --border-color: 0 0% 0%;
   /* gradient color #8f94fb, #4e54c8*/
   --g-color: hsl(237 93.1% 77.3%);
@@ -626,8 +627,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 25s ease-in-out infinite;
-          animation: bubbles 25s ease-in-out infinite;
+  -webkit-animation: bubbles 21s ease-in-out infinite;
+          animation: bubbles 21s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -635,124 +636,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 14vw;
-  width: 2em;
-  height: 2em;
+  left: 78vw;
+  width: 5em;
+  height: 5em;
   transform: translateZ(2em) rotateY(8deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 72vw;
+  left: 78vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(4em) rotateY(1deg);
+  transform: translateZ(5em) rotateY(3deg);
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 .hero .bubbles:nth-child(2) {
-  left: 53vw;
+  left: 27vw;
   width: 6em;
   height: 6em;
-  transform: translateZ(3em) rotateY(1deg);
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  transform: translateZ(2em) rotateY(3deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 .hero .bubbles:nth-child(3) {
-  left: 5vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(4em) rotateY(8deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(4) {
-  left: 63vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(7em) rotateY(4deg);
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-.hero .bubbles:nth-child(5) {
-  left: 25vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(4em) rotateY(6deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(6) {
-  left: 79vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(1em) rotateY(1deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 2vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(7em) rotateY(4deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-}
-.hero .bubbles:nth-child(8) {
-  left: 83vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(1em) rotateY(6deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-.hero .bubbles:nth-child(9) {
   left: 42vw;
   width: 6em;
   height: 6em;
-  transform: translateZ(4em) rotateY(7deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
+  transform: translateZ(5em) rotateY(8deg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
-.hero .bubbles:nth-child(10) {
-  left: 47vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(5em) rotateY(1deg);
+.hero .bubbles:nth-child(4) {
+  left: 22vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(5em) rotateY(6deg);
   -webkit-animation-delay: 14s;
           animation-delay: 14s;
 }
-.hero .bubbles:nth-child(11) {
-  left: 21vw;
+.hero .bubbles:nth-child(5) {
+  left: 35vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(2em) rotateY(3deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+.hero .bubbles:nth-child(6) {
+  left: 88vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(3em) rotateY(7deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-}
-.hero .bubbles:nth-child(12) {
-  left: 41vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(4em) rotateY(6deg);
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.hero .bubbles:nth-child(13) {
-  left: 60vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(4em) rotateY(6deg);
+  transform: translateZ(4em) rotateY(2deg);
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
+.hero .bubbles:nth-child(7) {
+  left: 64vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(3em) rotateY(5deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 14vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(6em) rotateY(4deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 52vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(7em) rotateY(7deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 28vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(7em) rotateY(1deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 69vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(7em) rotateY(8deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(12) {
+  left: 28vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(6em) rotateY(4deg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.hero .bubbles:nth-child(13) {
+  left: 66vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(7em) rotateY(6deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
 .hero .bubbles:nth-child(14) {
-  left: 29vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(6em) rotateY(6deg);
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  left: 94vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(5em) rotateY(8deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
 }
 
 .settings {
@@ -1147,7 +1148,22 @@ input[id=settingsBtn] {
   justify-content: center;
 }
 .project .rightPanel p {
+  text-align: left;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.project .rightPanel p a {
+  color: var(--white);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.project .rightPanel p a:hover {
+  opacity: 0.8;
+  color: hsl(var(--orange));
+  transition: all ease-in-out 200ms;
 }
 .project .rightPanel .boxBtn {
   width: auto;
