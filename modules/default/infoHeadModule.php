@@ -1,6 +1,8 @@
 <?php //$infoHead = new Infohead($database); ?>
 
 <div class="style indexBanner">
+	<div class="container m-center">
+
 	<?php foreach($functions->getBanner() as $output) { ?>
 
 		<h2><?php echo $output["name"]; ?></h2>
@@ -8,4 +10,5 @@
 
 	<?php } ?>
 	
+	</div>
 </div>

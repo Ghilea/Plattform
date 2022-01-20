@@ -161,6 +161,10 @@ a {
   padding: 0.5em 0.3em !important;
 }
 
+.m-center {
+  margin: 0 auto !important;
+}
+
 .txtJustify {
   text-align: justify !important;
 }
@@ -622,8 +626,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 18s ease-in-out infinite;
-          animation: bubbles 18s ease-in-out infinite;
+  -webkit-animation: bubbles 17s ease-in-out infinite;
+          animation: bubbles 17s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -631,124 +635,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 83vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(4em) rotateY(2deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.hero .bubbles:nth-child(1) {
-  left: 23vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(8deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(2) {
-  left: 3vw;
+  left: 80vw;
   width: 6em;
   height: 6em;
-  transform: translateZ(1em) rotateY(7deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-.hero .bubbles:nth-child(3) {
-  left: 28vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(2em) rotateY(8deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.hero .bubbles:nth-child(4) {
-  left: 45vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(7deg);
+  transform: translateZ(2em) rotateY(6deg);
   -webkit-animation-delay: 11s;
           animation-delay: 11s;
 }
+.hero .bubbles:nth-child(1) {
+  left: 57vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(2em) rotateY(6deg);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+.hero .bubbles:nth-child(2) {
+  left: 69vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(8em) rotateY(4deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+.hero .bubbles:nth-child(3) {
+  left: 22vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(7em) rotateY(5deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+.hero .bubbles:nth-child(4) {
+  left: 68vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(4em) rotateY(6deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
 .hero .bubbles:nth-child(5) {
+  left: 70vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(8em) rotateY(1deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(6) {
   left: 82vw;
   width: 4em;
   height: 4em;
-  transform: translateZ(6em) rotateY(5deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-.hero .bubbles:nth-child(6) {
-  left: 47vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(4em) rotateY(2deg);
+  transform: translateZ(6em) rotateY(8deg);
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
 .hero .bubbles:nth-child(7) {
-  left: 64vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(1em) rotateY(1deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  left: 61vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(2em) rotateY(1deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 .hero .bubbles:nth-child(8) {
-  left: 4vw;
+  left: 59vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(4em) rotateY(5deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(9) {
-  left: 46vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(4em) rotateY(7deg);
+  transform: translateZ(1em) rotateY(2deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.hero .bubbles:nth-child(10) {
-  left: 37vw;
+.hero .bubbles:nth-child(9) {
+  left: 88vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(8em) rotateY(3deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  transform: translateZ(7em) rotateY(2deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
-.hero .bubbles:nth-child(11) {
-  left: 95vw;
+.hero .bubbles:nth-child(10) {
+  left: 9vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(6em) rotateY(8deg);
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  transform: translateZ(2em) rotateY(7deg);
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
-.hero .bubbles:nth-child(12) {
-  left: 43vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(8em) rotateY(6deg);
+.hero .bubbles:nth-child(11) {
+  left: 44vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(7em) rotateY(3deg);
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
+.hero .bubbles:nth-child(12) {
+  left: 19vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(3em) rotateY(4deg);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
 .hero .bubbles:nth-child(13) {
-  left: 29vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(2em) rotateY(6deg);
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  left: 78vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(7em) rotateY(6deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 .hero .bubbles:nth-child(14) {
-  left: 27vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(2em) rotateY(7deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  left: 48vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(7em) rotateY(1deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 
 .settings {
@@ -1429,10 +1433,10 @@ footer .container {
   transition: transform 200ms;
 }
 .menu-open-button:nth-child(0) {
-  transform: translate3d(0, -8px, 0, 8px, 0, 0);
+  transform: translate3d(0, -8px, 0, 8px, 0);
 }
 .menu-open-button:nth-child(1) {
-  transform: translate3d(0, -8px, 0, 8px, 1, 0);
+  transform: translate3d(0, -8px, 0, 8px, 0);
 }
 
 /* icon for button */
