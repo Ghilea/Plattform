@@ -149,21 +149,15 @@
         margin-top: -1.5px;
         transition: transform 200ms;
 
-        &:nth-child(1) {
-            transform: translate3d(0, -8, 0);
+        $transform: (-8px, 0, 8px);
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                transform: translate3d(0, nth($transform, $i), 0);
+            }
         }
     }
-
-    //TODO: måste fixas, så vita strecken syns riktigt på mobilknappen
-    $transform: (-8px, 0, 8px);
-
     
-    /*@for $i from 0 to 2 {
-        &:nth-child(#{$i}) {
-            transform: translate3d(0, $transform, 0);
-        }
-    }*/
-
 }
 
 /* icon for button */
