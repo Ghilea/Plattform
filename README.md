@@ -8,4 +8,4 @@ För att lära mig mer om allt möjligt bygger jag en plattform som använder si
 * Uppdatera kod som använder PHP5x till PHP8x
 * Strukturera om databasen
 * Strukturera om så att classer används för JavaScript
-* Strukturera om och förbättre PHP för OOP
+* Strukturera om och förbättra PHP för OOP
