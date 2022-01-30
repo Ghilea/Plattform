@@ -161,10 +161,33 @@
     }
 
     .view {
-        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        gap:1em;
+        align-items: start;
+        margin-top: 10em;
+        margin-bottom: 10em;
+
+        .boxBtn {
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        h1 {
+            grid-column: 1 / span 2;
+            color: white;
+            text-align: center;
+        }
+
+        section {
+
+            &:nth-child(4) {
+                grid-column: 1 / span 2;
+            }
+        }
 
         .row {
             justify-content: left;
+            gap: 1em;
         }
 
         h2 {

@@ -617,8 +617,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 25s ease-in-out infinite;
-          animation: bubbles 25s ease-in-out infinite;
+  -webkit-animation: bubbles 19s ease-in-out infinite;
+          animation: bubbles 19s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -626,124 +626,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 36vw;
+  left: 48vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(8em) rotateY(1deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  transform: translateZ(7em) rotateY(2deg);
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 11vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(7em) rotateY(4deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(2) {
-  left: 24vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(7em) rotateY(2deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(3) {
-  left: 31vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(6em) rotateY(5deg);
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-}
-.hero .bubbles:nth-child(4) {
-  left: 66vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(3em) rotateY(2deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(5) {
-  left: 77vw;
+  left: 14vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(7em) rotateY(2deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  transform: translateZ(5em) rotateY(6deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
-.hero .bubbles:nth-child(6) {
-  left: 80vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(1em) rotateY(2deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 10vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(2em) rotateY(7deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-.hero .bubbles:nth-child(8) {
-  left: 42vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(2em) rotateY(4deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(9) {
-  left: 91vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(8em) rotateY(4deg);
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.hero .bubbles:nth-child(10) {
-  left: 97vw;
+.hero .bubbles:nth-child(2) {
+  left: 27vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(1em) rotateY(8deg);
+  transform: translateZ(2em) rotateY(8deg);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+.hero .bubbles:nth-child(3) {
+  left: 2vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(5em) rotateY(8deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.hero .bubbles:nth-child(11) {
+.hero .bubbles:nth-child(4) {
   left: 33vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(7em) rotateY(4deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(3em) rotateY(5deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
-.hero .bubbles:nth-child(12) {
-  left: 79vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(7em) rotateY(7deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+.hero .bubbles:nth-child(5) {
+  left: 10vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(1em) rotateY(8deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
-.hero .bubbles:nth-child(13) {
-  left: 81vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(4em) rotateY(8deg);
+.hero .bubbles:nth-child(6) {
+  left: 56vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(4em) rotateY(4deg);
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
-.hero .bubbles:nth-child(14) {
-  left: 24vw;
+.hero .bubbles:nth-child(7) {
+  left: 18vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(4em) rotateY(6deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 30vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(7em) rotateY(6deg);
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 1vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(3em) rotateY(3deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  transform: translateZ(5em) rotateY(8deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 17vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(5em) rotateY(1deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 75vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(6em) rotateY(4deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+.hero .bubbles:nth-child(12) {
+  left: 11vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(3em) rotateY(7deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.hero .bubbles:nth-child(13) {
+  left: 20vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(3em) rotateY(2deg);
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.hero .bubbles:nth-child(14) {
+  left: 60vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(2em) rotateY(3deg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 .settings {
@@ -1217,10 +1217,27 @@ input[id=settingsBtn] {
   grid-column: 5/span 3;
 }
 .project .view {
-  align-items: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  align-items: start;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+.project .view .boxBtn {
+  display: inline-flex;
+  justify-content: center;
+}
+.project .view h1 {
+  grid-column: 1/span 2;
+  color: white;
+  text-align: center;
+}
+.project .view section:nth-child(4) {
+  grid-column: 1/span 2;
 }
 .project .view .row {
   justify-content: left;
+  gap: 1em;
 }
 .project .view h2 {
   font-size: 1.1rem;
