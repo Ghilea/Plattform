@@ -100,6 +100,10 @@
 
     h2 {
         padding: 3em 0 0 0;
+        text-align: center;
+        color: hsl(var(--color));
+        font-weight: var(--fw-m);
+        font-size: var(--fs-h2);
     }
 
     h3 {
@@ -153,6 +157,26 @@
 
         &:nth-child(3) {
             grid-column: 5 / span 3;
+        }
+    }
+
+    .view {
+        align-items: flex-start;
+
+        .row {
+            justify-content: left;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            padding: 1em;
+        }
+
+        .box {
+            background-color: hsl(var(--g-color));
+            border-radius: 0.3em;
+            padding: var(--space-p-small);
+            box-shadow: var(--b-shadow);
         }
     }
 }

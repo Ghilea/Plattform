@@ -1,6 +1,6 @@
 <?php $class = new Project($database, $functions); ?>
 
-<section class="container-fluid project activate3d">
+<section class="container-fluid project">
 	
 	<header>
 		<h2>Kunskaper</h2>	
@@ -32,11 +32,11 @@
 		<?php } ?>		
 	</header>
 
-	<div class="container projectBox activate3d">
+	<div class="container projectBox">
 
 	<?php foreach($class->getProject() as $output) {  ?>
 		
-		<article class="container row item preserve3d">
+		<article class="container row item">
 			
 			<div class="leftPanel">
 
@@ -59,7 +59,7 @@
 		
 				<h3><?php echo $output["title"]; ?></h3>
 							
-				<p><?php echo $functions->ellipsis($output["content"], 200); ?><a href="#">Läs mer</a></p>
+				<p><?php echo $functions->ellipsis($output["content"], 200); ?><a href="./modules/project/projectView.php">Läs mer</a></p>
 				
 				
 				<?php if($output["showBtn"] >= 1 ){?>

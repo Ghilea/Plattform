@@ -56,12 +56,8 @@
     --lh: 1em;
 }
 
-html {
-    height: 100%;
-}
 
 body {
-    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -69,7 +65,7 @@ body {
 .box {
     --bg-color: 0.54 100% 6%;
     background-color: hsl(var(--bg-color));
-    border-radius: var(--br-b);
+    border-radius: 0.3em;
     padding: var(--space-p-small);
     box-shadow: var(--b-shadow);
 }
@@ -80,18 +76,18 @@ body {
     padding: 0 0 var(--space-p-xLarge) 0;
     clear: both;
     margin: 0;
-}
-
-.style header p {
-    text-align: center;
-    color: hsl(var(--color));
-    font-weight: var(--fw-n);
-    --fs-p: 1.5rem;
-    font-size: var(--fs-p);
-    width: 100%;
-    height: auto;
-    margin: 1.5em 0;
-    padding: 0 var(--space-p);
+    
+    header p {
+        text-align: center;
+        color: hsl(var(--color));
+        font-weight: var(--fw-n);
+        --fs-p: 1.5rem;
+        font-size: var(--fs-p);
+        width: 100%;
+        height: auto;
+        margin: 1.5em 0;
+        padding: 0 var(--space-p);
+    }
 }
 
 h2 {
@@ -217,9 +213,6 @@ a {text-decoration: none;}
     margin: 0;
 }
 
-/***************************/
-/* colors	               */
-/***************************/
 .borderOrangeTop {
     border-top: 0.2em solid rgba(255, 182, 47, 1);
     margin-top: 25px;
@@ -392,17 +385,19 @@ textarea:focus {
     outline: 0;
 }
 
-form textarea {
-    height: 20em;
-    resize: vertical;
+form {
+    textarea {
+        height: 20em;
+        resize: vertical;
+    }
+
+    h3 {
+        display: inline-block;
+    }
 }
 
 li div {
     cursor: pointer;
-}
-
-form h3 {
-    display: inline-block;
 }
 
 /*checkbox locked and sticked*/

@@ -1,4 +1,3 @@
-
 .circleImgSmall {
     position: absolute;
     border-radius: var(--br-r);
@@ -43,13 +42,6 @@
     background-color: hsl(var(--bg-color) / 0.2);
     border-bottom-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-}
-
-.project h2 {
-    text-align: center;
-    color: hsl(var(--color));
-    font-weight: var(--fw-m);
-    font-size: var(--fs-h2);
 }
 
 .taskBox {
@@ -136,7 +128,7 @@
     }
 }
 
-:is(.boxColor1, .boxColor2, .boxColor3, .boxColor4, .boxColor5) {
+.boxColor1, .boxColor2, .boxColor3, .boxColor4, .boxColor5 {
     overflow: hidden;
     position: relative;
     --bg-color: 0.11 35% 62%;
@@ -171,9 +163,6 @@
     background-color: hsl(var(--bg-color)) !important;
 }
 
-/***************************/
-/* style ul / li		   */
-/***************************/
 .categoryMenu {
     
     li {
@@ -663,16 +652,18 @@ button,
 }
 
 button,
-.button a {
-    color: rgb(255, 255, 255);
-    outline: 0;
-    text-decoration: none;
-    transition: color .2s ease-in-out;
-}
+.button {
+    
+    &:focus {
+        outline: none;
+    }
 
-button:focus,
-.button:focus {
-    outline: none;
+    a {
+        color: rgb(255, 255, 255);
+        outline: 0;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+    }
 }
 
 .shareButton a:hover,
@@ -737,12 +728,14 @@ button:hover,
     color: rgb(255, 255, 255);
 }
 
-.productLSBtn:focus,
-.productRSBtn:focus {
-    outline: none;
-}
+.productLSBtn,
+.productRSBtn {
 
-.productLSBtn:hover,
-.productRSBtn:hover {
+    &:hover {
     box-shadow: var(--b-shadow);
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
