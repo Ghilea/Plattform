@@ -27,9 +27,13 @@ $company = $config->GetConfig("company")[0];
 	<link rel="shortcut icon" href="<?php echo $config->GetConfig("icon")[0]["image"]; ?>">
 
 	<!-- CSS -->
-	<link href="<?php echo $config->GetConfig("font")[0]["link"]; ?>" rel="stylesheet">
+	<?php foreach ($config->GetConfig("font") as $output) {  ?>
+		<link href="<?php echo $output["link"]; ?>" rel="stylesheet">
+	<?php } ?>
 
-	<link href="<?php echo $config->GetConfig("css")[0]["link"]; ?>" rel="stylesheet" type='text/css'>
+	<?php foreach ($config->GetConfig("css") as $output) {  ?>
+		<link href="<?php echo $output["link"]; ?>" rel="stylesheet">
+	<?php } ?>
 
 </head>
 
