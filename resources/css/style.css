@@ -23,52 +23,16 @@ body {
   scroll-behavior: smooth;
 }
 
-:root {
-  /* fonts */
-  --ff: "Exo", sans-serif;
-  /* color */
-  --color: 0, 0%, 100%;
-  --bg-color: 0 0% 100%;
-  --white: 0, 0%, 100%;
-  --orange: 19, 88.1%, 57.1%;
-  --border-color: 0 0% 0%;
-  /* gradient color #8f94fb, #4e54c8*/
-  --g-color: hsl(237 93.1% 77.3%);
-  --g-color2: hsl(237 52.6% 54.5%);
-  /* shadow */
-  --b-shadow: 0 0 .8em hsl(0 0% 0% / .10);
-  --t-shadow: .1em .1em hsl(0 0% 0% / .10);
-  /* margin */
-  --space-m: 1em;
-  --space-m-small: calc(var(--space-m) / 2);
-  --space-m-medium: calc(var(--space-m) * 2);
-  --space-m-large: calc(var(--space-m) * 3);
-  /* padding */
-  --space-p: 1em;
-  --space-p-small: calc(var(--space-p) / 2);
-  --space-p-medium: calc(var(--space-p) * 2);
-  --space-p-large: calc(var(--space-p) * 3);
-  --space-p-xLarge: calc(var(--space-p) * 12);
-  /* font weight */
-  --fw-n: 400;
-  --fw-m: 600;
-  --fw-b: 800;
-  /* font size */
-  --fs-h1: 3rem;
-  --fs-h2: 2rem;
-  --fs-h3: 1.5rem;
-  --fs-p: 1rem;
-  --fs-n: .95rem;
-  --fs-s: .7rem;
-  /* border radius */
-  --br: 1em;
-  --br-b: 3em;
-  --br-r: 50%;
-  /* line-height */
-  --lh-n: 1.85em;
-  --lh: 1em;
-}
-
+/* fonts */
+/* color */
+/* gradient color #8f94fb, #4e54c8*/
+/* shadow */
+/* margin */
+/* padding */
+/* font weight */
+/* font size */
+/* border radius */
+/* line-height */
 body {
   display: flex;
   flex-direction: column;
@@ -617,8 +581,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 19s ease-in-out infinite;
-          animation: bubbles 19s ease-in-out infinite;
+  -webkit-animation: bubbles 15s ease-in-out infinite;
+          animation: bubbles 15s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -626,124 +590,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 48vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(7em) rotateY(2deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+  left: 54vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(8em) rotateY(8deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 14vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(5em) rotateY(6deg);
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  left: 98vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(1em) rotateY(1deg);
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 .hero .bubbles:nth-child(2) {
-  left: 27vw;
+  left: 98vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(2em) rotateY(8deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
+  transform: translateZ(8em) rotateY(5deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 .hero .bubbles:nth-child(3) {
-  left: 2vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(5em) rotateY(8deg);
+  left: 88vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(8em) rotateY(4deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 .hero .bubbles:nth-child(4) {
-  left: 33vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(3em) rotateY(5deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  left: 52vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(2em) rotateY(8deg);
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
 }
 .hero .bubbles:nth-child(5) {
-  left: 10vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(1em) rotateY(8deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-.hero .bubbles:nth-child(6) {
-  left: 56vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(4em) rotateY(4deg);
+  left: 43vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(2em) rotateY(2deg);
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
+.hero .bubbles:nth-child(6) {
+  left: 91vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(7em) rotateY(5deg);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 .hero .bubbles:nth-child(7) {
-  left: 18vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(4em) rotateY(6deg);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  left: 4vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(1em) rotateY(6deg);
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
 }
 .hero .bubbles:nth-child(8) {
-  left: 30vw;
+  left: 6vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(2em) rotateY(2deg);
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 60vw;
   width: 2em;
   height: 2em;
+  transform: translateZ(6em) rotateY(7deg);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 9vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(8em) rotateY(2deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 9vw;
+  width: 3em;
+  height: 3em;
   transform: translateZ(7em) rotateY(6deg);
   -webkit-animation-delay: 13s;
           animation-delay: 13s;
 }
-.hero .bubbles:nth-child(9) {
-  left: 1vw;
+.hero .bubbles:nth-child(12) {
+  left: 36vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(5em) rotateY(8deg);
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-.hero .bubbles:nth-child(10) {
-  left: 17vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(5em) rotateY(1deg);
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-.hero .bubbles:nth-child(11) {
-  left: 75vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(6em) rotateY(4deg);
+  transform: translateZ(5em) rotateY(5deg);
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
 }
-.hero .bubbles:nth-child(12) {
-  left: 11vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(3em) rotateY(7deg);
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
 .hero .bubbles:nth-child(13) {
-  left: 20vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(2deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-.hero .bubbles:nth-child(14) {
-  left: 60vw;
+  left: 7vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(2em) rotateY(3deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  transform: translateZ(7em) rotateY(8deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(14) {
+  left: 32vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(1em) rotateY(4deg);
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
 }
 
 .settings {

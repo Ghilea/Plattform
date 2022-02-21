@@ -1,61 +1,60 @@
-:root {
+//:root {
     /* fonts */
-    --ff: 'Exo', sans-serif;
+    //--ff: 'Exo', sans-serif;
 
     /* color */
-    --color: 0, 0%, 100%;
-    --bg-color: 0 0% 100%;
+    //--color: 0, 0%, 100%;
+    //--bg-color: 0 0% 100%;
     
-    --white: 0, 0%, 100%;
-    --orange: 19, 88.1%, 57.1%;
+    //--white: 0, 0%, 100%;
+    //--orange: 19, 88.1%, 57.1%;
 
-    --border-color: 0 0% 0%;
+    //--border-color: 0 0% 0%;
 
     /* gradient color #8f94fb, #4e54c8*/
-    --g-color: hsl(237 93.1% 77.3%);
-    --g-color2: hsl(237 52.6% 54.5%);
+    //--g-color: hsl(237 93.1% 77.3%);
+   // --g-color2: hsl(237 52.6% 54.5%);
 
     /* shadow */
-    --b-shadow: 0 0 .8em hsl(0 0% 0% / .10);
-    --t-shadow: .1em .1em hsl(0 0% 0% / .10);
+    //--b-shadow: 0 0 .8em hsl(0 0% 0% / .10);
+    //--t-shadow: .1em .1em hsl(0 0% 0% / .10);
 
     /* margin */
-    --space-m: 1em;
-    --space-m-small: calc(var(--space-m) / 2);
-    --space-m-medium: calc(var(--space-m) * 2);
-    --space-m-large: calc(var(--space-m) * 3);
+    //--space-m: 1em;
+   // --space-m-small: calc(var(--space-m) / 2);
+    //--space-m-medium: calc(var(--space-m) * 2);
+   // --space-m-large: calc(var(--space-m) * 3);
 
     /* padding */
-    --space-p: 1em;
-    --space-p-small: calc(var(--space-p) / 2);
-    --space-p-medium: calc(var(--space-p) * 2);
-    --space-p-large: calc(var(--space-p) * 3);
-    --space-p-xLarge: calc(var(--space-p) * 12);
+    //--space-p: 1em;
+   // --space-p-small: calc(var(--space-p) / 2);
+   // --space-p-medium: calc(var(--space-p) * 2);
+   // --space-p-large: calc(var(--space-p) * 3);
+  //  --space-p-xLarge: calc(var(--space-p) * 12);
 
     /* font weight */
-    --fw-n: 400;
-    --fw-m: 600;
-    --fw-b: 800;
+  //  --fw-n: 400;
+   // --fw-m: 600;
+   // --fw-b: 800;
 
     /* font size */
-    --fs-h1: 3rem;
-    --fs-h2: 2rem;
-    --fs-h3: 1.5rem;
-    --fs-p: 1rem;
+  //  --fs-h1: 3rem;
+   // --fs-h2: 2rem;
+   // --fs-h3: 1.5rem;
+    //--fs-p: 1rem;
 
-    --fs-n: .95rem;
-    --fs-s: .7rem;
+   // --fs-n: .95rem;
+  //  --fs-s: .7rem;
 
     /* border radius */
-    --br: 1em;
-    --br-b: 3em;
-    --br-r: 50%;
+  //  --br: 1em;
+   // --br-b: 3em;
+ //   --br-r: 50%;
 
     /* line-height */
-    --lh-n: 1.85em;
-    --lh: 1em;
-}
-
+   // --lh-n: 1.85em;
+   // --lh: 1em;
+//}
 
 body {
     display: flex;
