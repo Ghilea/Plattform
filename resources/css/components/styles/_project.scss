@@ -36,11 +36,13 @@
     }
 
     .leftPanel {
+        width:100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
+        align-items: flex-start;
 
         img {
             width: 100%;
@@ -102,13 +104,13 @@
         padding: 3em 0 0 0;
         text-align: center;
         color: hsl(var(--color));
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         font-size: var(--fs-h2);
     }
 
     h3 {
         color: hsl(var(--white));
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         --fs-h3: 1.5rem;
         font-size: var(--fs-h3);
         overflow-wrap: break-word;
@@ -117,7 +119,7 @@
     header p {
         text-align: center;
         color: hsl(var(--color));
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         font-size: var(--fs-p);
         width: 100%;
         height: auto;
@@ -127,7 +129,7 @@
 
     p {
         color: hsl(var(--color));
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         font-size: var(--fs-p);
         width: 100%;
         height: auto;

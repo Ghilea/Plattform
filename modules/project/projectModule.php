@@ -49,7 +49,6 @@
 			<div class="centerPanel">
 
 				<?php foreach($output["images_skill"] as $output2) { ?>
-					
 					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output2["image_link"]; ?>" title="<?php echo $output2["name"]; ?>" alt="">
 				<?php } ?>
 
@@ -62,7 +61,7 @@
 				<p><?php echo $functions->ellipsis($output["content"], 200); ?><a href="./modules/project/projectView.php">Läs mer</a></p>
 				
 				
-				<?php if($output["showBtn"] >= 1 ){?>
+				<?php if($output["showBtn"] === 1 ){?>
 			
 					<?php if($output["link"] !== null) { ?>
 					<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>

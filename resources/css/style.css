@@ -16,7 +16,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   line-height: var(--lh-n);
   font-size: var(--fs-n);
   font-family: var(--ff);
@@ -49,10 +49,6 @@ body {
   --space-p-medium: calc(var(--space-p) * 2);
   --space-p-large: calc(var(--space-p) * 3);
   --space-p-xLarge: calc(var(--space-p) * 12);
-  /* font weight */
-  --fw-n: 400;
-  --fw-m: 600;
-  --fw-b: 800;
   /* font size */
   --fs-h1: 3rem;
   --fs-h2: 2rem;
@@ -73,26 +69,24 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.box {
+body .box {
   --bg-color: 0.54 100% 6%;
   background-color: hsl(var(--bg-color));
   border-radius: 0.3em;
   padding: var(--space-p-small);
   box-shadow: var(--b-shadow);
 }
-
-.style {
+body .style {
   position: relative;
   overflow: hidden;
   padding: 0 0 var(--space-p-xLarge) 0;
   clear: both;
   margin: 0;
 }
-.style header p {
+body .style header p {
   text-align: center;
   color: hsl(var(--color));
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   --fs-p: 1.5rem;
   font-size: var(--fs-p);
   width: 100%;
@@ -100,18 +94,16 @@ body {
   margin: 1.5em 0;
   padding: 0 var(--space-p);
 }
-
-h2 {
+body h2 {
   font-size: var(--fs-h2);
   color: hsl(var(--color));
   line-height: 1.2em;
   text-align: center;
   text-shadow: var(--t-shadow);
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   letter-spacing: 0.1em;
 }
-
-a {
+body a {
   text-decoration: none;
 }
 
@@ -610,15 +602,15 @@ textarea:focus) {
   color: hsl(var(--color));
   line-height: var(--lh);
   text-shadow: var(--t-shadow);
-  font-weight: var(--fw-b);
+  font-weight: var(--font-weight-800);
   opacity: 0;
   transform: scale(0);
   -webkit-animation: zoom-in 2s ease-in-out forwards;
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 11s ease-in-out infinite;
-          animation: bubbles 11s ease-in-out infinite;
+  -webkit-animation: bubbles 19s ease-in-out infinite;
+          animation: bubbles 19s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--b-shadow);
   position: absolute;
@@ -626,124 +618,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 69vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(2em) rotateY(8deg);
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.hero .bubbles:nth-child(1) {
-  left: 98vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(7em) rotateY(6deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(2) {
-  left: 28vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(3em) rotateY(2deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-.hero .bubbles:nth-child(3) {
-  left: 31vw;
+  left: 49vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(8em) rotateY(6deg);
+  transform: translateZ(3em) rotateY(8deg);
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+.hero .bubbles:nth-child(1) {
+  left: 80vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(6em) rotateY(5deg);
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+.hero .bubbles:nth-child(2) {
+  left: 95vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(4em) rotateY(4deg);
   -webkit-animation-delay: 12s;
           animation-delay: 12s;
 }
+.hero .bubbles:nth-child(3) {
+  left: 43vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(8em) rotateY(1deg);
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
 .hero .bubbles:nth-child(4) {
-  left: 89vw;
+  left: 41vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(6em) rotateY(2deg);
+  transform: translateZ(4em) rotateY(1deg);
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 .hero .bubbles:nth-child(5) {
   left: 93vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(4em) rotateY(7deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(7em) rotateY(7deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 .hero .bubbles:nth-child(6) {
-  left: 86vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(4em) rotateY(7deg);
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 47vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(2em) rotateY(5deg);
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-.hero .bubbles:nth-child(8) {
-  left: 94vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(1em) rotateY(5deg);
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-.hero .bubbles:nth-child(9) {
-  left: 61vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(1em) rotateY(7deg);
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-.hero .bubbles:nth-child(10) {
-  left: 81vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(3em) rotateY(7deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.hero .bubbles:nth-child(11) {
-  left: 82vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(6em) rotateY(3deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.hero .bubbles:nth-child(12) {
   left: 74vw;
   width: 5em;
   height: 5em;
-  transform: translateZ(5em) rotateY(5deg);
+  transform: translateZ(7em) rotateY(4deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(7) {
+  left: 73vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(8em) rotateY(7deg);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 28vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(6em) rotateY(3deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.hero .bubbles:nth-child(9) {
+  left: 38vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(1em) rotateY(4deg);
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
+.hero .bubbles:nth-child(10) {
+  left: 85vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(2em) rotateY(2deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 35vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(2em) rotateY(4deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.hero .bubbles:nth-child(12) {
+  left: 22vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(6em) rotateY(8deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
 .hero .bubbles:nth-child(13) {
-  left: 18vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(7em) rotateY(6deg);
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  left: 77vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(6em) rotateY(4deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 .hero .bubbles:nth-child(14) {
-  left: 1vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(7em) rotateY(8deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  left: 25vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(2em) rotateY(1deg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 .settings {
@@ -760,7 +752,7 @@ textarea:focus) {
   text-align: center;
   --color: 0 0% 38%;
   color: hsl(var(--color));
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   --fs-h3: 1.5rem;
   font-size: var(--fs-n);
   overflow-wrap: break-word;
@@ -768,7 +760,7 @@ textarea:focus) {
 .settings p {
   --color: 0 0% 38%;
   color: hsl(var(--color));
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   font-size: var(--fs-p);
   width: 100%;
   height: auto;
@@ -965,7 +957,7 @@ input[id=settingsBtn] {
 
 .gallery h2 {
   font-size: var(--fs-h2);
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   text-align: center;
   --color: 0 0% 50%;
   color: hsl(var(--color));
@@ -1000,7 +992,7 @@ input[id=settingsBtn] {
   left: 0.7em;
   bottom: 2em;
   color: white;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   font-size: 150%;
   text-shadow: var(--t-shadow);
   overflow: hidden;
@@ -1009,7 +1001,7 @@ input[id=settingsBtn] {
 .gallery figcaption p {
   left: 0;
   bottom: 0;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   font-size: 100%;
 }
 
@@ -1029,14 +1021,14 @@ input[id=settingsBtn] {
   font-size: 280%;
   --color: 0 0% 0%;
   color: hsl(var(--color));
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   line-height: 1.2em;
   letter-spacing: 0.1em;
   margin: 0 0 1em 0;
 }
 .styleNews h4 {
   font-size: 120%;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   --color: 0.61 12% 32%;
   color: hsl(var(--color));
   text-align: justify;
@@ -1109,11 +1101,13 @@ input[id=settingsBtn] {
   padding: 1em;
 }
 .project .leftPanel {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  align-items: flex-start;
 }
 .project .leftPanel img {
   width: 100%;
@@ -1166,12 +1160,12 @@ input[id=settingsBtn] {
   padding: 3em 0 0 0;
   text-align: center;
   color: hsl(var(--color));
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   font-size: var(--fs-h2);
 }
 .project h3 {
   color: hsl(var(--white));
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   --fs-h3: 1.5rem;
   font-size: var(--fs-h3);
   overflow-wrap: break-word;
@@ -1179,7 +1173,7 @@ input[id=settingsBtn] {
 .project header p {
   text-align: center;
   color: hsl(var(--color));
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   font-size: var(--fs-p);
   width: 100%;
   height: auto;
@@ -1188,7 +1182,7 @@ input[id=settingsBtn] {
 }
 .project p {
   color: hsl(var(--color));
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   font-size: var(--fs-p);
   width: 100%;
   height: auto;
@@ -1268,7 +1262,7 @@ footer .container {
 .footer h2 {
   margin: 3em 0 0.5em 0;
   color: hsl(var(--color));
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   font-size: var(--fs-h2);
   text-align: left;
 }
@@ -1276,7 +1270,7 @@ footer .container {
   margin: 1em 0 0 0;
   color: hsl(var(--color));
   font-size: 100%;
-  font-weight: var(--fw-b);
+  font-weight: var(--font-weight-800);
 }
 .footer ul {
   display: flex;
@@ -1365,14 +1359,14 @@ footer .container {
 #header .logo p {
   color: hsl(var(--color));
   font-size: 200%;
-  font-weight: var(--fw-b);
+  font-weight: var(--font-weight-800);
   text-transform: capitalize;
   margin: 0.2em 0 0 0;
 }
 #header .logo p span {
   display: block;
   font-size: 50%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
 }
 #header .logo:hover {
   transition: all 0.2s ease-in-out;
@@ -1391,7 +1385,7 @@ footer .container {
   margin: -1em 0 0 -20em;
   text-align: center;
   font-size: var(--fs-n);
-  font-weight: var(--fw-b);
+  font-weight: var(--font-weight-800);
 }
 #header nav li {
   display: inline-block;
@@ -1629,7 +1623,7 @@ footer .container {
   overflow: hidden;
 }
 .eduMenu a {
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
 }
 .eduMenu a:hover {
   color: #007ea7;
@@ -1672,7 +1666,7 @@ footer .container {
 .indexBanner h2 {
   text-align: center;
   color: hsl(var(--color));
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   font-size: var(--fs-h2);
   margin: 6em 0 0 0;
   text-shadow: var(--t-shadow);
@@ -1703,7 +1697,7 @@ footer .container {
 }
 .styleShop h3 {
   font-size: 150%;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   --color: 0.61 12% 32%;
   color: hsl(var(--color));
   text-align: left;
@@ -1713,12 +1707,12 @@ footer .container {
 }
 .styleShop h4 {
   font-size: 120%;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   --color: 0.61 12% 32%;
   color: hsl(var(--color));
   text-align: justify;
   margin: 1.5em 0 3em 0;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   text-align: center;
 }
 .styleShop p {
@@ -1742,7 +1736,7 @@ footer .container {
   color: hsl(var(--color));
   line-height: 1.2em;
   text-align: center;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   letter-spacing: 0.1em;
   margin: 1em 0 0.5em 0;
   text-overflow: ellipsis;
@@ -1774,7 +1768,7 @@ footer .container {
 .showShoping .totalProducts {
   margin: -1.3em 0 0 1em;
   font-size: 80%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   line-height: 2em;
   text-align: center;
   background-color: hsl(var(--bg-color));
@@ -1789,7 +1783,7 @@ footer .container {
 }
 .showShoping .totalProductsPrice {
   font-size: 90%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   line-height: 2.5em;
   text-align: center;
   --color: 0 0% 0%;
@@ -1830,7 +1824,7 @@ footer .container {
   letter-spacing: 0.05em;
   word-spacing: 0.05em;
   font-size: 180%;
-  font-weight: var(--fw-b);
+  font-weight: var(--font-weight-800);
   color: hsl(var(--color));
   position: absolute;
   top: 0.5em;
@@ -1843,7 +1837,7 @@ footer .container {
   text-align: center;
   letter-spacing: 0.05em;
   word-spacing: 0.05em;
-  font-weight: var(--fw-b);
+  font-weight: var(--font-weight-800);
   color: hsl(var(--color));
   position: absolute;
   font-size: 85%;
@@ -1905,7 +1899,7 @@ footer .container {
 }
 .boxForum h2 {
   font-size: 100%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   text-align: left;
   margin: 0.5em 0;
 }
@@ -1914,7 +1908,7 @@ footer .container {
 }
 .boxForum h4 {
   font-size: 200%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
   line-height: 2em;
@@ -1976,7 +1970,7 @@ footer .container {
 }
 
 .forumBarSetting {
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   font-size: 100%;
 }
 .forumBarSetting a {
@@ -2112,7 +2106,7 @@ footer .container {
 }
 .headerBox h2 {
   color: hsl(var(--color));
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   text-shadow: var(--t-shadow);
 }
 .headerBox .bgBox {
@@ -2147,7 +2141,7 @@ footer .container {
   top: 2em;
   left: 0;
   font-size: 120%;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   color: hsl(var(--color));
   text-align: center;
   --bg-color: 0.57 100% 17%;
@@ -2217,7 +2211,7 @@ footer .container {
 .categoryMenu li p {
   margin: 0 0 0 1em;
   font-size: 85%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
 }
 .categoryMenu li img {
   margin: 0;
@@ -2268,7 +2262,7 @@ footer .container {
   letter-spacing: 0.05em;
   word-spacing: 0.05em;
   font-size: 0.85em;
-  font-weight: var(--fw-b);
+  font-weight: var(--font-weight-800);
   color: hsl(var(--color));
   position: absolute;
   left: 0;
@@ -2328,7 +2322,7 @@ footer .container {
   color: hsl(var(--color));
   line-height: 1.2em;
   text-align: left;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   letter-spacing: 0.1em;
   margin: 1em 0 0.5em 0;
 }
@@ -2499,7 +2493,7 @@ footer .container {
   border-radius: var(--br);
   cursor: pointer;
   font-size: 100%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   letter-spacing: 0.2em;
   line-height: 2.3em;
   width: 8em;
@@ -2553,7 +2547,7 @@ footer .container {
   --color: 0.61 12% 32%;
   color: hsl(var(--color));
   padding: 0.5em 0 0 0;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   text-transform: capitalize;
 }
 .boxLight p {
@@ -2575,7 +2569,7 @@ footer .container {
   font-size: 125%;
   text-align: center;
   color: black;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   text-transform: capitalize;
   text-align: left;
   margin: 0;
@@ -2591,7 +2585,7 @@ footer .container {
 .right-menu-Box h2,
 .right-menu-Box p {
   font-size: 100%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   text-align: left;
   line-height: 1.2em;
 }
@@ -2623,7 +2617,7 @@ button,
   border-radius: var(--br);
   cursor: pointer;
   font-size: 100%;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   letter-spacing: 0.2em;
   line-height: 2.3em;
   min-width: 8em;
@@ -2636,7 +2630,7 @@ button,
 .button,
 .boxBtn {
   box-shadow: var(--b-shadow);
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   line-height: 3em;
   min-width: 10em;
   max-width: 14em;
@@ -2695,7 +2689,7 @@ button:hover,
   box-shadow: var(--b-shadow);
   cursor: pointer;
   font-size: 300%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   line-height: 1em;
   width: 25%;
   height: 1em;
@@ -2756,7 +2750,7 @@ button:hover,
   text-align: left;
   color: black;
   font-size: 100%;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
 }
 .errorMessage img {
   float: left;
@@ -2923,7 +2917,7 @@ button:hover,
   font-size: 150%;
   text-shadow: none;
   color: black;
-  font-weight: var(--fw-m);
+  font-weight: var(--font-weight-600);
   letter-spacing: 0.1em;
 }
 
@@ -2950,21 +2944,21 @@ button:hover,
   text-shadow: none;
   --color: 0.61 12% 32%;
   color: hsl(var(--color));
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   margin: 0 0 0 0 !important;
   border-bottom: 0.1em solid hsl(var(--border-color)/0.1);
 }
 .styleOverlay h3 {
   text-align: left;
   font-size: 130%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   text-transform: capitalize;
   --color: 0 0% 20%;
   color: hsl(var(--color));
 }
 .styleOverlay h4 {
   font-size: 115%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
   text-transform: capitalize;
   color: hsl(var(--color));
 }
@@ -3004,7 +2998,7 @@ button:hover,
 .styleOverlay li p {
   margin: 0 0 0 1em;
   font-size: 85%;
-  font-weight: var(--fw-n);
+  font-weight: var(--font-weight-400);
 }
 .styleOverlay li img {
   margin: 0;

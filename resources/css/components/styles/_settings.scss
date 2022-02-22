@@ -13,7 +13,7 @@
          text-align: center;
          --color: 0 0% 38%;
          color: hsl(var(--color));
-         font-weight: var(--fw-m);
+         font-weight: var(--font-weight-600);
          --fs-h3: 1.5rem;
          font-size: var(--fs-n);
          overflow-wrap: break-word;
@@ -22,7 +22,7 @@
     p {
         --color: 0 0% 38%;
         color: hsl(var(--color));
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         font-size: var(--fs-p);
         width: 100%;
         height: auto;

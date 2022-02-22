@@ -15,7 +15,7 @@
         font-size: 280%;
         --color: 0 0% 0%;
         color: hsl(var(--color));
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         line-height: 1.2em;
         letter-spacing: 0.1em;
         margin: 0 0 1em 0;
@@ -23,7 +23,7 @@
 
     h4 {
         font-size: 120%;
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         --color: 0.61 12% 32%;
         color: hsl(var(--color));
         text-align: justify;

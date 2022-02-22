@@ -25,14 +25,14 @@
         p {
             color: hsl(var(--color));
             font-size: 200%;
-            font-weight: var(--fw-b);
+            font-weight: var(--font-weight-800);
             text-transform: capitalize;
             margin: 0.2em 0 0 0;
 
             span {
                 display: block;
                 font-size: 50%;
-                font-weight: var(--fw-n);
+                font-weight: var(--font-weight-400);
             }
         }
 
@@ -57,7 +57,7 @@
         margin: -1em 0 0 -20em;
         text-align: center;
         font-size: var(--fs-n);
-        font-weight: var(--fw-b);
+        font-weight: var(--font-weight-800);
 
         li {
             display: inline-block;
@@ -320,7 +320,7 @@
     overflow: hidden;
 
     a {
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
 
         &:hover {
             color: rgb(0, 126, 167);

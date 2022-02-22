@@ -13,7 +13,7 @@
         color: hsl(var(--color));
         line-height: var(--lh);
         text-shadow: var(--t-shadow);
-        font-weight: var(--fw-b);
+        font-weight: var(--font-weight-800);
         opacity: 0;
         transform: scale(0);
         animation: zoom-in 2s ease-in-out forwards;

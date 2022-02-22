@@ -18,7 +18,7 @@ footer {
     h2 {
         margin: 3em 0 0.5em 0;
         color: hsl(var(--color));
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         font-size: var(--fs-h2);
         text-align: left;
     }
@@ -27,7 +27,7 @@ footer {
         margin: 1em 0 0 0;
         color: hsl(var(--color));
         font-size: 100%;
-        font-weight: var(--fw-b);
+        font-weight: var(--font-weight-800);
     }
 
     ul {

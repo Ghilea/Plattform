@@ -16,7 +16,7 @@
 
     h3 {
         font-size: 150%;
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         --color: 0.61 12% 32%;
         color: hsl(var(--color));
         text-align: left;
@@ -27,12 +27,12 @@
 
     h4 {
         font-size: 120%;
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         --color: 0.61 12% 32%;
         color: hsl(var(--color));
         text-align: justify;
         margin: 1.5em 0 3em 0;
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         text-align: center;
     }
 
@@ -60,7 +60,7 @@
         color: hsl(var(--color));
         line-height: 1.2em;
         text-align: center;
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         letter-spacing: 0.1em;
         margin: 1em 0 0.5em 0;
         text-overflow: ellipsis;
@@ -95,7 +95,7 @@
     .totalProducts {
         margin: -1.3em 0 0 1em;
         font-size: 80%;
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         line-height: 2em;
         text-align: center;
         background-color: hsl(var(--bg-color));
@@ -111,7 +111,7 @@
 
     .totalProductsPrice {
         font-size: 90%;
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         line-height: 2.5em;
         text-align: center;
         --color: 0 0% 0%;
@@ -157,7 +157,7 @@
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
         font-size: 180%;
-        font-weight: var(--fw-b);
+        font-weight: var(--font-weight-800);
         color: hsl(var(--color));
         position: absolute;
         top: 0.5em;
@@ -171,7 +171,7 @@
         text-align: center;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
-        font-weight: var(--fw-b);
+        font-weight: var(--font-weight-800);
         color: hsl(var(--color));
         position: absolute;
         font-size: 85%;

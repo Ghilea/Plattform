@@ -143,7 +143,7 @@
     font-size: 150%;
     text-shadow: none;
     color: rgb(0, 0, 0);
-    font-weight: var(--fw-m);
+    font-weight: var(--font-weight-600);
     letter-spacing: 0.1em;
 }
 
@@ -170,7 +170,7 @@
         text-shadow: none;
         --color: 0.61 12% 32%;
         color: hsl(var(--color));
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         margin: 0 0 0 0 !important;
         border-bottom: 0.1em solid hsl(var(--border-color) / 0.1)
     }
@@ -178,7 +178,7 @@
     h3 {
         text-align: left;
         font-size: 130%;
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         text-transform: capitalize;
         --color: 0 0% 20%;
         color: hsl(var(--color));
@@ -186,7 +186,7 @@
 
     h4 {
         font-size: 115%;
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         text-transform: capitalize;
         color: hsl(var(--color));
     }
@@ -232,7 +232,7 @@
         p {
             margin: 0 0 0 1em;
             font-size: 85%;
-            font-weight: var(--fw-n);
+            font-weight: var(--font-weight-400);
         }
 
         img {

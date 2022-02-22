@@ -63,7 +63,7 @@
 
     h2 {
         color: hsl(var(--color));
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         text-shadow: var(--t-shadow);
     }
 
@@ -106,7 +106,7 @@
     top: 2em;
     left: 0;
     font-size: 120%;
-    font-weight: var(--fw-m);
+    font-weight: var(--font-weight-600);
     color: hsl(var(--color));
     text-align: center;
     --bg-color: 0.57 100% 17%;
@@ -183,7 +183,7 @@
         p {
             margin: 0 0 0 1em;
             font-size: 85%;
-            font-weight: var(--fw-n);
+            font-weight: var(--font-weight-400);
         }
 
         img {
@@ -238,7 +238,7 @@
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
         font-size: 0.85em;
-        font-weight: var(--fw-b);
+        font-weight: var(--font-weight-800);
         color: hsl(var(--color));
         position: absolute;
         left: 0;
@@ -302,7 +302,7 @@
     color: hsl(var(--color));
     line-height: 1.2em;
     text-align: left;
-    font-weight: var(--fw-n);
+    font-weight: var(--font-weight-400);
     letter-spacing: 0.1em;
     margin: 1em 0 0.5em 0;
 }
@@ -480,7 +480,7 @@
     border-radius: var(--br);
     cursor: pointer;
     font-size: 100%;
-    font-weight: var(--fw-n);
+    font-weight: var(--font-weight-400);
     letter-spacing: 0.2em;
     line-height: 2.3em;
     width: 8em;
@@ -534,7 +534,7 @@
         --color: 0.61 12% 32%;
         color: hsl(var(--color));
         padding: 0.5em 0 0 0;
-        font-weight: var(--fw-m);
+        font-weight: var(--font-weight-600);
         text-transform: capitalize;
     }
 
@@ -559,7 +559,7 @@
         font-size: 125%;
         text-align: center;
         color: rgba(0, 0, 0, 1);
-        font-weight: var(--fw-n);
+        font-weight: var(--font-weight-400);
         text-transform: capitalize;
         text-align: left;
         margin: 0;
@@ -577,7 +577,7 @@
 .right-menu-Box h2,
 .right-menu-Box p {
     font-size: 100%;
-    font-weight: var(--fw-n);
+    font-weight: var(--font-weight-400);
     text-align: left;
     line-height: 1.2em;
 }
@@ -609,7 +609,7 @@ button,
     border-radius: var(--br);
     cursor: pointer;
     font-size: 100%;
-    font-weight: var(--fw-m);
+    font-weight: var(--font-weight-600);
     letter-spacing: 0.2em;
     line-height: 2.3em;
     min-width: 8em;
@@ -622,7 +622,7 @@ button,
 .button,
 .boxBtn {
     box-shadow: var(--b-shadow);
-    font-weight: var(--fw-n);
+    font-weight: var(--font-weight-400);
     line-height: 3em;
     min-width: 10em;
     max-width: 14em;
@@ -684,7 +684,7 @@ button:hover,
     box-shadow: var(--b-shadow);
     cursor: pointer;
     font-size: 300%;
-    font-weight: var(--fw-n);
+    font-weight: var(--font-weight-400);
     line-height: 1em;
     width: 25%;
     height: 1em;

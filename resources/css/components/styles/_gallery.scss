@@ -11,7 +11,7 @@
 
 .gallery h2 {
     font-size: var(--fs-h2);
-    font-weight: var(--fw-m);
+    font-weight: var(--font-weight-600);
     text-align: center;
     --color: 0 0% 50%;
     color: hsl(var(--color));
@@ -46,7 +46,7 @@
     left: 0.7em;
     bottom: 2em;
     color: rgb(255, 255, 255);
-    font-weight: var(--fw-m);
+    font-weight: var(--font-weight-600);
     font-size: 150%;
     text-shadow: var(--t-shadow);
     overflow: hidden;
@@ -55,6 +55,6 @@
 .gallery figcaption p {
     left: 0;
     bottom: 0;
-    font-weight: var(--fw-n);
+    font-weight: var(--font-weight-400);
     font-size: 100%;
 }

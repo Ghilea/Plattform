@@ -32,11 +32,6 @@
     --space-p-large: calc(var(--space-p) * 3);
     --space-p-xLarge: calc(var(--space-p) * 12);
 
-    /* font weight */
-    --fw-n: 400;
-    --fw-m: 600;
-    --fw-b: 800;
-
     /* font size */
      --fs-h1: 3rem;
     --fs-h2: 2rem;
@@ -59,47 +54,52 @@
 body {
     display: flex;
     flex-direction: column;
-}
 
-.box {
-    --bg-color: 0.54 100% 6%;
-    background-color: hsl(var(--bg-color));
-    border-radius: 0.3em;
-    padding: var(--space-p-small);
-    box-shadow: var(--b-shadow);
-}
+    .box {
+        --bg-color: 0.54 100% 6%;
+        background-color: hsl(var(--bg-color));
+        border-radius: 0.3em;
+        padding: var(--space-p-small);
+        box-shadow: var(--b-shadow);
+    }
 
-.style {
-    position: relative;
-    overflow: hidden;
-    padding: 0 0 var(--space-p-xLarge) 0;
-    clear: both;
-    margin: 0;
-    
-    header p {
-        text-align: center;
+    .style {
+        position: relative;
+        overflow: hidden;
+        padding: 0 0 var(--space-p-xLarge) 0;
+        clear: both;
+        margin: 0;
+
+        header {
+            
+            p {
+                text-align: center;
+                color: hsl(var(--color));
+                font-weight: var(--font-weight-400);
+                --fs-p: 1.5rem;
+                font-size: var(--fs-p);
+                width: 100%;
+                height: auto;
+                margin: 1.5em 0;
+                padding: 0 var(--space-p);
+            }
+        }
+    }
+
+    h2 {
+        font-size: var(--fs-h2);
         color: hsl(var(--color));
-        font-weight: var(--fw-n);
-        --fs-p: 1.5rem;
-        font-size: var(--fs-p);
-        width: 100%;
-        height: auto;
-        margin: 1.5em 0;
-        padding: 0 var(--space-p);
+        line-height: 1.2em;
+        text-align: center;
+        text-shadow: var(--t-shadow);
+        font-weight: var(--font-weight-600);
+        letter-spacing: 0.1em;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
-
-h2 {
-    font-size: var(--fs-h2);
-    color: hsl(var(--color));
-    line-height: 1.2em;
-    text-align: center;
-    text-shadow: var(--t-shadow);
-    font-weight: var(--fw-m);
-    letter-spacing: 0.1em;
-}
-
-a {text-decoration: none;}
 
 /***************************/
 /* small changes	       */
