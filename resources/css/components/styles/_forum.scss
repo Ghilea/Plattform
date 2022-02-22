@@ -36,10 +36,9 @@
     line-height: 1em;
     position: relative;
     padding: 0.5em !important;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     background-color: rgb(255, 255, 255);
-    --br: 0.3em;
-    border-radius: var(--br);
+    border-radius: var(--size-1);
 
     &:hover {
         opacity: 0.5;
@@ -92,7 +91,7 @@
 }
 
 .forumPicture {
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
 
     img {
         position: absolute;

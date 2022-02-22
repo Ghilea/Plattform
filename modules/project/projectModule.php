@@ -61,7 +61,7 @@
 				<p><?php echo $functions->ellipsis($output["content"], 200); ?><a href="./modules/project/projectView.php">Läs mer</a></p>
 				
 				
-				<?php if($output["showBtn"] === 1 ){?>
+				<?php if($output["showBtn"] == 1 ){?>
 			
 					<?php if($output["link"] !== null) { ?>
 					<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>

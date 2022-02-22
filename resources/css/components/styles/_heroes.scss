@@ -9,10 +9,10 @@
 
     h1 {
         max-width: 10em;
-        font-size: var(--fs-h1);
+        font-size: var(--font-size-7);
         color: hsl(var(--color));
-        line-height: var(--lh);
-        text-shadow: var(--t-shadow);
+        line-height: var(--font-lineheight-0);
+        text-shadow: var(--shadow-1);
         font-weight: var(--font-weight-800);
         opacity: 0;
         transform: scale(0);
@@ -22,7 +22,7 @@
     .bubbles {
         animation: bubbles random(15)+10s ease-in-out infinite;
         transform-style: preserve-3d;
-        box-shadow: var(--b-shadow);
+        box-shadow: var(--shadow-1);
         position: absolute;
         background-color: hsl(var(--white), 0.2);
         top: -10em;

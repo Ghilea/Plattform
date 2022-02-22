@@ -10,7 +10,7 @@
 }
 
 .gallery h2 {
-    font-size: var(--fs-h2);
+    font-size: var(--font-size-5);
     font-weight: var(--font-weight-600);
     text-align: center;
     --color: 0 0% 50%;
@@ -28,10 +28,10 @@
 }
 
 .gallery figure img {
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     padding: 0.5em;
     width: 100%;
-    border-radius: var(--br);
+    border-radius: var(--size-3);
 }
 
 .gallery figure:hover {
@@ -48,7 +48,7 @@
     color: rgb(255, 255, 255);
     font-weight: var(--font-weight-600);
     font-size: 150%;
-    text-shadow: var(--t-shadow);
+    text-shadow: var(--shadow-1);
     overflow: hidden;
 }
 

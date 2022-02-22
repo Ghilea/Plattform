@@ -8,7 +8,7 @@
     margin: 0;
 
     h2 {
-        text-shadow: var(--t-shadow);
+        text-shadow: var(--shadow-1);
         --color: 0.61 12% 32%;
         color: hsl(var(--color));
         margin: 0.5em 0 0 0;
@@ -86,7 +86,7 @@
         margin: 0 0 0 -1.5em;
         --bg-color: 0.54 100% 33%;
         background-color: hsl(var(--bg-color));
-        border-radius: var(--br-r);
+        border-radius: var(--radius-round);
         width: 40px;
         height: 40px;
         padding: 0.5em;
@@ -101,7 +101,7 @@
         background-color: hsl(var(--bg-color));
         --border-color: 0.54 100% 33%;
         border: 1px solid hsl(var(--border-color));
-        border-radius: var(--br-r);
+        border-radius: var(--radius-round);
         --color: 0 0% 0%;
         color: hsl(var(--color));
         width: 25px;
@@ -126,7 +126,7 @@
 
 .categoryMenu {
     position: relative;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     padding: 0 0 1em 0;
 
     h3 {
@@ -152,7 +152,7 @@
     }
 
     .priceTagText {
-        text-shadow: var(--t-shadow);
+        text-shadow: var(--shadow-1);
         text-align: center;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
@@ -167,7 +167,7 @@
     }
 
     .priceTag {
-        text-shadow: var(--t-shadow);
+        text-shadow: var(--shadow-1);
         text-align: center;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;

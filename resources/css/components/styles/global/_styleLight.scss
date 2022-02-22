@@ -1,6 +1,6 @@
 .styleLight {
     h2 {
-        text-shadow: var(--t-shadow);
+        text-shadow: var(--shadow-1);
         --color: 0.61 12% 32%;
         color: hsl(var(--color));
         margin: 0.5em 0 0 0;
@@ -55,14 +55,14 @@
     }
 
     .circleImg {
-        border-radius: var(--br-r);
+        border-radius: var(--radius-round);
         max-width: 10em;
         width: 100%;
         max-height: 10em;
         height: 100%;
         margin: 0 auto;
         overflow: hidden;
-        box-shadow: var(--b-shadow);
+        box-shadow: var(--shadow-1);
         position: relative;
         display: flex;
         justify-content: center;

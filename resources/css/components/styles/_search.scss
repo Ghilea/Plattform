@@ -8,7 +8,7 @@
     height: 100%;
     max-height: 206px;
     overflow-y: auto;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
 
     a {
         --border-color: 0 0& 87&;
@@ -59,8 +59,7 @@
     margin: 0 0 0 -225px;
 
     input {
-        --br: 0.3em;
-        border-radius: var(--br);
+        border-radius: var(--size-1);
         padding: 1.7em 0 1.7em 3em !important;
         margin: 0 !important;
         --border-color: 0.57 100% 17%;

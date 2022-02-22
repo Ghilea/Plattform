@@ -79,7 +79,7 @@
             gap: 1em;
 
             a {
-                color: var(--white);
+                color: var(--gray-0);
                 width: fit-content;
 
                 &:hover {
@@ -105,14 +105,13 @@
         text-align: center;
         color: hsl(var(--color));
         font-weight: var(--font-weight-600);
-        font-size: var(--fs-h2);
+        font-size: var(--font-size-5);
     }
 
     h3 {
-        color: hsl(var(--white));
+        color: hsl(var(--gray-0));
         font-weight: var(--font-weight-600);
-        --fs-h3: 1.5rem;
-        font-size: var(--fs-h3);
+        font-size: var(--font-size-4);
         overflow-wrap: break-word;
     }
 
@@ -120,7 +119,7 @@
         text-align: center;
         color: hsl(var(--color));
         font-weight: var(--font-weight-400);
-        font-size: var(--fs-p);
+        font-size: var(--font-size-1);
         width: 100%;
         height: auto;
         margin: 1.5em auto;
@@ -130,7 +129,7 @@
     p {
         color: hsl(var(--color));
         font-weight: var(--font-weight-400);
-        font-size: var(--fs-p);
+        font-size: var(--font-size-1);
         width: 100%;
         height: auto;
         margin: 1.5em auto;
@@ -200,8 +199,8 @@
         .box {
             background-color: hsl(var(--g-color));
             border-radius: 0.3em;
-            padding: var(--space-p-small);
-            box-shadow: var(--b-shadow);
+            padding: var(--size-2);
+            box-shadow: var(--shadow-1);
         }
     }
 }

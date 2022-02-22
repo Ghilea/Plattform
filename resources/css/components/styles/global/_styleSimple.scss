@@ -1,8 +1,8 @@
 .styleSimple {
     position: relative;
-    background-color: hsl(var(--white));
+    background-color: hsl(var(--gray-0));
     overflow: hidden;
-    padding: var(--space-p-xLarge) 0;
+    padding: var(--size-12) 0;
     clear: both;
 
     h2,
@@ -15,26 +15,26 @@
         color: hsl(var(--color));
         text-align: center;
         line-height: 1.2em;
-        margin: var(--space-m) 0;
+        margin: var(--size-3) 0;
     }
 
     h2 {
-        font-size: var(--fs-h2);
-        text-shadow: var(--t-shadow);
-        margin: var(--space-m-small) 0 var(--space-m-medium) 0;
+        font-size: var(--font-size-5);
+        text-shadow: var(--shadow-1);
+        margin: var(--size-2) 0 var(--size-7) 0;
     }
 
     h3 {
-        font-size: var(--fs-h3);
+        font-size: var(--font-size-4);
     }
 
     h4 {
         font-size: 130%;
-        margin: var(--space-m) 0 0 0;
+        margin: var(--size-3) 0 0 0;
     }
 
     p {
-        font-size: var(--fs-p);
+        font-size: var(--font-size-1);
         --color: 0 0% 33%;
         color: hsl(var(--color));
         height: 100%;
@@ -43,12 +43,12 @@
     }
 
     .circleImg {
-        border-radius: var(--br-r);
+        border-radius: var(--radius-round);
         width: 20vw;
         height: 20vw;
         margin: 0 auto;
         overflow: hidden;
-        box-shadow: var(--b-shadow);
+        box-shadow: var(--shadow-1);
         position: relative;
     }
 }

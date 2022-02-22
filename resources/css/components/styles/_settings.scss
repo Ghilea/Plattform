@@ -6,7 +6,7 @@
         margin: 1.5em 0 2.5em 0;
         --color: 0 0% 0%;
         color: var(--color);
-        font-size: var(--fs-h3);
+        font-size: var(---font-size-4);
     }
 
      h3 {
@@ -14,7 +14,6 @@
          --color: 0 0% 38%;
          color: hsl(var(--color));
          font-weight: var(--font-weight-600);
-         --fs-h3: 1.5rem;
          font-size: var(--fs-n);
          overflow-wrap: break-word;
      }
@@ -23,7 +22,7 @@
         --color: 0 0% 38%;
         color: hsl(var(--color));
         font-weight: var(--font-weight-400);
-        font-size: var(--fs-p);
+        font-size: var(--font-size-1);
         width: 100%;
         height: auto;
         margin: 1.5em auto;
@@ -41,7 +40,6 @@
 
     .box {
         --bg-color: 0 0% 100%;
-        --br-b: 1.5em;
         padding: 3em;
         position: relative;
         width: 100%;
@@ -82,16 +80,15 @@
     display: block;
     --bg-color: 19 88.1% 57.1%;
     background-color: hsl(var(--bg-color));
-    box-shadow: var(--b-shadow);
-    --br: 0.3em;
-    border-radius: var(--br);
+    box-shadow: var(--shadow-1);
+    border-radius: var(--size-1);
     cursor: pointer;
     font-size: 100%;
     line-height: 2.3em;
     min-width: 2em;
     height: 2em;
     text-align: center;
-    padding: 0 var(--space-p);
+    padding: 0 var(--size-3);
     z-index: 2;
     background-image: url(/resources/images/svg/configuration.svg);
     background-size: 50%;
@@ -130,8 +127,7 @@ input[id='settingsBtn'] {
     --bg-color: 0 0% 30%;
     background-color: hsl(var(--bg-color));
     transition: .4s;
-    --br: 0.3em;
-    border-radius: var(--br);
+    border-radius: var(--size-1);
 }
 
 .slider:before {
@@ -144,7 +140,7 @@ input[id='settingsBtn'] {
     --bg-color: 0 0% 40%;
     background-color: hsl(var(--bg-color));
     transition: .4s;
-    border-radius: var(--br);
+    border-radius: var(--size-3);
 }
 
 .settings input[type="checkbox"]:checked+.slider {
@@ -171,8 +167,7 @@ input[id='settingsBtn'] {
 .settings #modulesContent div {
     --bg-color: 0 0% 95%;
     background-color: hsl(var(--bg-color));
-    --br: 0.3em;
-    border-radius: var(--br);
+    border-radius: var(--size-1);
     padding: 0.5em 1em;
 }
 
@@ -192,8 +187,7 @@ input[id='settingsBtn'] {
 .configsContent__title {
     --bg-color: 0 0% 95%;
     background-color: hsl(var(--bg-color));
-    --br: 0.3em;
-    border-radius: var(--br);
+    border-radius: var(--size-1);
     padding: 0.5em 1em;
     width: 100%;
     height: auto;
@@ -208,7 +202,6 @@ input[id='settingsBtn'] {
     overflow: hidden;
     --bg-color: 0 0% 95%;
     background-color: hsl(var(--bg-color));
-    --br: 0.3em;
-    border-radius: var(--br);
+    border-radius: var(--size-1);
     padding: 0;
     /*padding: 0.5em 1em;*/

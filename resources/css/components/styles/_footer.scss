@@ -8,7 +8,7 @@ footer {
 .footer {
     position: relative;
     overflow: hidden;
-    padding: 0 0 var(--space-p-xLarge) 0;
+    padding: 0 0 var(--size-12) 0;
     clear: both;
     margin: 0;
     --g-color: 0 0% 23%;
@@ -19,7 +19,7 @@ footer {
         margin: 3em 0 0.5em 0;
         color: hsl(var(--color));
         font-weight: var(--font-weight-600);
-        font-size: var(--fs-h2);
+        font-size: var(--font-size-5);
         text-align: left;
     }
 
@@ -72,7 +72,7 @@ footer {
 .subFooter {
     position: relative;
     overflow: hidden;
-    padding: 0 0 var(--space-p-xLarge) 0;
+    padding: 0 0 var(--size-12) 0;
     clear: both;
     margin: 0;
     --color: 0.61 24% 84%;

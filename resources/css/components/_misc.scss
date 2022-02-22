@@ -1,9 +1,9 @@
 .circleImgSmall {
     position: absolute;
-    border-radius: var(--br-r);
+    border-radius: var(--radius-round);
     width: 7em;
     height: 7em;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     background-color: hsl(var(--bg-color) / 0.3);
     animation: animateCircle 15s infinite ease-in-out,
         fade-in 3s ease-in 1;
@@ -25,13 +25,13 @@
     position: absolute;
     width: 100%;
     max-width: 45em;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     background-color: hsl(var(--bg-color) / 0.3);
     height: auto;
-    margin: var(--space-m);
+    margin: var(--size-3);
 
     img {
-        padding: var(--space-p-small);
+        padding: var(--size-2);
         width: 100%;
         overflow: hidden;
     }
@@ -64,7 +64,7 @@
     h2 {
         color: hsl(var(--color));
         font-weight: var(--font-weight-400);
-        text-shadow: var(--t-shadow);
+        text-shadow: var(--shadow-1);
     }
 
     .bgBox {
@@ -75,7 +75,7 @@
         right: 0;
         --bg-color: 0.54 100% 33%;
         background-color: hsl(var(--bg-color) / 0.9);
-        box-shadow: var(--b-shadow);
+        box-shadow: var(--shadow-1);
         padding: 5% 1em 1em 1em;
 
         p {
@@ -83,7 +83,7 @@
             padding: 1em 0 2em 0;
             color: hsl(var(--color));
             font-size: 110%;
-            text-shadow: var(--t-shadow);
+            text-shadow: var(--shadow-1);
             letter-spacing: 0.2em;
         }
     }
@@ -207,7 +207,7 @@
     height: auto;
     float: left;
     margin: 0.7em 2em 0 0;
-    border-radius: var(--br-r);
+    border-radius: var(--radius-round);
 }
 
 .circleImg img {
@@ -221,7 +221,7 @@
     img {
         width: 100%;
         height: auto;
-        box-shadow: var(--b-shadow);
+        box-shadow: var(--shadow-1);
         --border-color: 0 0% 100%;
         border: 0.3em solid hsl(var(--border-color) / 0.2);
     }
@@ -233,7 +233,7 @@
 
     figcaption {
         text-transform: capitalize;
-        text-shadow: var(--t-shadow);
+        text-shadow: var(--shadow-1);
         text-align: center;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
@@ -319,7 +319,7 @@
 
 .productBorder {
     position: relative;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
 }
 
 .sideNav {
@@ -334,7 +334,7 @@
     bottom: 0;
     background-color: hsl(var(--bg-color));
     border-bottom: 0.1em solid hsl(var(--border-color) / 0.1);
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -359,7 +359,7 @@
     bottom: 1.3em;
     --border-color: 0.54 100% 33%;
     border-right: 5px solid hsl(var(--border-color));
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 
@@ -386,7 +386,7 @@
     bottom: 1.3em;
     --border-color: 0.54 100% 33%;
     border-right: 5px solid hsl(var(--border-color));
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     width: 70%;
     left: 30.5%;
     border-top-right-radius: 0;
@@ -424,7 +424,7 @@
     background-position: center;
     --border-color: 0.54 100% 33%;
     border-left: 5px solid hsl(var(--border-color));
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     position: absolute;
     right: 0;
     top: 0;
@@ -450,7 +450,7 @@
     background-size: 20px;
     --bg-color: 0.54 100% 33%;
     background-color: 5px solid hsl(var(--bg-color));
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     left: 14px;
     right: auto;
     text-align: center;
@@ -475,9 +475,8 @@
     display: block;
     --bg-color: 0.54 100% 33%;
     background-color: hsl(var(--bg-color));
-    box-shadow: var(--b-shadow);
-    --br: 0.3em;
-    border-radius: var(--br);
+    box-shadow: var(--shadow-1);
+    border-radius: var(--size-1);
     cursor: pointer;
     font-size: 100%;
     font-weight: var(--font-weight-400);
@@ -499,8 +498,8 @@
     transition: border-color .2s ease;
     --bg-color: 0.54 100% 33%;
     background-color: hsl(var(--bg-color));
-    box-shadow: var(--b-shadow);
-    border-radius: var(--br-r);
+    box-shadow: var(--shadow-1);
+    border-radius: var(--radius-round);
     float: left;
     color: hsl(var(--color));
 }
@@ -517,11 +516,11 @@
 .circular {
     width: 35px;
     height: 35px;
-    border-radius: var(--br-r);
+    border-radius: var(--radius-round);
     background-image: url('uploads/basic/profile.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
 }
 
 .boxLight {
@@ -552,7 +551,7 @@
 }
 
 .simple-box {
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     position: relative;
 
     h2 {
@@ -604,9 +603,8 @@ button,
     display: block;
     --bg-color: 19 88.1% 57.1%;
     background-color: hsl(var(--bg-color));
-    box-shadow: var(--b-shadow);
-    --br: 0.3em;
-    border-radius: var(--br);
+    box-shadow: var(--shadow-1);
+    border-radius: var(--size-1);
     cursor: pointer;
     font-size: 100%;
     font-weight: var(--font-weight-600);
@@ -615,13 +613,13 @@ button,
     min-width: 8em;
     height: 2.3em;
     text-align: center;
-    padding: 0 var(--space-p);
+    padding: 0 var(--size-3);
 }
 
 button,
 .button,
 .boxBtn {
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     font-weight: var(--font-weight-400);
     line-height: 3em;
     min-width: 10em;
@@ -681,7 +679,7 @@ button:hover,
     left: 0;
     bottom: 0;
     display: block;
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     cursor: pointer;
     font-size: 300%;
     font-weight: var(--font-weight-400);
@@ -732,7 +730,7 @@ button:hover,
 .productRSBtn {
 
     &:hover {
-    box-shadow: var(--b-shadow);
+    box-shadow: var(--shadow-1);
     }
 
     &:focus {

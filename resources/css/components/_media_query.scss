@@ -81,7 +81,7 @@
             li {
                 display: block;
                 margin: 0.3em;
-                box-shadow: var(--b-shadow);
+                box-shadow: var(--shadow-1);
                 font-size: 85%;
                 background: rgb(255, 255, 255);
 
@@ -105,7 +105,7 @@
 
     .indexBanner h2,
     .styleNews h2 {
-        font-size: var(--fs-h3);
+        font-size: var(--font-size-4);
     }
 
     .project {
@@ -309,7 +309,7 @@
 
     .indexBanner .circleImg,
     .styleLight .circleImg {
-        border-radius: var(--br-r);
+        border-radius: var(--radius-round);
         width: 6em;
         height: 6em;
     }
@@ -400,7 +400,7 @@
     .hero {
 
         h1 {
-            font-size: var(--fs-h3);
+            font-size: var(--font-size-4);
         }
     }
 
