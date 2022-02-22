@@ -43,6 +43,25 @@ class Project {
                 ["id" => $id]
             );
 
+            $query["images_skill"] = $this->db->select("project_images",
+            ["[<]project_skills" => ["project_skills_id" => "id"]],
+            [
+                "link(image_link)",
+                "name"
+                
+            ],
+            ["project_id" =>  $id]);
+
+            $query["workflow"] = $this->db->select("project_workflow",
+            [
+                "img",
+                "name",
+                "content",
+                "class"
+            ],
+            ["project_id" =>  $id],
+            ["ORDER" => ["sortOrder" => "ASC"]]);
+
         }else{
 
             $count = $this->db->count("project");
@@ -76,12 +95,13 @@ class Project {
                 $number++;
 
             }
-        
+
+            $query = $this->fk->dynamicRow($query, $count, "project", "id");
+
         }
 
-        $res = $this->fk->dynamicRow($query, $count, "presentation", "id");
-
-        return $res;
+        
+        return $query;
     }
 
     public function getSkills(int $id = null)

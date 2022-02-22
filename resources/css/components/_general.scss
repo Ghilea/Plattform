@@ -17,6 +17,12 @@
 
     --fs-n: .95rem;
     --fs-s: .7rem;
+
+    --screen-xs : 150px;
+    --screen-s : 576px;
+    --screen-m : 768px;
+    --screen-l : 992px;
+    --screen-xl : 1200px;
 }
 
 body {
@@ -26,7 +32,7 @@ body {
     .box {
         --bg-color: 0.54 100% 6%;
         background-color: hsl(var(--bg-color));
-        border-radius: 0.3em;
+        border-radius: var(--size-1);
         padding: var(--size-2);
         box-shadow: var(--shadow-1);
     }

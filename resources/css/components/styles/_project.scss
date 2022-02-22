@@ -164,9 +164,35 @@
     .view {
         grid-template-columns: repeat(2, 1fr);
         gap:1em;
-        align-items: start;
         margin-top: 10em;
         margin-bottom: 10em;
+
+        .toolImg { 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-evenly;
+
+            img {
+                width: var(--size-10);
+                margin: var(--size-3);
+            }
+
+            @mixin screen-minmax($min, $max) {
+                @media (min-width: $min) and (max-width: $max) {
+                    @content;
+                }
+            }
+
+            @include screen-minmax(var(--screen-l), var(--screen-xl)) {
+                $grid-column: 1 / span 2
+            };
+
+            @include screen-minmax(var(--screen-xs), var(--screen-l)) {
+                grid-column: 1;
+            };
+        }
 
         .boxBtn {
             display: inline-flex;
@@ -177,11 +203,12 @@
             grid-column: 1 / span 2;
             color: white;
             text-align: center;
+            font-size: var(--font-size-7);
         }
 
         section {
 
-            &:nth-child(4) {
+            &:nth-child(5) {
                 grid-column: 1 / span 2;
             }
         }
@@ -194,6 +221,9 @@
         h2 {
             font-size: 1.1rem;
             padding: 1em;
+            text-align: left;
+            font-weight: var(--font-weight-6);
+            font-size: var(--font-size-4);
         }
 
         .box {
@@ -201,6 +231,40 @@
             border-radius: 0.3em;
             padding: var(--size-2);
             box-shadow: var(--shadow-1);
+        }
+
+        p {
+            font-size: var(--font-size-3);
+
+            a { 
+                font-weight: var(--font-weight-6);
+                color: hsl(var(--orange));           
+                
+                &:hover {
+                    color: var(--gray-0);
+                }
+            }
+        }
+
+        .workFlow {
+            grid-column: 1 / span 2;
+
+            article {
+                display: flex;
+                gap: var(--size-8);
+                margin-block: var(--size-12);
+
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+
+               figure {
+
+                    img {
+                        border-radius: var(--radius-3);
+                    }
+               }
+            }
         }
     }
 }

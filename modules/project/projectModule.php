@@ -58,13 +58,13 @@
 		
 				<h3><?php echo $output["title"]; ?></h3>
 							
-				<p><?php echo $functions->ellipsis($output["content"], 200); ?><a href="./modules/project/projectView.php">Läs mer</a></p>
+				<p><?php echo $functions->ellipsis($output["content"], 200); ?><a href="./modules/project/projectView.php?id=<?php echo $output["id"]; ?>">Läs mer</a></p>
 				
 				
 				<?php if($output["showBtn"] == 1 ){?>
 			
 					<?php if($output["link"] !== null) { ?>
-					<a rel="noreferrer noopener" target="_blank" href="#<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>
+					<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link"]; ?>" class="boxBtn buttonLeft">Live Demo</a>
 					<?php } if($output["link2"] !== null) { ?>
 				
 					<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn buttonRight">GitHub</a>

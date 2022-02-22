@@ -37,6 +37,11 @@ body {
   --g-color2: hsl(237 52.6% 54.5%);
   --fs-n: .95rem;
   --fs-s: .7rem;
+  --screen-xs: 150px;
+  --screen-s: 576px;
+  --screen-m: 768px;
+  --screen-l: 992px;
+  --screen-xl: 1200px;
 }
 
 body {
@@ -46,7 +51,7 @@ body {
 body .box {
   --bg-color: 0.54 100% 6%;
   background-color: hsl(var(--bg-color));
-  border-radius: 0.3em;
+  border-radius: var(--size-1);
   padding: var(--size-2);
   box-shadow: var(--shadow-1);
 }
@@ -580,8 +585,8 @@ textarea:focus) {
           animation: zoom-in 2s ease-in-out forwards;
 }
 .hero .bubbles {
-  -webkit-animation: bubbles 11s ease-in-out infinite;
-          animation: bubbles 11s ease-in-out infinite;
+  -webkit-animation: bubbles 14s ease-in-out infinite;
+          animation: bubbles 14s ease-in-out infinite;
   transform-style: preserve-3d;
   box-shadow: var(--shadow-1);
   position: absolute;
@@ -589,124 +594,124 @@ textarea:focus) {
   top: -10em;
 }
 .hero .bubbles:nth-child(0) {
-  left: 58vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(8em) rotateY(6deg);
+  left: 47vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(6em) rotateY(5deg);
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 .hero .bubbles:nth-child(1) {
-  left: 88vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(8em) rotateY(6deg);
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  left: 87vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(1em) rotateY(4deg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 .hero .bubbles:nth-child(2) {
-  left: 19vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(1em) rotateY(6deg);
+  left: 49vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(8em) rotateY(5deg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.hero .bubbles:nth-child(3) {
+  left: 65vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(2em) rotateY(2deg);
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
 }
-.hero .bubbles:nth-child(3) {
-  left: 94vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(8em) rotateY(2deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
 .hero .bubbles:nth-child(4) {
-  left: 29vw;
+  left: 74vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(3em) rotateY(1deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+  transform: translateZ(2em) rotateY(1deg);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
 }
 .hero .bubbles:nth-child(5) {
-  left: 48vw;
-  width: 6em;
-  height: 6em;
-  transform: translateZ(6em) rotateY(5deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
-.hero .bubbles:nth-child(6) {
-  left: 8vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(3em) rotateY(3deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-.hero .bubbles:nth-child(7) {
-  left: 85vw;
+  left: 36vw;
   width: 3em;
   height: 3em;
-  transform: translateZ(1em) rotateY(4deg);
+  transform: translateZ(2em) rotateY(2deg);
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.hero .bubbles:nth-child(8) {
-  left: 59vw;
+.hero .bubbles:nth-child(6) {
+  left: 43vw;
   width: 2em;
   height: 2em;
-  transform: translateZ(2em) rotateY(3deg);
+  transform: translateZ(8em) rotateY(6deg);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.hero .bubbles:nth-child(7) {
+  left: 65vw;
+  width: 5em;
+  height: 5em;
+  transform: translateZ(5em) rotateY(7deg);
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.hero .bubbles:nth-child(8) {
+  left: 60vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(3em) rotateY(7deg);
   -webkit-animation-delay: 9s;
           animation-delay: 9s;
 }
 .hero .bubbles:nth-child(9) {
-  left: 79vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(8em) rotateY(8deg);
+  left: 83vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(8em) rotateY(3deg);
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+.hero .bubbles:nth-child(10) {
+  left: 94vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(4em) rotateY(4deg);
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+.hero .bubbles:nth-child(11) {
+  left: 3vw;
+  width: 4em;
+  height: 4em;
+  transform: translateZ(6em) rotateY(6deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.hero .bubbles:nth-child(12) {
+  left: 6vw;
+  width: 2em;
+  height: 2em;
+  transform: translateZ(4em) rotateY(7deg);
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
-.hero .bubbles:nth-child(10) {
-  left: 8vw;
-  width: 5em;
-  height: 5em;
-  transform: translateZ(2em) rotateY(3deg);
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-.hero .bubbles:nth-child(11) {
-  left: 95vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(6em) rotateY(1deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.hero .bubbles:nth-child(12) {
-  left: 47vw;
-  width: 3em;
-  height: 3em;
-  transform: translateZ(7em) rotateY(8deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
-}
 .hero .bubbles:nth-child(13) {
-  left: 13vw;
-  width: 4em;
-  height: 4em;
-  transform: translateZ(3em) rotateY(6deg);
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+  left: 84vw;
+  width: 6em;
+  height: 6em;
+  transform: translateZ(2em) rotateY(8deg);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 .hero .bubbles:nth-child(14) {
-  left: 2vw;
-  width: 2em;
-  height: 2em;
-  transform: translateZ(2em) rotateY(2deg);
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+  left: 51vw;
+  width: 3em;
+  height: 3em;
+  transform: translateZ(4em) rotateY(7deg);
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .settings {
@@ -1176,9 +1181,24 @@ input[id=settingsBtn] {
 .project .view {
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
-  align-items: start;
   margin-top: 10em;
   margin-bottom: 10em;
+}
+.project .view .toolImg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.project .view .toolImg img {
+  width: var(--size-10);
+  margin: var(--size-3);
+}
+@media (min-width: var(--screen-xs)) and (max-width: var(--screen-l)) {
+  .project .view .toolImg {
+    grid-column: 1;
+  }
 }
 .project .view .boxBtn {
   display: inline-flex;
@@ -1188,8 +1208,9 @@ input[id=settingsBtn] {
   grid-column: 1/span 2;
   color: white;
   text-align: center;
+  font-size: var(--font-size-7);
 }
-.project .view section:nth-child(4) {
+.project .view section:nth-child(5) {
   grid-column: 1/span 2;
 }
 .project .view .row {
@@ -1199,12 +1220,39 @@ input[id=settingsBtn] {
 .project .view h2 {
   font-size: 1.1rem;
   padding: 1em;
+  text-align: left;
+  font-weight: var(--font-weight-6);
+  font-size: var(--font-size-4);
 }
 .project .view .box {
   background-color: hsl(var(--g-color));
   border-radius: 0.3em;
   padding: var(--size-2);
   box-shadow: var(--shadow-1);
+}
+.project .view p {
+  font-size: var(--font-size-3);
+}
+.project .view p a {
+  font-weight: var(--font-weight-6);
+  color: hsl(var(--orange));
+}
+.project .view p a:hover {
+  color: var(--gray-0);
+}
+.project .view .workFlow {
+  grid-column: 1/span 2;
+}
+.project .view .workFlow article {
+  display: flex;
+  gap: var(--size-8);
+  margin-block: var(--size-12);
+}
+.project .view .workFlow article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.project .view .workFlow article figure img {
+  border-radius: var(--radius-3);
 }
 
 footer .container {

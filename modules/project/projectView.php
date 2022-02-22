@@ -1,33 +1,57 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/resources/includes/header.php"); ?>
 
+<?php $class = new Project($database, $functions); ?>
+
+<?php $output = $class->getProject($_GET["id"]); ?>
+
 <main class="project">
 	<div class="container view">
-		<h1>En egen CMS plattform</h1>
+		<section class="container row">
+			<p><a rel="noreferrer noopener" href="/index.php#project" title="Gå tillbaka">Hem</a> -> <?php echo $output["title"]; ?></p>
+		</section>
+
+		<h1><?php echo $output["title"]; ?></h1>
 		<section class="container row">
 			<article>
-				<p>Mitt senaste projekt är att bygga upp en dynamisk plattform som kommer att användas till nya projekt. Plattformen bygger på anpassningsbara moduler och CMS för att snabbare kunna få upp en bass.</p>
-				
-			</article>	<a rel="noreferrer noopener" target="_blank" href="#" class="boxBtn">Live Demo</a>	
-				<a rel="noreferrer noopener" target="_blank" href="#" class="boxBtn">GitHub</a>
+				<h2>Bakgrundshistoria</h2>
+				<p><?php echo $output["content"]; ?></p>
+			</article>	
+			
+			<?php if($output["link"] !== null) { ?>
+				<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link"]; ?>" class="boxBtn">Live Demo</a>
+			<?php } ?>
+
+			<?php if($output["link2"] !== null) { ?>
+			<a rel="noreferrer noopener" target="_blank" href="<?php echo $output["link2"]; ?>" class="boxBtn">GitHub</a>
+			<?php } ?>
+		</section>
+
+		<section class="toolImg">
+			<?php foreach($output["images_skill"] as $output2) { ?>
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output2["image_link"]; ?>" title="<?php echo $output2["name"]; ?>" alt="">
+			<?php } ?>
 		</section>
 
 		<section class="container row">
-			<img src="" alt="" width="500" height="250">
+			<figure>	
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["image"]; ?>" title="<?php echo $output["title"]; ?>" alt="">
+			</figure>
 		</section>
 
-		<section>
+		<section class="workFlow">
+			<?php foreach ($output["workflow"] as $output3) { ?>
 			<article>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi mollitia accusamus autem, repudiandae nihil facere necessitatibus dolorem dolorum ad est esse, adipisci nemo quaerat porro vero, a temporibus possimus et!</p>
+				<p><?php echo $functions->formatText($output3["content"]); ?></p>
 				<figure>
-					<img src="" alt="" width="300" height="350">
+					<img src="<?php echo $output3["img"]; ?>" alt="">
 					<figcaption>
-
+						<?php echo $output3["name"]; ?>
 					</figcaption>
 				</figure>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi mollitia accusamus autem, repudiandae nihil facere necessitatibus dolorem dolorum ad est esse, adipisci nemo quaerat porro vero, a temporibus possimus et!</p>
 			</article>
-			
+			<?php } ?>
 		</section>
+		
 	</div>
 </main>
 
