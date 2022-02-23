@@ -6,20 +6,16 @@
 		<h2>Kunskaper</h2>	
 	</header>
 
-	<div class="container row">
+	<div class="container skills">
 
 		<?php foreach($class->getSkills() as $output) { ?>
 
-			<div class="col-lg-3 col-md-4 col-sm-6">
+			<figure <?php if(isset($output["class"])){ ?>class="<?php echo $output["class"]; ?>" <?php } ?>>
+				
+				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["link"]; ?>" title="<?php echo $output["name"]; ?>" alt="<?php echo $output["name"]; ?>">
 
-				<figure class="<?php echo $output["class"]; ?>">
-					
-					<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="<?php echo $output["link"]; ?>" title="<?php echo $output["name"]; ?>" alt="<?php echo $output["name"]; ?>">
-
-					<figcaption><?php echo $output["name"]; ?></figcaption>
-				</figure>
-			
-			</div>
+				<figcaption><?php echo $output["name"]; ?></figcaption>
+			</figure>
 
 		<?php } ?>
 
@@ -36,7 +32,7 @@
 
 	<?php foreach($class->getProject() as $output) {  ?>
 		
-		<article class="container row item">
+		<article class="container row">
 			
 			<div class="leftPanel">
 
