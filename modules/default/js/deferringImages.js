@@ -1,11 +1,9 @@
-$(document).ready(function($){
-    
-    //Deferring Images
-    var imgDefer = document.getElementsByTagName('img');
+//Deferring Images
+let imgDefer = document.querySelectorAll('img');
 
-	    for (var i=0; i<imgDefer.length; i++){
-			if(imgDefer[i].getAttribute('data-src')){
-				imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-			} 
-		} 
+imgDefer.forEach(element => {
+	if (element.getAttribute('data-src')) {
+		element.setAttribute('src', element.getAttribute('data-src'));
+	}
 });
+ 

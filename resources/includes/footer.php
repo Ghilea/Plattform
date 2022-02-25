@@ -84,10 +84,9 @@ if($outputSetting["target_id"] === 'settingsBtn'){?>
 	</div>
 </div>
 
-<?php foreach ($config->GetConfig("script") as $output) {
-	if (is_null($output["name"]) || $output["name"] == $functions->getLinkName()) { ?>
-		<script defer <?php echo $output["content"]; ?> src="<?php echo $output["link"]; ?>"></script>
-<?php } } ?>
+<?php foreach ($config->GetConfig("script") as $output) { ?>
+	<script <?php echo $output["content"]; ?> src="<?php echo $output["link"]; ?>"></script>
+<?php  } ?>
 </body>
 
 </html>

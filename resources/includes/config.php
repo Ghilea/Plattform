@@ -140,7 +140,8 @@ class Config {
 
 		$query = $this->db->select("config",
 			["name", "content", "image", "link"],
-			["AND" => ["type" => $type, "active" => 1]]
+			["AND" => ["type" => $type, "active" => 1],
+			"ORDER" => ["sort" => "ASC"]]
 		);
 			
 		return $query;
