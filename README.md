@@ -9,3 +9,4 @@ För att lära mig mer om allt möjligt bygger jag en plattform som använder si
 * Strukturera om databasen
 * Strukturera om så att classer används för JavaScript
 * Strukturera om och förbättra PHP för OOP
+* Lägga till React och försöka minska användandet av PHP
