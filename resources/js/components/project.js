@@ -2,13 +2,13 @@ import React from 'react';
 import Get from './get';
 
 export default function ProjectView() {
-/* <ProjectViewNav />
-            <ProjectViewHeader />
-            <ProjectViewHistory />
-            <ProjectViewBtn />*/
+
     return ( 
         <div className='container view'>
-           
+            <ProjectViewNav />
+            <ProjectViewHeader />
+            <ProjectViewHistory />
+            <ProjectViewBtn />
             <ProjectViewSkills />
             <ProjectViewFrontImage />
             <ProjectViewWorkFlow />
@@ -107,12 +107,28 @@ function ProjectViewSkills() {
 
     let getData = Get(data);
     
+    console.log(getData);
+    
+    const getNestedObject = (nestedObj, pathArr) => {
+        return pathArr.reduce((obj, key) =>
+            (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
+    }
+
+    const generateKey = (pre) => {
+        return `${ pre }_${ new Date().getTime() }`;
+    }
+
+    let newArr = [];
+
+    Object.keys(getData).forEach(index => {
+        newArr.push(
+            <img src={getNestedObject(getData[index], ['link'])} title={getNestedObject(getData[index], ['name'])} key={generateKey(getNestedObject(getData[index], ['name']))} />
+        );
+    });
+    
+    console.log(newArr);
     return (
-       <div className='toolImg'>
-            {getData.map((item) => {
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src={item.link} title={item.name} alt="blabla" key={item.link} />
-        })}
-		</div>
+       <div className='toolImg'>{newArr}</div>
     );  
 }
 
@@ -128,7 +144,7 @@ function ProjectViewFrontImage() {
     return (
        <section className='container row'>
 			<figure>	
-				<img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src={getData.image} title={getData.title} alt="" />
+				<img src={getData.image} title={getData.title} alt={getData.title} />
 			</figure>
 		</section>
     );

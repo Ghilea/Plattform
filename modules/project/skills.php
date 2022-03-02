@@ -14,16 +14,9 @@ if(isset($data["id"]) != null)
 
 }else{
 
-    $count = $database->count($data["table"]);
-
     $query = $database->select($data["table"],
     $data["column"],
-    ["ORDER" => ["sortOrder" => "ASC", "name" => "DESC"],
-    "LIMIT" => $count]);
-
-    foreach($query as $output){
-        $query = $output;
-    }
+    ["ORDER" => ["sortOrder" => "ASC", "name" => "DESC"]]);
 }
 
 echo json_encode($query, JSON_PRETTY_PRINT);
