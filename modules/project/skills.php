@@ -21,4 +21,9 @@ if(isset($data["id"]) != null)
 
 echo json_encode($query, JSON_PRETTY_PRINT);
 
+/*
+
+<img src={getNestedObject(getData[index], ['link'])} title={getNestedObject(getData[index], ['name'])} key={generateKey(getNestedObject(getData[index], ['name']))} />
+
+*/
 ?>

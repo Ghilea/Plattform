@@ -107,26 +107,28 @@ function ProjectViewSkills() {
 
     let getData = Get(data);
     
-    console.log(getData);
-    
     const getNestedObject = (nestedObj, pathArr) => {
         return pathArr.reduce((obj, key) =>
             (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
     }
 
-    const generateKey = (pre) => {
-        return `${ pre }_${ new Date().getTime() }`;
-    }
-
     let newArr = [];
-
-    Object.keys(getData).forEach(index => {
+        
+    Object.keys(getData).map(index => {
         newArr.push(
-            <img src={getNestedObject(getData[index], ['link'])} title={getNestedObject(getData[index], ['name'])} key={generateKey(getNestedObject(getData[index], ['name']))} />
+            <img src = {
+                getNestedObject(getData[index], ['link'])
+            }
+            title = {
+                getNestedObject(getData[index], ['name'])
+            }
+
+            />
         );
     });
-    
+
     console.log(newArr);
+
     return (
        <div className='toolImg'>{newArr}</div>
     );  
