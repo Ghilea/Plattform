@@ -3,10 +3,22 @@ import Get from './get';
 
 export default function ProjectView() {
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
+    let data = {
+        single: true,
+        id: id,
+        table: 'project',
+        column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
+    };
+
+    let getData = Get(data);
+
     return ( 
         <div className='container view'>
-            <ProjectViewNav />
-            <ProjectViewHeader />
+            <ProjectViewNav {...getData}/>
+            <ProjectViewHeader {...getData}/>
             <ProjectViewHistory />
             <ProjectViewBtn />
             <ProjectViewSkills />
@@ -16,43 +28,61 @@ export default function ProjectView() {
     )
 }
 
-function ProjectViewNav() {
+function ProjectViewNav(data) {
+    /*const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
     let data = {
-        id: 1,
+        single: true,
+        id: id,
         table: 'project',
         column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
     };
 
-    let getData = Get(data);
+    let getData = Get(data);*/
 
     return (  
         <nav className = 'container row'>
             <a rel = "noreferrer noopener" href = "/index.php#project" title = "Gå tillbaka">Hem</a>
             <>-&gt;</>
-            {getData.title}
+            <React.Fragment key="navDataTitle">
+                {data.title}
+            </React.Fragment>
         </nav>
     );
 }
 
-function ProjectViewHeader() {
+function ProjectViewHeader(data) {
+    
+    /*const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
     let data = {
-        id: 1,
+        single: true,
+        id: id,
         table: 'project',
         column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
     };
 
-    let getData = Get(data);
-    
+    let getData = Get(data);*/
+    console.log(data);
     return (
         <header>
-            <h1>{getData.title}</h1>
+            <React.Fragment key = "headerDataTitle" >
+                <h1 >{data.title}</h1>
+            </React.Fragment>
+            
         </header>
     );
 }
 
 function ProjectViewHistory() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
     let data = {
-        id: 1,
+        single: true,
+        id: id,
         table: 'project',
         column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
     };
@@ -72,8 +102,12 @@ function ProjectViewHistory() {
 }
 
 function ProjectViewBtn() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
     let data = {
-        id: 1,
+        single: true,
+        id: id,
         table: 'project',
         column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
     };
@@ -100,9 +134,15 @@ function ProjectViewBtn() {
 }
 
 function ProjectViewSkills() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
     let data = {
-        table: 'project_skills',
-        column: ['name', 'link']
+        single: false,
+        id: id,
+        table: 'project_images',
+        table2: '[<]project_skills',
+        column: ['project_skills.name', 'project_skills.link']
     };
 
     let getData = Get(data);
@@ -110,6 +150,7 @@ function ProjectViewSkills() {
     let newArr = [];
 
     if (getData.length !== 0 && getData instanceof Array) {
+        
         getData.map(obj => {
             newArr.push( 
                 <img src = {
@@ -134,8 +175,12 @@ function ProjectViewSkills() {
 }
 
 function ProjectViewFrontImage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
     let data = {
-        id: 1,
+        single: true,
+        id: id,
         table: 'project',
         column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
     };
@@ -152,8 +197,12 @@ function ProjectViewFrontImage() {
 }
 
 function ProjectViewWorkFlow() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
     let data = {
-        id: 1,
+        single: true,
+        id: id,
         table: 'project',
         column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
     };
