@@ -15,18 +15,24 @@ if($data['single']){
         );
     }else{
         $query = $database->select($data["table"],
-        $data["column"],
-        ["ORDER" => ["sortOrder" => "ASC", "name" => "DESC"]]);
+            $data["column"],
+            ["ORDER" => ["sortOrder" => "ASC", "name" => "DESC"]]);
     }   
 
 }else{
-  
-    $query = $database->select($data["table"],
+
+    if(isset($data['table2'])){
+        $query = $database->select($data["table"],
             ["[<]project_skills" => ["project_skills_id" => "id"]],
             //[$data["table2"] => ["project_skills_id" => "id"]],
             $data["column"],
             ["project_id" =>  $data["id"]]);
-
+    }else{
+        $query = $database->select($data["table"],
+            $data["column"],
+            ["project_id" =>  $data["id"]]);
+    }
+  
     
 }
 

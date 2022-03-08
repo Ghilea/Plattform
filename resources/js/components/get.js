@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-export default function GetProject(data){
-    const [error, setError] = React.useState(null);
-    const [isLoaded, setIsLoaded] = React.useState(false);
-    const [items, setItems] = React.useState([]);
+const GetProject = (data) => {
+
+    const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [items, setItems] = useState([]);
     let result;
 
-    React.useEffect(() => {
+    useEffect(() => {
 
         fetch('./skills.php', {
                 method: 'POST',
@@ -38,3 +39,5 @@ export default function GetProject(data){
 
     return result;
 }
+
+export default GetProject;

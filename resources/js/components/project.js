@@ -13,81 +13,74 @@ export default function ProjectView() {
         column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
     };
 
+    let dataSkillImages = {
+        single: false,
+        id: id,
+        table: 'project_images',
+        table2: '[<]project_skills',
+        column: ['project_skills.name', 'project_skills.link']
+    };
+
+    let dataWorkFlow = {
+        single: false,
+        id: id,
+        table: 'project_workflow',
+        column: ['name', 'content', 'img']
+    };
+
     let getData = Get(data);
+    let getSkillImagesData = Get(dataSkillImages);
+    let getWorkFlowData = Get(dataWorkFlow);
 
     return ( 
         <div className='container view'>
-            <ProjectViewNav {...getData}/>
-            <ProjectViewHeader {...getData}/>
-            <ProjectViewHistory />
-            <ProjectViewBtn />
-            <ProjectViewSkills />
-            <ProjectViewFrontImage />
-            <ProjectViewWorkFlow />
+            <ProjectViewNav props={getData.title} />
+            <ProjectViewHeader props={getData.title} />
+            <ProjectViewHistory props={getData.content} />
+            <ProjectViewBtn props={getData} />
+            <ProjectViewSkills props={getSkillImagesData}/>
+            <ProjectViewFrontImage props={getData} />
+            <ProjectViewWorkFlow props={getWorkFlowData} />
         </div>
     )
 }
 
-function ProjectViewNav(data) {
-    /*const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+const ProjectViewNav = (data) => {
+    let title;
 
-    let data = {
-        single: true,
-        id: id,
-        table: 'project',
-        column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
-    };
-
-    let getData = Get(data);*/
+    if (data.props !== undefined) {
+        title=data.props;
+    }
 
     return (  
-        <nav className = 'container row'>
+        <nav className = 'container row' key="navDataTitle">
             <a rel = "noreferrer noopener" href = "/index.php#project" title = "Gå tillbaka">Hem</a>
             <>-&gt;</>
-            <React.Fragment key="navDataTitle">
-                {data.title}
-            </React.Fragment>
+            {title}   
         </nav>
     );
 }
 
 function ProjectViewHeader(data) {
-    
-    /*const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+    let title;
 
-    let data = {
-        single: true,
-        id: id,
-        table: 'project',
-        column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
-    };
+    if (data.props !== undefined) {
+        title = data.props;
+    }
 
-    let getData = Get(data);*/
-    console.log(data);
     return (
         <header>
-            <React.Fragment key = "headerDataTitle" >
-                <h1 >{data.title}</h1>
-            </React.Fragment>
-            
+            <h1>{title}</h1>
         </header>
     );
 }
 
-function ProjectViewHistory() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+function ProjectViewHistory(data) {
+    let content;
 
-    let data = {
-        single: true,
-        id: id,
-        table: 'project',
-        column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
-    };
-
-    let getData = Get(data);
+    if (data.props !== undefined) {
+        content = data.props;
+    }
 
     return ( 
         <section aria-labelledby="background-title" className='container row'>
@@ -95,34 +88,20 @@ function ProjectViewHistory() {
 				<h1 id="background-title">Bakgrundshistoria</h1>
 			</header>
 			<article>
-				<p>{getData.content}</p>
+				<p>{content}</p>
 			</article>	
 		</section>
     );
 }
 
-function ProjectViewBtn() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
-
-    let data = {
-        single: true,
-        id: id,
-        table: 'project',
-        column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
-    };
-
-    let getData = Get(data);
-
+function ProjectViewBtn(data) {
     let link;
     let link2;
 
-    if (getData.link !== null) {
-        link = <a rel="noreferrer noopener" target="_blank" href={getData.link} className="boxBtn">Live Demo</a>;
-    }
+    if (data.props.link !== undefined || data.props.link2 !== undefined) {
+        link = <a rel="noreferrer noopener" target="_blank" href={data.props.link} className="boxBtn">Live Demo</a>;
 
-    if (getData.link2 !== null) {
-        link2 = <a rel="noreferrer noopener" target="_blank" href={getData.link2} className="boxBtn">GitHub</a>;
+        link2 = <a rel="noreferrer noopener" target="_blank" href={data.props.link2} className="boxBtn">GitHub</a>;
     }
 
     return (
@@ -133,25 +112,16 @@ function ProjectViewBtn() {
     );
 }
 
-function ProjectViewSkills() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
-
-    let data = {
-        single: false,
-        id: id,
-        table: 'project_images',
-        table2: '[<]project_skills',
-        column: ['project_skills.name', 'project_skills.link']
-    };
-
-    let getData = Get(data);
+function ProjectViewSkills(data) {
 
     let newArr = [];
 
-    if (getData.length !== 0 && getData instanceof Array) {
-        
-        getData.map(obj => {
+    
+    if (data.props.length !== 0 && data.props instanceof Array) {
+
+        data.props.map(obj => {
+            
+
             newArr.push( 
                 <img src = {
                     obj.link
@@ -167,61 +137,59 @@ function ProjectViewSkills() {
                 />
             );
         });
-    }    
+    }
 
     return (
        <div className='toolImg'>{newArr}</div>
     );  
 }
 
-function ProjectViewFrontImage() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+function ProjectViewFrontImage(data) {
+    
+    let title;
+    let image;
 
-    let data = {
-        single: true,
-        id: id,
-        table: 'project',
-        column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
-    };
-
-    let getData = Get(data);
+    if (data.props.title !== undefined || data.props.image !== undefined) {
+        title = data.props.title;
+        image = data.props.image;
+    }
 
     return (
        <section className='container row'>
 			<figure>	
-				<img src={getData.image} title={getData.title} alt={getData.title} />
+				<img src={image} title={title} alt={title} />
 			</figure>
 		</section>
     );
 }
 
-function ProjectViewWorkFlow() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+function ProjectViewWorkFlow(data) {
 
-    let data = {
-        single: true,
-        id: id,
-        table: 'project',
-        column: ['title', 'content', 'link', 'link2', 'image', 'showBtn', 'created']
-    };
+    let newArr = [];
 
-    let getData = Get(data);
+    if (data.props.length !== 0 && data.props instanceof Array) {
+
+        data.props.map(obj => {
+
+        console.log(obj);
+
+            newArr.push(
+                <article key={obj.name}>
+                    <p>{obj.content}</p>
+                    <figure>
+                        <img src={obj.img} alt={obj.name} />
+                        <figcaption>
+                            {obj.name}
+                        </figcaption>
+                    </figure>
+			    </article>
+            );
+        });
+    }
 
     return (
        <section className='workFlow'>
-			
-			<article>
-				<p>{getData.content}</p>
-				<figure>
-					<img src={getData.image} alt="" />
-					<figcaption>
-						{getData.title}
-					</figcaption>
-				</figure>
-			</article>
-		
+			{newArr}
 		</section>
     );
 }
