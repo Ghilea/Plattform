@@ -17,6 +17,10 @@
          max-width: 100%;
      }
 
+     .headTitle {
+         width: 100%;
+     }
+
     .skills {
 
         gap: var(--size-10);
@@ -140,7 +144,7 @@
         align-content: center;
         justify-content: center;
 
-        p{
+        p {
             text-align: left;
             padding: 1em;
             display: flex;
@@ -184,8 +188,21 @@
         overflow-wrap: break-word;
     }
 
-    header p {
-        text-align: center;
+    header {
+        
+        p {
+            text-align: center;
+            color: hsl(var(--color));
+            font-weight: var(--font-weight-400);
+            font-size: var(--font-size-1);
+            width: 100%;
+            height: auto;
+            margin: 1.5em auto;
+            padding: 0 1em;
+        }
+    }
+
+    p {
         color: hsl(var(--color));
         font-weight: var(--font-weight-400);
         font-size: var(--font-size-1);
@@ -193,9 +210,10 @@
         height: auto;
         margin: 1.5em auto;
         padding: 0 1em;
+        white-space: pre-line;
     }
 
-    p {
+    nav {
         color: hsl(var(--color));
         font-weight: var(--font-weight-400);
         font-size: var(--font-size-1);
@@ -210,6 +228,10 @@
         gap:1em;
         margin-top: 10em;
         margin-bottom: 10em;
+
+        p {
+            font-size: var(--font-size-3);
+        }
 
         .toolImg { 
             display: flex;
@@ -237,7 +259,7 @@
             font-size: var(--font-size-7);
         }
 
-        section {
+        section, nav {
             grid-column: 1 / span 2;
         }
 
@@ -261,7 +283,7 @@
             box-shadow: var(--shadow-1);
         }
 
-        p {
+        nav {
             font-size: var(--font-size-3);
 
             a { 
@@ -272,6 +294,8 @@
                     color: var(--gray-0);
                 }
             }
+
+            
         }
 
         .workFlow {

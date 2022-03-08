@@ -33,7 +33,7 @@ export default function ProjectView() {
     let getWorkFlowData = Get(dataWorkFlow);
 
     return ( 
-        <div className='container view'>
+        <section className='container view'>
             <ProjectViewNav props={getData.title} />
             <ProjectViewHeader props={getData.title} />
             <ProjectViewHistory props={getData.content} />
@@ -41,7 +41,7 @@ export default function ProjectView() {
             <ProjectViewSkills props={getSkillImagesData}/>
             <ProjectViewFrontImage props={getData} />
             <ProjectViewWorkFlow props={getWorkFlowData} />
-        </div>
+        </section>
     )
 }
 
@@ -55,8 +55,8 @@ const ProjectViewNav = (data) => {
     return (  
         <nav className = 'container row' key="navDataTitle">
             <a rel = "noreferrer noopener" href = "/index.php#project" title = "Gå tillbaka">Hem</a>
-            <>-&gt;</>
-            {title}   
+            &gt;
+            <span>{title}</span>
         </nav>
     );
 }
@@ -69,9 +69,7 @@ function ProjectViewHeader(data) {
     }
 
     return (
-        <header>
-            <h1>{title}</h1>
-        </header>
+        <h1>{title}</h1>
     );
 }
 
@@ -84,10 +82,8 @@ function ProjectViewHistory(data) {
 
     return ( 
         <section aria-labelledby="background-title" className='container row'>
-			<header>
-				<h1 id="background-title">Bakgrundshistoria</h1>
-			</header>
 			<article>
+                <h2 id="background-title">Bakgrundshistoria</h2>
 				<p>{content}</p>
 			</article>	
 		</section>
@@ -105,10 +101,10 @@ function ProjectViewBtn(data) {
     }
 
     return (
-       <div className='container row'>
+       <section className='container row'>
             {link}
             {link2}
-        </div>
+        </section>
     );
 }
 
@@ -140,7 +136,7 @@ function ProjectViewSkills(data) {
     }
 
     return (
-       <div className='toolImg'>{newArr}</div>
+       <section className='toolImg'>{newArr}</section>
     );  
 }
 
@@ -170,8 +166,6 @@ function ProjectViewWorkFlow(data) {
     if (data.props.length !== 0 && data.props instanceof Array) {
 
         data.props.map(obj => {
-
-        console.log(obj);
 
             newArr.push(
                 <article key={obj.name}>

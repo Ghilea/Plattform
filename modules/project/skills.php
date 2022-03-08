@@ -32,8 +32,7 @@ if($data['single']){
             $data["column"],
             ["project_id" =>  $data["id"]]);
     }
-  
-    
+
 }
 
 echo json_encode($query, JSON_PRETTY_PRINT);
