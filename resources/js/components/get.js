@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-const GetProject = (data) => {
+const GetProject = (data, link) => {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -9,7 +9,7 @@ const GetProject = (data) => {
 
     useEffect(() => {
 
-        fetch('./skills.php', {
+        fetch(link, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(data)

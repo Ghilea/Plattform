@@ -7,7 +7,7 @@ $data = json_decode(file_get_contents("php://input"), true);
 
 if($data['single']){
 
-    if(isset($data["id"]) > 0)
+    if(isset($data["id"]))
     {
         $query = $database->get($data["table"],
             $data["column"],
@@ -16,21 +16,22 @@ if($data['single']){
     }else{
         $query = $database->select($data["table"],
             $data["column"],
-            ["ORDER" => ["sortOrder" => "ASC", "name" => "DESC"]]);
+            ["ORDER" => [$data["order"] => "ASC"]]);
     }   
 
 }else{
 
     if(isset($data['table2'])){
         $query = $database->select($data["table"],
-            ["[<]project_skills" => ["project_skills_id" => "id"]],
-            //[$data["table2"] => ["project_skills_id" => "id"]],
+            [$data['table2']['table'] => [$data['table2']['id'] => "id"]],
             $data["column"],
-            ["project_id" =>  $data["id"]]);
+            [$data["getId"] =>  $data["id"]],
+            ["ORDER" => [$data["order"]["column"] => $data["order"]["direction"]]]
+        );
     }else{
         $query = $database->select($data["table"],
             $data["column"],
-            ["project_id" =>  $data["id"]]);
+            [$data["getId"] =>  $data["id"]]);
     }
 
 }

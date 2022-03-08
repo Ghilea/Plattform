@@ -1,7 +1,8 @@
 import React from 'react';
+import {BrowserRouter as Router, Link} from "react-router-dom";
 import Get from './get';
 
-export default function ProjectView() {
+const ProjectView = () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
@@ -17,20 +18,29 @@ export default function ProjectView() {
         single: false,
         id: id,
         table: 'project_images',
-        table2: '[<]project_skills',
-        column: ['project_skills.name', 'project_skills.link']
+        table2: {
+            'table': '[<]project_skills',
+            'id': 'project_skills_id'
+        },
+        column: ['project_skills.name', 'project_skills.link'],
+        getId: 'project_id',
+        order: {
+            'column': 'id',
+            'direction': 'ASC'
+        }
     };
 
     let dataWorkFlow = {
         single: false,
         id: id,
         table: 'project_workflow',
-        column: ['name', 'content', 'img']
+        column: ['name', 'content', 'img'],
+        getId: 'project_id'
     };
 
-    let getData = Get(data);
-    let getSkillImagesData = Get(dataSkillImages);
-    let getWorkFlowData = Get(dataWorkFlow);
+    let getData = Get(data, './skills.php');
+    let getSkillImagesData = Get(dataSkillImages, './skills.php');
+    let getWorkFlowData = Get(dataWorkFlow, './skills.php');
 
     return ( 
         <section className='container view'>
@@ -52,9 +62,15 @@ const ProjectViewNav = (data) => {
         title=data.props;
     }
 
+    /*
+    <Router>
+        <Link to="/index.php#project">Hem</Link>
+    </Router>
+    */
     return (  
-        <nav className = 'container row' key="navDataTitle">
-            <a rel = "noreferrer noopener" href = "/index.php#project" title = "Gå tillbaka">Hem</a>
+        <nav className = 'container row'>
+            
+            <a href="/index.php#project">Hem</a>
             &gt;
             <span>{title}</span>
         </nav>
@@ -187,3 +203,5 @@ function ProjectViewWorkFlow(data) {
 		</section>
     );
 }
+
+export default ProjectView;
