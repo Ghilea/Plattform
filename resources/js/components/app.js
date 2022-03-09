@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Link} from "react-router-dom";
 import Index from './index';
 import ProjectView from './project';
 
@@ -22,9 +22,13 @@ const App = () => {
     }
 
     return (
-        <React.Fragment>
+        <>
+            <BrowserRouter>
+                <Link className="button" to="/modules/project/projectView.php?id=1" onClick={() => setCurrentPageIndex(1)}>Project</Link>
+            </BrowserRouter>
+            
             {renderPage()}
-        </React.Fragment>
+        </>
     )
 }
 

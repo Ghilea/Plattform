@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import Get from './get';
+import Get from '../crud/get';
 
 const ProjectView = () => {
 
@@ -38,12 +38,13 @@ const ProjectView = () => {
         getId: 'project_id'
     };
 
-    let getData = Get(data, './skills.php');
-    let getSkillImagesData = Get(dataSkillImages, './skills.php');
-    let getWorkFlowData = Get(dataWorkFlow, './skills.php');
+    let getData = Get(data, '/resources/crud/read.php');
+    let getSkillImagesData = Get(dataSkillImages, '/resources/crud/read.php');
+    let getWorkFlowData = Get(dataWorkFlow, '/resources/crud/read.php');
 
     return ( 
-        <section className='container view'>
+        <div className = "project" >
+            <section className='container view'>
             <ProjectViewNav props={getData.title} />
             <ProjectViewHeader props={getData.title} />
             <ProjectViewHistory props={getData.content} />
@@ -51,7 +52,8 @@ const ProjectView = () => {
             <ProjectViewSkills props={getSkillImagesData}/>
             <ProjectViewFrontImage props={getData} />
             <ProjectViewWorkFlow props={getWorkFlowData} />
-        </section>
+            </section>
+        </div> 
     )
 }
 

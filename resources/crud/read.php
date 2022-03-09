@@ -26,6 +26,7 @@ if($data['single']){
             [$data['table2']['table'] => [$data['table2']['id'] => "id"]],
             $data["column"],
             [$data["getId"] =>  $data["id"]],
+            ['AND' => ["moduleOn" => 1, "type" => 'index', "modules_content.active" => 1]],
             ["ORDER" => [$data["order"]["column"] => $data["order"]["direction"]]]
         );
     }else{

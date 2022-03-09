@@ -1,13 +1,12 @@
 import React from 'react';
-import {BrowserRouter as Router, Link} from "react-router-dom";
-import Get from './get';
+import Modules from './modules';
 
 const Index = () => {
-
-    return ( 
-        <section className='container view'>
-            
-        </section>
+    
+    return (
+        <div className="indexContent">
+            <Modules/>
+        </div>       
     )
 }
 

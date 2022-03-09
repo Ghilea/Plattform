@@ -1,6 +1,6 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/resources/includes/header.php"); ?>
 
-<main class="indexContent"></main>
+<main></main>
 
 <!--<div id="indexContent">
 <?php //foreach ($config->ActivateModule("index") as $output) { 	
