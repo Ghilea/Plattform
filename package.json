@@ -1,8 +1,22 @@
 {
+  "name": "project",
+  "version": "0.0.1",
+  "description": "Platform to build website",
+  "main": "public/index.php",
+  "author": "Ghilea",
   "dependencies": {
+    "npm-watch": "^0.6.0",
     "open-props": "^1.3.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.0.17",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^9.1.0",
     "sass": "^1.49.8"
   },
   "devDependencies": {
@@ -14,5 +28,33 @@
     "react-router-dom": "^6.2.2",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
+  },
+  "scripts": {
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
+    "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy:php": "copyfiles -u 1 ./src/*.php public",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:assets": "onchange 'src/*.html' -- npm run copy:assets",
+    "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+    "watch:php": "onchange 'src/*.php' -- npm run copy:php",
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server public --files public",
+    "start": "npm-run-all copy --parallel watch serve",
+    "build": "npm-run-all copy:html copy:php build:*",
+    "eject": "react-scripts eject",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
