@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development', //production
-    entry: './resources/js/default.jsx',
+    entry: './src/assets/js/default.jsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'

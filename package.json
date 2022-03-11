@@ -5,11 +5,12 @@
   "main": "public/index.php",
   "author": "Ghilea",
   "dependencies": {
-    "npm-watch": "^0.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-react": "^7.16.7",
     "open-props": "^1.3.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.0",
+    "react-router-dom": "^6.2.2",
     "autoprefixer": "^10.4.2",
     "browser-sync": "^2.27.7",
     "copyfiles": "^2.4.1",
@@ -23,11 +24,11 @@
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
-    "react-router-dom": "^6.2.2",
+    "autoprefixer": "^9.4.4",
     "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^3.1.14"
   },
   "watch": {
     "build": {
@@ -38,23 +39,14 @@
     }
   },
   "scripts": {
-    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "build:sass": "sass --no-source-map src/sass:public/css",
+    "build:react": "babel src/react/default.js --out-dir src/react/",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
-    "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy:php": "copyfiles -u 1 ./src/*.php public",
     "copy": "npm-run-all --parallel copy:*",
-    "watch:assets": "onchange 'src/*.html' -- npm run copy:assets",
-    "watch:html": "onchange 'src/*.html' -- npm run copy:html",
-    "watch:php": "onchange 'src/*.php' -- npm run copy:php",
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
-    "watch": "npm-run-all --parallel watch:*",
-    "serve": "browser-sync start --server public --files public",
-    "start": "npm-run-all copy --parallel watch serve",
-    "build": "npm-run-all copy:html copy:php build:*",
-    "eject": "react-scripts eject",
+    "start": "npm-run-all copy --parallel",
+    "webpack": "weback",
+    "build": "npm-run-all webpack copy:* build:*",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }
