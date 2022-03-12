@@ -1,5 +1,5 @@
 import React from 'react';
-import Get from '../crud/get';
+import Get from './crud/get.js';
 
 const Modules = () => {
     

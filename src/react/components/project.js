@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import Get from './crud/get';
+import Get from './crud/get.js';
 
 const ProjectView = () => {
 
