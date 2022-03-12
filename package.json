@@ -29,7 +29,9 @@
     "watch": "nodemon --exec \"npm run build\"",
     "build:sass": "sass --no-source-map src/sass:public/css",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
-    "copy:php": "copyfiles -u 1 ./src/*.php public",
+    "copy:php": "copyfiles -u 1 ./src/php/**/* public",
+    "copy:robots": "copyfiles -u 1 ./src/robots.txt public",
+    "copy:htaccess": "copyfiles -u 1 ./src/.htaccess public",
     "copy": "npm-run-all --parallel copy:*",
     "start": "npm-run-all copy --parallel",
     "webpack": "webpack",
@@ -42,4 +44,3 @@
     "delay": 2500
   }
 }
-
