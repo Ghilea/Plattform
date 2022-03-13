@@ -4,41 +4,32 @@ import Get from './crud/get.js';
 const Modules = () => {
     
     return (
-        <Banner />
+        <>
+            <Banner/>
+
+        </>  
     );
 }
 
 const Banner = () => {
-    
-    let data = {
-        table: 'modules_content',
-        table2: {
-            'table': '[<]modules',
-            'id': '"modules_id'
-        },
-        column: ['modules_content.name', 'modules_content.content'],
-        type: 'index',
-        order: {
-            'column': 'setOrder',
-            'direction': 'ASC'
-        }
-    };
-    
-    let newArr = [];
 
-    let getData = Get(data, '/resources/crud/read.php');
+    let data = {
+        type: 'banner'
+    };
+
+    let getData = Get(data, '/public/php/crud/read_modules.php');
+
+    let newArr = [];
 
     if (getData.length !== 0 && getData instanceof Array) {
        
-        console.log(getData);
-
         getData.map(obj => {
 
             newArr.push(
-                <>
+                <React.Fragment key={obj.name}>
                     <h2>{obj.name}</h2>
                     <p>{obj.content}</p>
-                </>
+                </React.Fragment>
             );
         })
     }
@@ -49,6 +40,42 @@ const Banner = () => {
                 {newArr}
 	        </div>
         </div>
+    );
+}
+
+const ProjectModule = () => {
+
+    let data = {
+        type: 'banner'
+    };
+
+    let getData = Get(data, '/public/php/crud/read_modules.php');
+
+    let newArr = [];
+
+    if (getData.length !== 0 && getData instanceof Array) {
+       
+        getData.map(obj => {
+
+            newArr.push(
+                <React.Fragment key={obj.name}>
+                    <h2>{obj.name}</h2>
+                    <p>{obj.content}</p>
+                </React.Fragment>
+            );
+        })
+    }
+
+    return (
+        <section className = "container-fluid project">
+	        <header>
+		        <h2>Kunskaper</h2>	
+	        </header>
+
+            <div div className = "container skills">
+                {skills}
+	        </div>
+        </section>
     );
 }
 

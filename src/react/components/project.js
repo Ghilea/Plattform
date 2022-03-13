@@ -1,5 +1,4 @@
 import React from 'react';
-import {BrowserRouter as Router, Link} from "react-router-dom";
 import Get from './crud/get.js';
 
 const ProjectView = () => {
@@ -15,7 +14,7 @@ const ProjectView = () => {
     };
 
     let dataSkillImages = {
-        single: false,
+        multi: true,
         id: id,
         table: 'project_images',
         table2: {
@@ -31,16 +30,17 @@ const ProjectView = () => {
     };
 
     let dataWorkFlow = {
-        single: false,
+        multi: true,
         id: id,
         table: 'project_workflow',
         column: ['name', 'content', 'img'],
         getId: 'project_id'
     };
 
-    let getData = Get(data, '/resources/crud/read.php');
-    let getSkillImagesData = Get(dataSkillImages, '/resources/crud/read.php');
-    let getWorkFlowData = Get(dataWorkFlow, '/resources/crud/read.php');
+    let address = '/public/php/crud/read.php';
+    let getData = Get(data, address);
+    let getSkillImagesData = Get(dataSkillImages, address);
+    let getWorkFlowData = Get(dataWorkFlow, address);
 
     return ( 
         <div className = "project" >
@@ -72,7 +72,7 @@ const ProjectViewNav = (data) => {
     return (  
         <nav className = 'container row'>
             
-            <a href="/index.php#project">Hem</a>
+            <a href="/public/index.php#project">Hem</a>
             &gt;
             <span>{title}</span>
         </nav>
@@ -130,7 +130,6 @@ function ProjectViewSkills(data) {
 
     let newArr = [];
 
-    
     if (data.props.length !== 0 && data.props instanceof Array) {
 
         data.props.map(obj => {

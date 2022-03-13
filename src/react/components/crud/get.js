@@ -5,7 +5,6 @@ const GetProject = (data, link) => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
-    let result;
 
     useEffect(() => {
 
@@ -26,18 +25,15 @@ const GetProject = (data, link) => {
     }, []);
     
     if(error){
-        result = (<div>error: {error.message}</div>);
+        return <div>error: {error.message}</div>;
     }
 
     if(!isLoaded){
-        result = (<div>Loading...</div>);
+        return <div>Loading...</div>;
     }
+    
+    return items;
 
-    if (!error && isLoaded) {
-        result =  items;
-    }
-
-    return result;
 }
 
 export default GetProject;

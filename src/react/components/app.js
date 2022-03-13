@@ -13,6 +13,7 @@ const App = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
     useEffect(() => {
+        //start with index page
         setCurrentPageIndex(0);
     }, []) 
 
@@ -23,11 +24,11 @@ const App = () => {
 
     return (
         <>
+            {renderPage()}
+            
             <BrowserRouter>
                 <Link className="button" to="/modules/project/projectView.php?id=1" onClick={() => setCurrentPageIndex(1)}>Project</Link>
             </BrowserRouter>
-            
-            {renderPage()}
         </>
     )
 }

@@ -1,11 +1,19 @@
 <?php
 header('Content-Type: application/json');
 
-require_once "../../resources/includes/connection.php";
+require_once "../../php/includes/connection.php";
 
 $data = json_decode(file_get_contents("php://input"), true);
 
-if($data['single']){
+if(isset($data['and'])){
+    $query = $database->select($data["table"],
+        $data["column"],
+        ["AND" => [$data["and"]["set"] => $data["and"]["value"], "override" => null],
+        "ORDER" => ["sortOrder" => "ASC"]]
+    );
+}
+
+if(isset($data['single'])){
 
     if(isset($data["id"]))
     {
@@ -19,20 +27,21 @@ if($data['single']){
             ["ORDER" => [$data["order"] => "ASC"]]);
     }   
 
-}else{
+}
+
+if(isset($data["multi"])){
 
     if(isset($data['table2'])){
         $query = $database->select($data["table"],
             [$data['table2']['table'] => [$data['table2']['id'] => "id"]],
             $data["column"],
             [$data["getId"] =>  $data["id"]],
-            ['AND' => ["moduleOn" => 1, "type" => 'index', "modules_content.active" => 1]],
             ["ORDER" => [$data["order"]["column"] => $data["order"]["direction"]]]
         );
     }else{
         $query = $database->select($data["table"],
             $data["column"],
-            [$data["getId"] =>  $data["id"]]);
+            [isset($data["getId"]) =>  isset($data["id"])]);
     }
 
 }
