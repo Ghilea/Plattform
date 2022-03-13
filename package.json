@@ -2,13 +2,15 @@
   "name": "project",
   "version": "0.0.1",
   "description": "Platform to build website",
-  "main": "public/index.php",
+  "main": "public/",
   "author": "Ghilea",
+  "config": {
+      "address": "./src/",
+      "output": "C:\\wamp64\\www\\public"
+  },
   "dependencies": {
-    "open-props": "^1.3.8",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.2"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
@@ -23,22 +25,24 @@
     "sass": "^1.49.8",
     "npm-run-all": "^4.1.5",
     "nodemon": "^2.0.15",
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "open-props": "^1.3.8"
   },
   "scripts": {
     "watch": "nodemon --exec \"npm run build\"",
-    "build:sass": "sass --no-source-map src/sass:public/css",
-    "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
-    "copy:php": "copyfiles -u 1 ./src/php/**/* public",
-    "copy:robots": "copyfiles -u 1 ./src/robots.txt public",
-    "copy:htaccess": "copyfiles -u 1 ./src/.htaccess public",
+    "build:sass": "sass --no-source-map %npm_package_config_address%sass:%npm_package_config_output%/css",
+    "copy:assets": "copyfiles -u 1 %npm_package_config_address%assets/**/* %npm_package_config_output%",
+    "copy:php": "copyfiles -u 1 %npm_package_config_address%php/**/* %npm_package_config_output%",
+    "copy:robots": "copyfiles -u 1 %npm_package_config_address%robots.txt %npm_package_config_output%",
+    "copy:htaccess": "copyfiles -u 1 %npm_package_config_address%.htaccess %npm_package_config_output%",
+    "copy:index": "copyfiles -u 1 %npm_package_config_address%index.php %npm_package_config_output%",
     "copy": "npm-run-all --parallel copy:*",
     "start": "npm-run-all copy --parallel",
     "webpack": "webpack",
     "build": "npm-run-all webpack copy:* build:*"
   },
     "nodemonConfig": {
-    "watch": ["src/*"],
+    "watch": ["%npm_package_address%/*"],
     "ext": "js,php,jsx,sass,scss", 
     "ignore": ["public/*"],
     "delay": 2500

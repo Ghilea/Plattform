@@ -1,10 +1,12 @@
 const path = require('path');
+let address = './src/react/default.jsx';
+let output = 'C:\\wamp64\\www\\public';
 
 module.exports = {
     mode: 'development', //production
-    entry: './src/react/default.jsx',
+    entry: address,
     output: {
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, output),
         filename: 'bundle.js'
     },
     module: {
