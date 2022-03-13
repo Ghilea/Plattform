@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/lib/medoo/medoo.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/public/php/lib/medoo/medoo.php");
 
 use Medoo\Medoo;
 
@@ -57,22 +57,15 @@ function autoloadclass($className){
 		]
 	);
 
-	$test = $database->Select("config", 
+	$sql = $database->Select("config", 
 	["name", "link"],
 	["AND" => ["type" => "class"]]);
 
-	foreach($test as $output){
+	foreach($sql as $output){
 		if($className === $output["name"]) {
-			$link = $output["link"];
+			include($output["link"]);
 		}
 	}
-
-	$path = $_SERVER["DOCUMENT_ROOT"].$link;
 	
-	if (!file_exists($path)) {
-		return false;
-	}
-
-	include($path);
 }
 ?>

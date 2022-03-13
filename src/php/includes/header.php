@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER["DOCUMENT_ROOT"] . '/resources/includes/connection.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '/public/php/includes/connection.php');
 
 $config = new Config($database);
 $functions = new Functions($database);

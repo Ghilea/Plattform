@@ -1,4 +1,4 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/resources/includes/header.php"); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/public/php/includes/header.php"); ?>
 
 <main></main>
 
@@ -8,4 +8,4 @@
 //} ?>
 </div>-->
 
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/resources/includes/footer.php"); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/public/php/includes/footer.php"); ?>

@@ -42,9 +42,9 @@
     "build": "npm-run-all webpack copy:* build:*"
   },
     "nodemonConfig": {
-    "watch": ["%npm_package_address%/*"],
+    "watch": ["./src/*"],
     "ext": "js,php,jsx,sass,scss", 
-    "ignore": ["public/*"],
+    "ignore": ["%npm_package_config_output%*"],
     "delay": 2500
   }
 }
